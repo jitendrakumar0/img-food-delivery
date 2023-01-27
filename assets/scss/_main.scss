@@ -1,0 +1,152 @@
+
+
+::-webkit-scrollbar-track {
+  // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: rgba($black, 0);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: rgba($black, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $theme2;
+}
+body{
+  font-family: 'Nunito', sans-serif;
+}
+//? ################################## Main Page Start ###################################
+[page-name=landingPage] {
+  &.landingPage {
+    & .mainBg {
+      background-image: url('../img/main-bg.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      z-index: 1;
+      & .mainHeader {
+        & .logoOuter {
+          width: 250px;
+        }
+      }
+      & .bgGradient {
+        background-color: rgba($gray-900, $alpha: 0.5);
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+      & .topSection {
+        & .topSectionInner {
+          & .mainHading {
+            font-size: 30px;
+            font-weight: bold;
+            color: $theme1;
+          }
+          & .subHeading {
+            font-size: 22px;
+            font-weight: bold;
+            color: $white;
+          }
+          & .locationMain {
+            height: 50px;
+            & .form-control {
+              border: none;
+              outline: none;
+              &:focus {
+                border: none;
+                outline: none;
+              }
+            }
+            & input {
+              outline: none;
+              &:focus,
+              :focus-visible {
+                border: none;
+                outline: none;
+              }
+            }
+            & .locationButton {
+              transform: translate(0%, -50%);
+              margin-right: 100px;
+              border: none;
+              outline: none;
+              color: $secondary;
+              & .locationButtonInner {
+                transition: all 0.3s ease-in-out;
+                font-size: 12px;
+                & .locationImg {
+                  width: 16px;
+                  height: 16px;
+                }
+              }
+              &:active {
+                outline: none;
+                border: none;
+              }
+              &:hover .locationButtonInner {
+               scale: 1.1;
+              }
+            }
+          }
+          & .textCard {
+            & .textCardInner {
+              & .card-body {
+                & .cardImg {
+                  width: 100px;
+                  height: 100px;
+                }
+                & .card-tittle {
+                  font-size: 19px;
+                  font-weight: 600;
+                  color: $white;
+                  text-align: center;
+                }
+                & .cardDes {
+                  font-size: 15px;
+                  color: $white;
+                  font-weight: bold;
+                  text-align: center;
+                }
+              }
+              & .backdrop {
+                background-color: lighten($black, 20);
+                transition: all 0.3s ease-in-out;
+              }
+              &:hover {
+                & .backdrop {
+                  // background-color: rgba($theme1, 0.7);
+                  background: linear-gradient(-45deg, $theme1, $orange, $pink, );
+                  animation: gradient 1.8s ease infinite;
+                  background-size: 400% 400%;
+
+                  
+              }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+//! ###########################  Main Page End  ###########################
