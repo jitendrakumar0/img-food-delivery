@@ -1,0 +1,129 @@
+.headerMain {
+    & .navbar-brand {
+        width: auto;
+        height:45px;
+    }
+    & .navbar-nav {
+        & .nav-item {
+            & .nav-link {
+                font-size: 13px;
+                font-weight: 600;
+                color: $secondary;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    color: $theme1;
+                }
+                &.active {
+                    color: $theme1 !important;
+                }
+                & .imgOuter {
+                    width: 24px;
+                    height: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    & img {
+                        object-fit: contain;
+                        object-position: top center;
+                        
+                    }
+                }
+                &.dropdown-toggle {
+                    &::after {
+                        display: none;
+                    }
+                }
+                
+            }
+            &:hover{
+                & .dropdown-menu{
+                    opacity: 1;
+                        visibility: visible;
+                        transition: all 0.5s ease-in-out;
+            }
+            }
+            & .offersButton {
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 14px;
+                    height: 14px;
+                    background-image: url('../img/badge.png');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    top: 50%;
+                    left: 0;
+                    transform: translate(-50%,-50%);
+                    transition: all 0.3s ease-in-out;
+                }
+                &:hover::before{
+                    background-image: url('../img/badge-theme1.png');
+                }
+                &.active::before {
+                    background-image: url('../img/badge-theme1.png');
+                }
+            }
+            & .customBadge {
+                font-size: 10px;
+                padding: 3px;
+            }
+            & .dropdown-menu {
+                display: block;
+                visibility: hidden;
+                opacity: 0;
+                transition: all 0.5s ease-in-out;
+            }
+            & .cartButton {
+                position: relative;
+                & .cartButtonInner {
+                    display: flex;
+                    background-image: url('../img/shopping-bag.svg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    font-size: 9px;
+                    font-weight: bold;
+                    color: $secondary;
+                    width: 16px;
+                    height: 16px;
+                    align-items: center;
+                    justify-content: center;
+                    padding-top: 4px;
+                    transition: all 0.3s ease-in-out;
+                }
+                &:hover {
+                  & .cartButtonInner  {
+                    background-image: url('../img/shopping-bag-theme1.svg');
+                    color: $theme1;
+                  }
+                }
+            }
+        }
+    }
+    & .toggleButton {
+        & .item {
+            height: 2px;
+            background-color: $secondary;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+        }
+        & .item1 {
+            width: 18px;
+        }
+        & .item2 {
+            width: 15px;
+        }
+        & .item3 {
+            width: 12px;
+        }
+        &:hover {
+            & .item {
+                width: 18px;
+                background-color: $theme1;
+            }
+        }
+    }
+}

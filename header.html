@@ -1,0 +1,88 @@
+<nav class="navbar fixed-top navbar-expand-md py-2 bg-white shadow-sm headerMain">
+    <div class="container-lg container-fluid">
+      <a class="navbar-brand" href="javascript:;">
+        <img src="assets/img/demo-logo.png" class="w-100 h-100" alt="">
+      </a>
+      <button class="d-block d-md-none border-0 bg-transparent p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#headerOccanvas" aria-controls="headerOccanvas">
+        <div class="toggleButton d-flex flex-column gap-1 align-items-end p-1">
+            <div class="item item1"></div>
+            <div class="item item2"></div>
+            <div class="item item3"></div>
+        </div>
+      </button>
+      <div class="d-none d-md-block" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto align-items-center gap-3 ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="javascript:;">Home</a>
+          </li>
+          <li class="nav-item ms-3 me-5 position-relative">
+            <a class="nav-link offersButton" href="javascript:;">Offers</a>
+            <span class="position-absolute top-50 ms-3 start-100 translate-middle badge customBadge rounded-0 bg-theme1">New</span>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="javascript:;" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Restaurants
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="javascript:;">Action</a></li>
+              <li><a class="dropdown-item" href="javascript:;">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="javascript:;">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle d-flex align-items-center gap-2" href="javascript:;" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="rounded-circle overflow-hidden p-1 border border-theme1">
+                    <div class="imgOuter rounded-circle overflow-hidden">
+                        <img src="assets/img/profile-avater.jpg" class="w-100 h-100" alt="">
+                     </div> 
+                </div>
+                My Account
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="javascript:;">Action</a></li>
+              <li><a class="dropdown-item" href="javascript:;">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="javascript:;">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown position-relative">
+            <a class="nav-link dropdown-toggle cartButton d-flex align-items-center gap-1" href="javascript:;" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="cartButtonInner">
+                0
+              </span>
+                Cart
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="javascript:;">Action</a></li>
+              <li><a class="dropdown-item" href="javascript:;">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="javascript:;">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </nav>
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="headerOccanvas" aria-labelledby="headerOccanvasLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="headerOccanvasLabel">Offcanvas</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+      </div>
+      <div class="dropdown mt-3">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
