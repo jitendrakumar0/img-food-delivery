@@ -1,2 +1,18 @@
+.btn-style1 {
+    font-size: 13px;
+    font-weight: bold;
+}
+.btn-theme1.btn-style1 {
+    color: $white;
+    &:focus,
+    &:active,
+    &.active {
+        color: $white;
+    }
+}
 
-
+@media(max-width:768px) {
+    .btn-style1 {
+        font-size: 12px;
+    }  
+}
