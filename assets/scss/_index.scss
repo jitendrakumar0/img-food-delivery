@@ -1,0 +1,251 @@
+[page-name=mainSection] {
+    &.mainSecton {
+        & .heroSectionOne {
+            background-color: lighten($secondary, 45);
+            & .leftPart {
+                & .findDeals {
+                    font-size: 45px;
+                    font-weight: normal;
+                    color: lighten($black, 20);
+                    line-height: normal;
+                    & .findDealsInner {
+                        font-weight: bold;
+                    }
+                }
+                & .listRes {
+                    font-size: 18px;
+                    color: $secondary;
+                    font-weight: normal;
+                    line-height: normal;
+                }
+                & .inpFildOuter {
+                    height: 50px;
+                    & .customTomOuter {
+                        & .customTom {
+                            border: 1px solid $secondary !important;
+                            font-weight: bold;
+                            font-size: 15px;
+                            & .ts-control {
+                                padding: 0;
+                                height: 100%;
+                                border: none;
+                                padding: 0;
+                                position: relative;
+                                & .item {
+                                   padding-top: 15px;
+                                   padding-left: 30px;
+                                }
+                                & input {
+                                    display: none !important;
+                                }
+                                &::before {
+                                    content: "";
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 0;
+                                    transform: translate(8px, -50%);
+                                    width: 15px;
+                                    height: 15px;
+                                    background-image: url('../img/near-me.png');
+                                    background-size: contain;
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                }
+                                &::after {
+                                    content: "";
+                                    position: absolute;
+                                    top: 50%;
+                                    right: 0;
+                                    transform: translate(-10px, -50%);
+                                    width: 6px;
+                                    height: 6px;
+                                    background-image: url('../img/down.png');
+                                    background-size: contain;
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    transition: all 0.3s ease-in-out;
+                                }
+                            }
+                            & .ts-dropdown {
+                                margin: 0;
+                            }
+                            &.focus {
+                                & .ts-control {
+                                    &::after {
+                                        transform: rotate(60deg) translate(-8px, 8px);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .locationInpOuter {
+                        & .locationInp {
+                            font-size: 15px;
+                            color: $black;
+                            font-weight: normal;
+                            border: 1px solid $secondary;
+                            padding: 15px 115px 15px 15px;
+                            &:focus-visible,
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+                        & .locateButton {
+                            right: 0;
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            top: 0;
+                            transform: translate(-6px, 6px);
+                            border-radius: 3px;
+                            padding: 10px;
+                            font-weight: normal;
+                            & .btnIcon {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 12px;
+                                height: 12px;
+                            }
+                        }
+                    }
+                    & .searchBtnOuter {
+                        & .searchBtn {
+                            font-size: 15px;
+                        }
+                    }
+                }
+                & .subHeading {
+                    font-size: 15px;
+                    color: $black;
+                    font-weight: normal;
+                }
+                & .newAddedCarousel1 {
+                    position: relative;
+                    & .owl-stage-outer {
+                        & .owl-stage {
+                            & .owl-item {
+                                & .imgOuter {
+                                    background-color: $light;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    flex-direction: column;
+                                    padding: 10px;
+                                    border-radius: 3px;
+                                    overflow: hidden;
+                                    text-decoration: none;
+                                    & .imgInner {
+                                        width: 40px;
+                                        height: 40px;
+                                        border-radius: 50%;
+                                        overflow: hidden;
+                                    }
+                                    & .dishTitle {
+                                        font-size: 14px;
+                                        font-weight: bold;
+                                        color: $theme1;
+                                    }
+                                    & .dishCat {
+                                        color: $secondary;
+                                        font-size: 12px;
+                                        font-weight: normal;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .owl-nav  {
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        display: flex;
+                        justify-content: space-between;
+                        width: 103%;
+                        transform: translate(-15px, -50%);
+                        & .owl-prev {
+                            width: 27px;
+                            height: 27px;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            background-image: url('../img/chevron-left.png');
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: 16px;
+                            background-color: white;
+                            box-shadow: 0px 0px 5px gray;
+                            padding: 5px;
+                        }
+                        & .owl-next {
+                            width: 27px;
+                            height: 27px;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            background-image: url('../img/chevron-right.png');
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: 16px;
+                            background-color: white;
+                            box-shadow: 0px 0px 5px gray;
+                            padding: 5px;
+                        }
+                    }
+                }
+            }
+            & .rightPart {
+                & .newAddedCarousel2 {
+                    position: relative;
+                    height: 350px;
+                    & .owl-stage-outer {
+                        height: 100%;
+                         & .owl-stage {
+                            height: 100%;
+                            & .owl-item {
+                                height: 100%;
+                                & .imgOuter {
+                                    display: block;
+                                    height: 100%;
+                                }
+                            }
+                         }
+                    }
+                    & .owl-nav  {
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        display: flex;
+                        justify-content: space-between;
+                        width: 108%;
+                        transform: translate(-15px, -50%);
+                        & .owl-prev {
+                            width: 27px;
+                            height: 27px;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            background-image: url('../img/chevron-left.png');
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: 16px;
+                            background-color: white;
+                            box-shadow: 0px 0px 5px gray;
+                            padding: 5px;
+                        }
+                        & .owl-next {
+                            width: 27px;
+                            height: 27px;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            background-image: url('../img/chevron-right.png');
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: 16px;
+                            background-color: white;
+                            box-shadow: 0px 0px 5px gray;
+                            padding: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

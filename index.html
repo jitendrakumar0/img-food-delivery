@@ -59,31 +59,261 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Custom Css -->
     <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/libs/OwlCarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/libs/tom-select/tom-select.min.css">
     <script src="assets/libs/jquery/jquery-3.6.3.min.js"></script>
 </head>
-<body class="vh-100 p-0 m-0 overflow-hiddeen">
+<body class="vh-100 p-0 m-0 overflow-hidden">
     <!-- Main Start -->
-    <div class="container-fluid h-100 landingPage overflow-y-auto overflow-x-hiddeen p-0 d-flex flex-column flex-nowrap" page-name="landingPage">
-       <!-- Header Start -->
-       <div id="header"></div>
-       <!-- Header End -->
- 
-       <!-- Main Start-->
-       <div class="container-fluid h-100 flex-fill overflow-hidden-auto bg-secondary bg-opacity-25">
-            
+    <div class="container-fluid h-100 px-0 overflow-hidden">
+        <div class="row mx-0 flex-nowrap landingPage flex-column h-100 overflow-hidden" page-name="landingPage">
+            <!-- Header Start -->
+            <div class="col-12 px-0">
+                <div id="header"></div>
+            </div>
+            <!-- Header End -->
+
+            <!-- Main Start-->
+            <div class="col-12 px-0 flex-fill h-100 overflow-hidden">
+                <div class="h-100 overflow-y-auto ">
+                    <div class="mainSecton" page-name="mainSection">
+                        <div class="container-fluid heroSectionOne px-0">
+                            <div class="container py-5">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-md-8 leftPart">
+                                                <div class="row gap-5">
+                                                    <div class="col-12">
+                                                        <div class="findDeals"><span class="findDealsInner">Find Awesome Deals </span>Delhi</div>
+                                                        <div class="listRes">Lists of top restaurants, cafes, pubs, and bars in Melbourne, based on trends</div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <form>
+                                                            <div class="row inpFildOuter">
+                                                                <div class="col-3 customTomOuter h-100">
+                                                                    <select  class="w-100 h-100 customTom singleSelect" data-placeholder="Quick Searches"  autocomplete="off">
+                                                                        <option selected disabled>Quick Searches</option>
+                                                                        <option>Breakfast</option>
+                                                                        <option>Lunch</option>
+                                                                        <option>Dinner</option>
+                                                                        <option>Cafes</option>
+                                                                        <option>Delivery</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-7 locationInpOuter px-0 position-relative h-100">
+                                                                    <input type="text" class="locationInp w-100 h-100 shadow-none" placeholder="Enter your delivery location">
+                                                                    <button type="button" class="btn btn-secondary position-absolute locateButton btn-style1 shadow-none border-0">
+                                                                        <div class="btnIcon"><img src="assets/img/center-of-gravity.png" class="w-100 h-100" alt=""></div>
+                                                                        Locate Me
+                                                                    </button>
+                                                                </div>
+                                                                <div class="col-2 searchBtnOuter h-100">
+                                                                    <Button type="button" class="btn btn-theme1 h-100 btn-style1 searchBtn px-4 py-2 rounded-0 border-0">Search</Button>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="row mx-0">
+                                                            <div class="col-12 subHeading px-0 pb-2">
+                                                                E.g. Beverages, Pizzas, Chinese, Bakery, Indian...
+                                                            </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="owl-carousel newAddedCarousel1 owl-loaded">
+                                                                    <div class="owl-stage-outer">
+                                                                        <div class="owl-stage">
+                                                                            <div class="owl-item">
+                                                                                <a href="javascript:;" class="imgOuter">
+                                                                                    <div class="imgInner">
+                                                                                        <img src="assets/img/1.png" class="w-100 h-100" alt="">
+                                                                                    </div>
+                                                                                    <div class="dishTitle mt-2">Pizza</div>
+                                                                                    <div class="dishCat">128</div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="owl-item">
+                                                                                <a href="javascript:;" class="imgOuter">
+                                                                                    <div class="imgInner">
+                                                                                        <img src="assets/img/2.png" class="w-100 h-100" alt="">
+                                                                                    </div>
+                                                                                    <div class="dishTitle mt-2">Burgar</div>
+                                                                                    <div class="dishCat">288</div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="owl-item">
+                                                                                <a href="javascript:;" class="imgOuter">
+                                                                                    <div class="imgInner">
+                                                                                        <img src="assets/img/3.png" class="w-100 h-100" alt="">
+                                                                                    </div>
+                                                                                    <div class="dishTitle mt-2">Chaines</div>
+                                                                                    <div class="dishCat">756</div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="owl-item">
+                                                                                <a href="javascript:;" class="imgOuter">
+                                                                                    <div class="imgInner">
+                                                                                        <img src="assets/img/4.png" class="w-100 h-100" alt="">
+                                                                                    </div>
+                                                                                    <div class="dishTitle mt-2">Pizza</div>
+                                                                                    <div class="dishCat">425</div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="owl-item">
+                                                                                <a href="javascript:;" class="imgOuter">
+                                                                                    <div class="imgInner">
+                                                                                        <img src="assets/img/5.png" class="w-100 h-100" alt="">
+                                                                                    </div>
+                                                                                    <div class="dishTitle mt-2">Burgar</div>
+                                                                                    <div class="dishCat">467</div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="owl-item">
+                                                                                <a href="javascript:;" class="imgOuter">
+                                                                                    <div class="imgInner">
+                                                                                        <img src="assets/img/6.png" class="w-100 h-100" alt="">
+                                                                                    </div>
+                                                                                    <div class="dishTitle mt-2">Chaines</div>
+                                                                                    <div class="dishCat">345</div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="owl-item">
+                                                                                <a href="javascript:;" class="imgOuter">
+                                                                                    <div class="imgInner">
+                                                                                        <img src="assets/img/7.png" class="w-100 h-100" alt="">
+                                                                                    </div>
+                                                                                    <div class="dishTitle mt-2">Pizza</div>
+                                                                                    <div class="dishCat">468</div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="owl-item">
+                                                                                <a href="javascript:;" class="imgOuter">
+                                                                                    <div class="imgInner">
+                                                                                        <img src="assets/img/8.png" class="w-100 h-100" alt="">
+                                                                                    </div>
+                                                                                    <div class="dishTitle mt-2">Burgar</div>
+                                                                                    <div class="dishCat">457</div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="owl-item">
+                                                                                <a href="javascript:;" class="imgOuter">
+                                                                                    <div class="imgInner">
+                                                                                        <img src="assets/img/1.png" class="w-100 h-100" alt="">
+                                                                                    </div>
+                                                                                    <div class="dishTitle mt-2">Chaines</div>
+                                                                                    <div class="dishCat">111</div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="owl-item">
+                                                                                <a href="javascript:;" class="imgOuter">
+                                                                                    <div class="imgInner">
+                                                                                        <img src="assets/img/1.png" class="w-100 h-100" alt="">
+                                                                                    </div>
+                                                                                    <div class="dishTitle mt-2">Pizza</div>
+                                                                                    <div class="dishCat">111</div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="owl-item">
+                                                                                <a href="javascript:;" class="imgOuter">
+                                                                                    <div class="imgInner">
+                                                                                        <img src="assets/img/1.png" class="w-100 h-100" alt="">
+                                                                                    </div>
+                                                                                    <div class="dishTitle mt-2">Burgar</div>
+                                                                                    <div class="dishCat">111</div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="owl-item">
+                                                                                <a href="javascript:;" class="imgOuter">
+                                                                                    <div class="imgInner">
+                                                                                        <img src="assets/img/1.png" class="w-100 h-100" alt="">
+                                                                                    </div>
+                                                                                    <div class="dishTitle mt-2">Pizza</div>
+                                                                                    <div class="dishCat">111</div>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 rightPart">
+                                                <div class="row">
+                                                    <div class="col-12 pt-3 ps-5">
+                                                        <div class="owl-carousel newAddedCarousel2 owl-loaded">
+                                                            <div class="owl-stage-outer">
+                                                                <div class="owl-stage">
+                                                                    <div class="owl-item">
+                                                                        <a href="javascript:;" class="imgOuter">
+                                                                            <img src="assets/img/slider.png" class="w-100 h-100" alt="">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="owl-item">
+                                                                        <a href="javascript:;" class="imgOuter">
+                                                                            <img src="assets/img/slider1.png" class="w-100 h-100" alt="">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="owl-item">
+                                                                        <a href="javascript:;" class="imgOuter">
+                                                                            <img src="assets/img/slider.png" class="w-100 h-100" alt="">
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid heroTwo px-0">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-3 offerCards">
+                                       <a href="javascript:;" class="text-decoration-none">
+                                            <img src="assets/img/pro4.jpg" class="w-100 h-100" alt="">
+                                       </a>
+                                    </div>
+                                    <div class="col-md-3 offerCards">
+                                        <a href="javascript:;" class="text-decoration-none">
+                                             <img src="assets/img/pro3.jpg" class="w-100 h-100" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 offerCards">
+                                        <a href="javascript:;" class="text-decoration-none">
+                                             <img src="assets/img/pro2.jpg" class="w-100 h-100" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 offerCards">
+                                        <a href="javascript:;" class="text-decoration-none">
+                                             <img src="assets/img/pro1.jpg" class="w-100 h-100" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer Start -->
+                    <div id="footer"></div>
+                    <!-- Footer End -->
+                </div>
+            </div>
+            <!-- Main End-->
         </div>
-       <!-- Main End-->
-       
-
-        <!-- Footer End -->
-        <div id="footer"></div>
-        <!-- Footer End -->
-
     </div>
     <!-- Main End -->
 
     <!-- Bootstrap Js -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--Tom Select-->
+    <script src="assets/libs/tom-select/tom-select.complete.js"></script>
+    <!--OwlCarosal-->
+    <script src="assets/libs/OwlCarousel/owl.carousel.min.js"></script>
     <!-- Custom Js -->
     <script src="assets/js/index.js"></script>
 </body>

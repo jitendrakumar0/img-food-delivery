@@ -1,122 +1,209 @@
 //? ################################## Main Footer Start ###################################
-[page-name=footer] {
-    &.mainFooter {
-        background-color: $light;
-        & .footerTop {
-            & .workWithUsOuter {
-                color: $black;
-                font-size: 18px;
-                font-weight: bold;
-                & .workWithUs {
-                    color: $theme1;
-                    transition: 0.3s ease-in-out;
-                    &:hover {
-                        color: darken($theme1, 10);
-                    }
+.mainFooter {
+    background-color: $light;
+    & .footerTop {
+        & .workWithUsOuter {
+            color: $black;
+            font-size: 18px;
+            font-weight: bold;
+            & .workWithUs {
+                color: $theme1;
+                transition: 0.3s ease-in-out;
+                &:hover {
+                    color: darken($theme1, 10);
                 }
             }
         }
-        & .footerMiddalFirst {
-            background-color: $theme2;
-            & .subsHeading {
+    }
+    & .footerMiddalFirst {
+        background-color: $theme2;
+        & .subsHeading {
+            font-size: 16px;
+            font-weight: bold;
+            color: $black;
+            text-transform: uppercase;
+        }
+        & .subsInp {
+            font-size: 14px;
+            &:focus {
+                outline: none;
+                border: none;
+            }
+        }
+        & .regiDes {
+            color: $black;
+            font-size: 13px;
+            & .regiText {
+                color: $theme1;
+                font-weight: bold;
+                &:hover {
+                    color: darken($theme1, 20);
+                }
+            }
+        }
+        & .downloadAppHeading {
+            font-size: 14px;
+            color: $secondary;
+            font-weight: bold;
+        }
+        & .downloadAppImg {
+            width: auto;
+            height: 45px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                scale: 1.1;
+            }
+        }
+        & .subHeadingOuter {
+            & .subHeading {
                 font-size: 16px;
                 font-weight: bold;
                 color: $black;
                 text-transform: uppercase;
             }
+            & .subHaddingList {
+                font-size: 13px;
+                color: $secondary;
+                font-weight: bold;
+                text-decoration: none;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    color: $theme1;
+                }
+            }
+        }
+    }
+    & .footerMiddalSecond {
+        & .subHeadingText {
+            font-size: 15px;
+            font-weight: bold;
+            color: $black;
+            text-transform: uppercase;
+        }
+        & .catTestOuter {
+            & .catTest {
+                font-size: 12px;
+                color: $secondary;
+                font-weight: normal;
+                transition: all 0.3s ease-in-out;
+                text-decoration: none;
+                position: relative;
+                padding-right: 10px;
+                margin-right: 17px;
+                &:hover {
+                    color: lighten($theme1, 20);
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    width: 1px;
+                    height: 70%;
+                    background-color: lighten($secondary, 40);
+                    border-radius: 5px;
+                    top: 0;
+                    transform: translate(7px, 2px);
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+            & li {
+                &:last-child{
+                    & .catTest {
+                        &::before {
+                            display: none;
+                        }
+                    }
+                }
+                &:first-child {
+                    & .catTest {
+                        // padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    & .footerBottom {
+        & .copyRightText {
+            font-size: 13px;
+            font-weight: bold;
+            color: $secondary;
+        }
+    }
+}
+// Small devices (landscape phones, 576px and up)
+@mixin Footer-mixin-min-sm() {
+}
+// Medium devices (tablets, 768px and up)
+@mixin Footer-mixin-min-md() {
+}
+// Large devices (desktops, 992px and up)
+@mixin Footer-mixin-min-lg() {
+}
+// X-Large devices (large desktops, 1200px and up)
+@mixin Footer-mixin-min-xl() {
+}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin Footer-mixin-min-xxl() {
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin Footer-mixin-max-xs() {
+    .mainFooter {
+        & .footerTop {
+            & .workWithUsOuter {
+                font-size: 14px;
+                & .workWithUs {
+                    &:hover {
+                    }
+                }
+            }
+        }
+        & .footerMiddalFirst {
+            & .subsHeading {
+            }
             & .subsInp {
                 &:focus {
-                    outline: none;
-                    border: none;
                 }
             }
             & .regiDes {
-                color: $black;
-                font-size: 13px;
                 & .regiText {
-                    color: $secondary;
-                    font-weight: bold;
-                    transition: all 0.3s ease-in-out;
                     &:hover {
-                        color: $theme1;
                     }
                 }
             }
             & .downloadAppHeading {
-                font-size: 14px;
-                color: $secondary;
-                font-weight: bold;
             }
             & .downloadAppImg {
-                width: auto;
-                height: 45px;
-                transition: all 0.3s ease-in-out;
                 &:hover {
-                    scale: 1.1;
                 }
             }
             & .subHeadingOuter {
                 & .subHeading {
-                    font-size: 15px;
-                    font-weight: bold;
-                    color: $black;
                 }
                 & .subHaddingList {
-                    font-size: 13px;
-                    color: $secondary;
-                    font-weight: bold;
-                    text-decoration: none;
-                    transition: all 0.3s ease-in-out;
                     &:hover {
-                        color: $theme1;
                     }
                 }
             }
         }
         & .footerMiddalSecond {
             & .subHeadingText {
-                font-size: 15px;
-                font-weight: bold;
-                color: $black;
-                text-transform: uppercase;
             }
             & .catTestOuter {
                 & .catTest {
-                    font-size: 12px;
-                    color: $secondary;
-                    font-weight: normal;
-                    transition: all 0.3s ease-in-out;
-                    text-decoration: none;
-                    position: relative;
-                    padding-right: 10px;
-                    margin-right: 17px;
                     &:hover {
-                        color: lighten($theme1, 20);
                     }
                     &::before {
-                        content: "";
-                        position: absolute;
-                        right: 0;
-                        width: 1px;
-                        height: 70%;
-                        background-color: lighten($secondary, 40);
-                        border-radius: 5px;
-                        top: 0;
-                        transform: translate(7px, 2px);
-                        transition: all 0.3s ease-in-out;
                     }
                 }
                 & li {
                     &:last-child{
                         & .catTest {
                             &::before {
-                                display: none;
                             }
                         }
                     }
                     &:first-child {
                         & .catTest {
-                            // padding-right: 0;
                         }
                     }
                 }
@@ -124,12 +211,169 @@
         }
         & .footerBottom {
             & .copyRightText {
-                font-size: 13px;
-                font-weight: bold;
-                color: $secondary;
             }
         }
     }
-  }
+}
+// Small devices (landscape phones, less than 768px)
+@mixin Footer-mixin-max-sm() {
+}
+// Medium devices (tablets, less than 992px)
+@mixin Footer-mixin-max-md() {
+    .mainFooter {
+        & .footerTop {
+            & .workWithUsOuter {
+                & .workWithUs {
+                    &:hover {
+                    }
+                }
+            }
+        }
+        & .footerMiddalFirst {
+            & .subsHeading {
+                font-size: 12px;
+            }
+            & .subsInp {
+                &:focus {
+                }
+            }
+            & .regiDes {
+                & .regiText {
+                    &:hover {
+                    }
+                }
+            }
+            & .downloadAppHeading {
+            }
+            & .downloadAppImg {
+                // height: 35px;
+                &:hover {
+                }
+            }
+            & .subHeadingOuter {
+                & .subHeading {
+                    font-size: 12px;
+                }
+                & .subHaddingList {
+                    &:hover {
+                    }
+                }
+            }
+        }
+        & .footerMiddalSecond {
+            & .subHeadingText {
+                font-size: 12px;
+            }
+            & .catTestOuter {
+                & .catTest {
+                    &:hover {
+                    }
+                    &::before {
+                    }
+                }
+                & li {
+                    &:last-child{
+                        & .catTest {
+                            &::before {
+                            }
+                        }
+                    }
+                    &:first-child {
+                        & .catTest {
+                        }
+                    }
+                }
+            }
+        }
+        & .footerBottom {
+            & .copyRightText {
+            }
+        }
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin Footer-mixin-max-lg() {
+    .mainFooter {
+        & .footerTop {
+            & .workWithUsOuter {
+                font-size: 17px;
+                & .workWithUs {
+                    &:hover {
+                    }
+                }
+            }
+        }
+        & .footerMiddalFirst {
+            & .subsHeading {
+                font-size: 15px;
+            }
+            & .subsInp {
+                &:focus {
+                }
+            }
+            & .regiDes {
+                font-size: 12px;
+                & .regiText {
+                    &:hover {
+                    }
+                }
+            }
+            & .downloadAppHeading {
+                font-size: 13px;
+            }
+            & .downloadAppImg {
+                height: 40px;
+                &:hover {
+                }
+            }
+            & .subHeadingOuter {
+                & .subHeading {
+                    font-size: 14px;
+                }
+                & .subHaddingList {
+                    font-size: 12px;
+                    &:hover {
+                    }
+                }
+            }
+        }
+        & .footerMiddalSecond {
+            & .subHeadingText {
+                font-size: 15px;
+            }
+            & .catTestOuter {
+                & .catTest {
+                    &:hover {
+                    }
+                    &::before {
+                    }
+                }
+                & li {
+                    &:last-child{
+                        & .catTest {
+                            &::before {
+                            }
+                        }
+                    }
+                    &:first-child {
+                        & .catTest {
+                        }
+                    }
+                }
+            }
+        }
+        & .footerBottom {
+            & .copyRightText {
+            }
+        }
+    }
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin Footer-mixin-max-xl() {
+}
+
+@mixin Footer-mixin-330() {
+    
+}
   
   //! ###########################  Main Footer End  ###########################

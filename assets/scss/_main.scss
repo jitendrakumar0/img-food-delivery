@@ -11,7 +11,8 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: $theme2;
+  background-color: lighten($theme1, 20);
+  border-radius: 10px;
 }
 body{
   font-family: 'Nunito', sans-serif;
