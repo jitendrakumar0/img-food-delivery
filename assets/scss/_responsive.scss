@@ -5,71 +5,77 @@
 @media (min-width: 576px) {
   @include Header-mixin-min-sm();
   @include Footer-mixin-min-sm();
+  @include Index-mixin-min-sm();
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   @include Header-mixin-min-md();
   @include Footer-mixin-min-md();
+  @include Index-mixin-min-md();
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   @include Header-mixin-min-lg();
   @include Footer-mixin-min-lg();
+  @include Index-mixin-min-lg();
 }
 
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   @include Header-mixin-min-xl();
   @include Footer-mixin-min-xl();
+  @include Index-mixin-min-xl();
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {
   @include Header-mixin-min-xxl();
   @include Footer-mixin-min-xxl();
+  @include Index-mixin-min-xxl();
 }
 
 // X-Large devices (large desktops, less than 1400px)
 @media (max-width: 1399.98px) {
   @include Header-mixin-max-xl();
   @include Footer-mixin-max-xl();
+  @include Index-mixin-max-xl();
 }
 
-// Large devices (desktops, less than 1300px)
-@media (max-width: 1299.98px) {
-  @include Header-mixin-max-lg();
-  @include Footer-mixin-max-lg();
-}
 
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {
-  @include Header-mixin-max-md();
-  @include Footer-mixin-max-md();
+  @include Header-mixin-max-lg();
+  @include Footer-mixin-max-lg();
+  @include Index-mixin-max-lg();
 }
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
   @include Header-mixin-max-md();
   @include Footer-mixin-max-md();
+  @include Index-mixin-max-md();
 }
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
   @include Header-mixin-max-sm();
   @include Footer-mixin-max-sm();
+  @include Index-mixin-max-sm();
 }
 
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
   @include Header-mixin-max-xs();
   @include Footer-mixin-max-xs();
+  @include Index-mixin-max-xs();
 }
 
 @media(max-width: 330px) {
   @include Header-mixin-330();
   @include Footer-mixin-330();
+  @include Index-mixin-330();
 }
 
 // XX-Large devices (larger desktops)

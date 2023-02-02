@@ -1,3 +1,4 @@
+//? ################################## Index Page Start ###################################
 [page-name=mainSection] {
     &.mainSecton {
         & .heroSectionOne {
@@ -23,7 +24,7 @@
                     & .customTomOuter {
                         & .customTom {
                             border: 1px solid $secondary !important;
-                            font-weight: bold;
+                            font-weight: normal;
                             font-size: 15px;
                             & .ts-control {
                                 padding: 0;
@@ -96,7 +97,7 @@
                             align-items: center;
                             gap: 10px;
                             top: 0;
-                            transform: translate(-6px, 6px);
+                            transform: translate(-4px, 4px);
                             border-radius: 3px;
                             padding: 10px;
                             font-weight: normal;
@@ -135,6 +136,7 @@
                                     border-radius: 3px;
                                     overflow: hidden;
                                     text-decoration: none;
+                                    border: 1px solid transparent;
                                     & .imgInner {
                                         width: 40px;
                                         height: 40px;
@@ -151,19 +153,19 @@
                                         font-size: 12px;
                                         font-weight: normal;
                                     }
+                                    &:hover {
+                                        border: 1px solid $theme1;
+                                    }
                                 }
                             }
                         }
                     }
                     & .owl-nav  {
-                        position: absolute;
-                        top: 50%;
-                        left: 0;
-                        display: flex;
-                        justify-content: space-between;
-                        width: 103%;
-                        transform: translate(-15px, -50%);
                         & .owl-prev {
+                            position: absolute;
+                            top: 50%;
+                            transform: translate(-13.5px, -13.5px);
+                            left: 0;
                             width: 27px;
                             height: 27px;
                             border-radius: 50%;
@@ -174,9 +176,12 @@
                             background-size: 16px;
                             background-color: white;
                             box-shadow: 0px 0px 5px gray;
-                            padding: 5px;
                         }
                         & .owl-next {
+                            position: absolute;
+                            top: 50%;
+                            transform: translate(13.5px, -13.5px);
+                            right: 0;
                             width: 27px;
                             height: 27px;
                             border-radius: 50%;
@@ -187,7 +192,6 @@
                             background-size: 16px;
                             background-color: white;
                             box-shadow: 0px 0px 5px gray;
-                            padding: 5px;
                         }
                     }
                 }
@@ -195,7 +199,7 @@
             & .rightPart {
                 & .newAddedCarousel2 {
                     position: relative;
-                    height: 350px;
+                    height: 358px;
                     & .owl-stage-outer {
                         height: 100%;
                          & .owl-stage {
@@ -205,19 +209,18 @@
                                 & .imgOuter {
                                     display: block;
                                     height: 100%;
+                                    border-radius: 2px;
+                                    overflow: hidden;
                                 }
                             }
                          }
                     }
                     & .owl-nav  {
-                        position: absolute;
-                        top: 50%;
-                        left: 0;
-                        display: flex;
-                        justify-content: space-between;
-                        width: 108%;
-                        transform: translate(-15px, -50%);
                         & .owl-prev {
+                            position: absolute;
+                            top: 50%;
+                            transform: translate(-13.5px, -13.5px);
+                            left: 0;
                             width: 27px;
                             height: 27px;
                             border-radius: 50%;
@@ -228,9 +231,13 @@
                             background-size: 16px;
                             background-color: white;
                             box-shadow: 0px 0px 5px gray;
-                            padding: 5px;
+                            transition: all 0.3s ease-in-out;
                         }
                         & .owl-next {
+                            position: absolute;
+                            top: 50%;
+                            transform: translate(13.5px, -13.5px);
+                            right: 0;
                             width: 27px;
                             height: 27px;
                             border-radius: 50%;
@@ -241,11 +248,1249 @@
                             background-size: 16px;
                             background-color: white;
                             box-shadow: 0px 0px 5px gray;
-                            padding: 5px;
                         }
+                    }
+                }
+            }
+        }
+        & .heroTwo {
+            & .offerCards {
+                height: 300px;
+                width: 300px;
+            }
+        }
+        & .heroThree {
+            background-color: $theme2;
+            & .secHeading {
+                font-size: 32px;
+                font-weight: bold;
+                color: lighten($black, 20);
+            }
+            & .secSubHeading {
+                font-size: 16px;
+                font-weight: normal;
+                color: lighten($black, 20);
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 60px;
+                    height: 3px;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    background-color: lighten($black, 20);
+                    left: 50%;
+                    bottom: 0;
+                    transform: translate(-30px, 15px);
+                }
+            }
+            & .newAddedCarousel3 {
+                & .owl-stage-outer {
+                    & .owl-stage {
+                        & .owl-item {
+                            & .cardOuter {
+                                background-color: $white;
+                                border-radius: 4px;
+                                overflow: hidden;
+                                & .cardMiddel {
+                                    & .cardTop {
+                                        background-image: url('../img/8.png');
+                                        background-repeat: no-repeat;
+                                        background-size: cover;
+                                        height: 200px;
+                                        & .promotedText {
+                                            font-size: 12px;
+                                            font-weight: bold;
+                                            color: $white;
+                                            padding: 3px 6px;
+                                            border-radius: 2px;
+                                            overflow: hidden;
+                                        }
+                                        & .customCheck {
+                                            background-image: url('../img/heart.png');
+                                            background-repeat: no-repeat;
+                                            background-size: 15px;
+                                            background-position: center;
+                                            width: 26px;
+                                            height: 26px;
+                                            border-radius: 50%;
+                                            overflow: hidden;
+                                            background-color: $white;
+                                            transition: all 0.3s ease-in-out;
+                                            cursor: pointer;
+                                            &:focus {
+                                                border: none;
+                                            }
+                                            &:checked {
+                                                background-color: $white;
+                                                background-image: url('../img/heats-theme1.png');
+                                            }
+                                            &:active {
+                                                background-color: $white;
+                                                filter: none;
+                                            }
+                                        }
+                                        & .ratingOuter {
+                                            font-size: 11px;
+                                            font-weight: bold;
+                                            display: flex;
+                                            align-items: center;
+                                            padding: 4px;
+                                            border-radius: 3px;
+                                            gap: 3px;
+                                            line-height: normal;
+                                            & .starImg {
+                                                width: 13px;
+                                                height: 13px;
+                                            }
+                                        }
+                                    }
+                                    & .cardBottom {
+                                        & .cardHeading {
+                                           font-size: 16px;
+                                           font-weight: bold;
+                                           color: $black;
+                                           transition: all 0.3s ease-in-out;
+                                           line-height: normal;
+                                           &:hover {
+                                            color: darken($theme1, 10);
+                                           }
+                                        }
+                                        & .cardSubHeading {
+                                            font-size: 14px;
+                                            font-weight: bold;
+                                            color: $secondary;
+                                            & ul {
+                                                & li:first-child {
+                                                    list-style: none;
+                                                }
+                                            }
+                                        }
+                                        & .timeOuter {
+                                            font-size: 12px;
+                                            font-weight: bold;
+                                            color: $black;
+                                            background-color: lighten($theme2, 2);
+                                            border-radius: 3px;
+                                            padding: 2px 4px;
+                                            & .watchImg {
+                                                height: 14px;
+                                                height: 14px;
+                                            }
+                                        }
+                                        & .prizePerPerson {
+                                            font-size: 14px;
+                                            font-weight: bold;
+                                            color: $secondary;
+                                        }
+                                        & .codeOfferOuter {
+                                            font-size: 13px;
+                                            font-weight: bold;
+                                            display: flex;
+                                            align-items: center;
+                                            gap: 5px;
+                                            color: $black;
+                                            line-height: normal;
+                                            & .codeOffer {
+                                                background-color: $theme1;
+                                                color: $white;
+                                                padding: 2px 6px;
+                                                border-radius: 3px;
+                                                overflow: hidden;
+                                                line-height: normal;
+                                                text-transform: uppercase;
+                                                font-size: 11px;
+                                            }
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .owl-nav  {
+                    & .owl-prev {
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translate(-20px, -20px);
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        background-image: url('../img/chevron-left.png');
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: 20px;
+                        background-color: white;
+                        box-shadow: 0px 0px 5px gray;
+                        padding: 5px;
+                        transition: all 0.3s ease-in-out;
+                        &.disabled {
+                            background-color: lighten($secondary, 40);
+                            cursor: auto;
+                        }
+                    }
+                    & .owl-next {
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        transform: translate(20px, -20px);
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        background-image: url('../img/chevron-right.png');
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: 20px;
+                        background-color: white;
+                        box-shadow: 0px 0px 5px gray;
+                        padding: 5px;
+                        transition: all 0.3s ease-in-out;
+                        &.disabled {
+                            background-color: lighten($secondary, 40);
+                            cursor: auto;
+                        }
+                    }
+                }
+            }
+        }
+        & .heroFour {
+            background-color: $light;
+            & .sectionHeading {
+                font-size: 32px;
+                font-weight: bold;
+                color: lighten($black, 20);
+            }
+            & .sectionSubHeading {
+                font-size: 16px;
+                font-weight: normal;
+                color: $secondary;
+            }
+            & .bottomDivider {
+                width: 60px;
+                height: 3px;
+                background-color: lighten($black, 20);
+                margin: auto;
+                border-radius: 10px;
+            }
+            & .createAnAccount {
+                & .imgOuter {
+                    width: 17px;
+                    height: 17px;
+                    background-color: white;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 2px;
+                }
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin Index-mixin-min-sm() {
+    
+}
+// Medium devices (tablets, 768px and up)
+@mixin Index-mixin-min-md() {
+}
+// Large devices (desktops, 992px and up)
+@mixin Index-mixin-min-lg() {
+}
+// X-Large devices (large desktops, 1200px and up)
+@mixin Index-mixin-min-xl() {
+}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin Index-mixin-min-xxl() {
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin Index-mixin-max-xs() {
+    [page-name=mainSection] {
+        &.mainSecton {
+            & .heroSectionOne {
+                & .leftPart {
+                    & .findDeals {
+                        font-size: 17px;
+                        line-height: inherit;
+                        text-align: center;
+                        margin-bottom: 5px;
+                        & .findDealsInner {
+                        }
+                    }
+                    & .listRes {
+                        font-size: 14px;
+                        text-align: center;
+                        margin-bottom: 20px;
+                    }
+                    & .inpFildOuter {
+                        height: 100%;
+                        & .customTomOuter {
+                            height: 40px !important;
+                            & .customTom {
+                                & .ts-control {
+                                    font-size: 12px;
+                                    & .item {
+                                    }
+                                    & input {
+                                    }
+                                    &::before {
+                                        width: 13px;
+                                        height: 13px;
+                                    }
+                                    &::after {
+                                    }
+                                }
+                                & .ts-dropdown {
+                                }
+                                &.focus {
+                                    & .ts-control {
+                                        &::after {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & .locationInpOuter {
+                            height: 40px !important;
+                            & .locationInp {
+                                font-size: 12px;
+                                padding: 15px 92px 15px 5px;
+                                &:focus-visible,
+                                &:focus {
+                                }
+                            }
+                            & .locateButton {
+                                transform: translate(-17px, 4.5px);
+                                padding: 8px 8px;
+                                font-size: 10px;
+                                gap: 5px;
+                                & .btnIcon {
+
+                                }
+                            }
+                        }
+                        & .searchBtnOuter {
+                            height: 40px !important;
+                            & .searchBtn {
+                            }
+                        }
+                    }
+                    & .subHeading {
+                        font-size: 13px;
+                    }
+                    & .newAddedCarousel1 {
+                        & .owl-stage-outer {
+                            & .owl-stage {
+                                & .owl-item {
+                                    & .imgOuter {
+                                        & .imgInner {
+                                        }
+                                        & .dishTitle {
+                                        }
+                                        & .dishCat {
+                                        }
+                                        &:hover {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & .owl-nav  {
+                            & .owl-prev {
+                            }
+                            & .owl-next {
+                            }
+                        }
+                    }
+                }
+                & .rightPart {
+                    & .newAddedCarousel2 {
+                        & .owl-stage-outer {
+                             & .owl-stage {
+                                & .owl-item {
+                                    & .imgOuter {
+                                    }
+                                }
+                             }
+                        }
+                        & .owl-nav  {
+                            & .owl-prev {
+                            }
+                            & .owl-next {
+                            }
+                        }
+                    }
+                }
+            }
+           
+            & .heroThree {
+                & .secHeading {
+                    font-size: 17px;
+                }
+                & .secSubHeading {
+                    font-size: 14px;
+                    &::before {
+                    }
+                }
+                & .newAddedCarousel3 {
+                    & .owl-stage-outer {
+                        & .owl-stage {
+                            & .owl-item {
+                                & .cardOuter {
+                                    & .cardMiddel {
+                                        & .cardTop {
+                                            & .promotedText {
+                                            }
+                                            & .customCheck {
+                                                &:focus {
+                                                }
+                                                &:checked {
+                                                }
+                                                &:active {
+                                                }
+                                            }
+                                            & .ratingOuter {
+                                                & .starImg {
+                                                }
+                                            }
+                                        }
+                                        & .cardBottom {
+                                            & .cardHeading {
+                                               &:hover {
+                                               }
+                                            }
+                                            & .cardSubHeading {
+                                                & ul {
+                                                    & li:first-child {
+                                                    }
+                                                }
+                                            }
+                                            & .timeOuter {
+                                                & .watchImg {
+                                                }
+                                            }
+                                            & .prizePerPerson {
+                                            }
+                                            & .codeOfferOuter {
+                                                & .codeOffer {
+                                                }
+                                            }
+    
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .owl-nav  {
+                        & .owl-prev {
+                            &.disabled {
+                            }
+                        }
+                        & .owl-next {
+                            &.disabled {
+                            }
+                        }
+                    }
+                }
+            }
+            & .heroFour {
+                & .sectionHeading {
+                    font-size: 17px;
+                    
+                }
+                & .sectionSubHeading {
+                }
+                & .bottomDivider {
+                }
+                & .createAnAccount {
+                    & .imgOuter {
                     }
                 }
             }
         }
     }
 }
+// Small devices (landscape phones, less than 768px)
+@mixin Index-mixin-max-sm() {
+    [page-name=mainSection] {
+        &.mainSecton {
+            & .heroSectionOne {
+                & .leftPart {
+                    & .findDeals {
+                        & .findDealsInner {
+                        }
+                    }
+                    & .listRes {
+                    }
+                    & .inpFildOuter {
+                        & .customTomOuter {
+                            & .customTom {
+                                & .ts-control {
+                                    & .item {
+                                    }
+                                    & input {
+                                    }
+                                    &::before {
+                                    }
+                                    &::after {
+                                    }
+                                }
+                                & .ts-dropdown {
+                                }
+                                &.focus {
+                                    & .ts-control {
+                                        &::after {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & .locationInpOuter {
+                            & .locationInp {
+                                &:focus-visible,
+                                &:focus {
+                                }
+                            }
+                            & .locateButton {
+                                & .btnIcon {
+                                }
+                            }
+                        }
+                        & .searchBtnOuter {
+                            & .searchBtn {
+                            }
+                        }
+                    }
+                    & .subHeading {
+                    }
+                    & .newAddedCarousel1 {
+                        & .owl-stage-outer {
+                            & .owl-stage {
+                                & .owl-item {
+                                    & .imgOuter {
+                                        & .imgInner {
+                                        }
+                                        & .dishTitle {
+                                        }
+                                        & .dishCat {
+                                        }
+                                        &:hover {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & .owl-nav  {
+                            & .owl-prev {
+                            }
+                            & .owl-next {
+                            }
+                        }
+                    }
+                }
+                & .rightPart {
+                    & .newAddedCarousel2 {
+                        width: 100%;
+                        height: 100%;
+                        & .owl-stage-outer {
+                             & .owl-stage {
+                                & .owl-item {
+                                    & .imgOuter {
+                                    }
+                                }
+                             }
+                        }
+                        & .owl-nav  {
+                            & .owl-prev {
+                            }
+                            & .owl-next {
+                            }
+                        }
+                    }
+                }
+            }
+            & .heroThree {
+                & .secHeading {
+                }
+                & .secSubHeading {
+                    &::before {
+                    }
+                }
+                & .newAddedCarousel3 {
+                    & .owl-stage-outer {
+                        & .owl-stage {
+                            & .owl-item {
+                                & .cardOuter {
+                                    & .cardMiddel {
+                                        & .cardTop {
+                                            & .promotedText {
+                                            }
+                                            & .customCheck {
+                                                &:focus {
+                                                }
+                                                &:checked {
+                                                }
+                                                &:active {
+                                                }
+                                            }
+                                            & .ratingOuter {
+                                                & .starImg {
+                                                }
+                                            }
+                                        }
+                                        & .cardBottom {
+                                            & .cardHeading {
+                                               &:hover {
+                                               }
+                                            }
+                                            & .cardSubHeading {
+                                                & ul {
+                                                    & li:first-child {
+                                                    }
+                                                }
+                                            }
+                                            & .timeOuter {
+                                                & .watchImg {
+                                                }
+                                            }
+                                            & .prizePerPerson {
+                                            }
+                                            & .codeOfferOuter {
+                                                & .codeOffer {
+                                                }
+                                            }
+    
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .owl-nav  {
+                        & .owl-prev {
+                            &.disabled {
+                            }
+                        }
+                        & .owl-next {
+                            &.disabled {
+                            }
+                        }
+                    }
+                }
+            }
+            & .heroFour {
+                & .sectionHeading {
+                }
+                & .sectionSubHeading {
+                }
+                & .bottomDivider {
+                }
+                & .createAnAccount {
+                    & .imgOuter {
+                    }
+                }
+            }
+        }
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin Index-mixin-max-md() {
+    [page-name=mainSection] {
+        &.mainSecton {
+            & .heroSectionOne {
+                & .leftPart {
+                    & .findDeals {
+                        font-size: 25px;
+                        & .findDealsInner {
+                        }
+                    }
+                    & .listRes {
+                        font-size: 16px;
+                    }
+                    & .inpFildOuter {
+                        height: 40px;
+                        & .customTomOuter {
+                            & .customTom {
+                                & .ts-control {
+                                    & .item {
+                                        padding-top: 10px;
+                                    }
+                                    & input {
+                                    }
+                                    &::before {
+                                    }
+                                    &::after {
+                                    }
+                                }
+                                & .ts-dropdown {
+                                }
+                                &.focus {
+                                    & .ts-control {
+                                        &::after {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & .locationInpOuter {
+                            & .locationInp {
+                                font-size: 13px;
+                                padding: 15px 97px 15px 10px;
+                                &:focus-visible,
+                                &:focus {
+                                }
+                            }
+                            & .locateButton {
+                                padding: 6px 5px;
+                                font-size: 12px;
+                                transform: translate(-4px, 4.5px);
+                                & .btnIcon {
+                                }
+                            }
+                        }
+                        & .searchBtnOuter {
+                            & .searchBtn {
+                                font-size: 13px;
+                                padding: 0;
+                            }
+                        }
+                    }
+                    & .subHeading {
+                    }
+                    & .newAddedCarousel1 {
+                        & .owl-stage-outer {
+                            & .owl-stage {
+                                & .owl-item {
+                                    & .imgOuter {
+                                        & .imgInner {
+                                        }
+                                        & .dishTitle {
+                                        }
+                                        & .dishCat {
+                                        }
+                                        &:hover {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & .owl-nav  {
+                            & .owl-prev {
+                            }
+                            & .owl-next {
+                            }
+                        }
+                    }
+                }
+                & .rightPart {
+                    & .newAddedCarousel2 {
+                        height: 230px;
+                        width: 230px;
+                        & .owl-stage-outer {
+                             & .owl-stage {
+                                & .owl-item {
+                                    & .imgOuter {
+                                        & img {
+                                            object-fit: contain;
+                                        }
+                                    }
+                                }
+                             }
+                        }
+                        & .owl-nav  {
+                            & .owl-prev {
+                            }
+                            & .owl-next {
+                            }
+                        }
+                    }
+                }
+            }
+            & .heroTwo {
+                & .offerCards {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            & .heroThree {
+                & .secHeading {
+                    font-size: 25px;
+                }
+                & .secSubHeading {
+                    &::before {
+                    }
+                }
+                & .newAddedCarousel3 {
+                    & .owl-stage-outer {
+                        & .owl-stage {
+                            & .owl-item {
+                                & .cardOuter {
+                                    & .cardMiddel {
+                                        & .cardTop {
+                                            & .promotedText {
+                                            }
+                                            & .customCheck {
+                                                &:focus {
+                                                }
+                                                &:checked {
+                                                }
+                                                &:active {
+                                                }
+                                            }
+                                            & .ratingOuter {
+                                                & .starImg {
+                                                }
+                                            }
+                                        }
+                                        & .cardBottom {
+                                            & .cardHeading {
+                                               &:hover {
+                                               }
+                                            }
+                                            & .cardSubHeading {
+                                                & ul {
+                                                    & li:first-child {
+                                                    }
+                                                }
+                                            }
+                                            & .timeOuter {
+                                                & .watchImg {
+                                                }
+                                            }
+                                            & .prizePerPerson {
+                                            }
+                                            & .codeOfferOuter {
+                                                & .codeOffer {
+                                                }
+                                            }
+    
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .owl-nav  {
+                        & .owl-prev {
+                            &.disabled {
+                            }
+                        }
+                        & .owl-next {
+                            &.disabled {
+                            }
+                        }
+                    }
+                }
+            }
+            & .heroFour {
+                & .sectionHeading {
+                    font-size: 25px;
+                }
+                & .sectionSubHeading {
+                }
+                & .bottomDivider {
+                }
+                & .createAnAccount {
+                    & .imgOuter {
+                    }
+                }
+            }
+        }
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin Index-mixin-max-lg() {
+    [page-name=mainSection] {
+        &.mainSecton {
+            & .heroSectionOne {
+                & .leftPart {
+                    & .findDeals {
+                        & .findDealsInner {
+                        }
+                    }
+                    & .listRes {
+                    }
+                    & .inpFildOuter {
+                        & .customTomOuter {
+                            & .customTom {
+                                & .ts-control {
+                                    & .item {
+                                    }
+                                    & input {
+                                    }
+                                    &::before {
+                                    }
+                                    &::after {
+                                    }
+                                }
+                                & .ts-dropdown {
+                                }
+                                &.focus {
+                                    & .ts-control {
+                                        &::after {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & .locationInpOuter {
+                            & .locationInp {
+                                padding: 15px 120px 15px 10px;
+                                &:focus-visible,
+                                &:focus {
+                                }
+                            }
+                            & .locateButton {
+                                & .btnIcon {
+                                }
+                            }
+                        }
+                        & .searchBtnOuter {
+                            & .searchBtn {
+                            }
+                        }
+                    }
+                    & .subHeading {
+                    }
+                    & .newAddedCarousel1 {
+                        & .owl-stage-outer {
+                            & .owl-stage {
+                                & .owl-item {
+                                    & .imgOuter {
+                                        & .imgInner {
+                                        }
+                                        & .dishTitle {
+                                        }
+                                        & .dishCat {
+                                        }
+                                        &:hover {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & .owl-nav  {
+                            & .owl-prev {
+                            }
+                            & .owl-next {
+                            }
+                        }
+                    }
+                }
+                & .rightPart {
+                    & .newAddedCarousel2 {
+                        & .owl-stage-outer {
+                             & .owl-stage {
+                                & .owl-item {
+                                    & .imgOuter {
+                                        & img {
+                                            object-fit: contain;
+                                        }
+                                    }
+                                }
+                             }
+                        }
+                        & .owl-nav  {
+                            & .owl-prev {
+                            }
+                            & .owl-next {
+                            }
+                        }
+                    }
+                }
+            }
+            & .heroTwo {
+                & .offerCards {
+                    height: 210px;
+                    width: 210px;
+                }
+            }
+            & .heroThree {
+                & .secHeading {
+                    font-size: 28px;
+                }
+                & .secSubHeading {
+                    &::before {
+                    }
+                }
+                & .newAddedCarousel3 {
+                    & .owl-stage-outer {
+                        & .owl-stage {
+                            & .owl-item {
+                                & .cardOuter {
+                                    & .cardMiddel {
+                                        & .cardTop {
+                                            & .promotedText {
+                                            }
+                                            & .customCheck {
+                                                &:focus {
+                                                }
+                                                &:checked {
+                                                }
+                                                &:active {
+                                                }
+                                            }
+                                            & .ratingOuter {
+                                                & .starImg {
+                                                }
+                                            }
+                                        }
+                                        & .cardBottom {
+                                            & .cardHeading {
+                                               &:hover {
+                                               }
+                                            }
+                                            & .cardSubHeading {
+                                                & ul {
+                                                    & li:first-child {
+                                                    }
+                                                }
+                                            }
+                                            & .timeOuter {
+                                                & .watchImg {
+                                                }
+                                            }
+                                            & .prizePerPerson {
+                                            }
+                                            & .codeOfferOuter {
+                                                & .codeOffer {
+                                                }
+                                            }
+    
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .owl-nav  {
+                        & .owl-prev {
+                            &.disabled {
+                            }
+                        }
+                        & .owl-next {
+                            &.disabled {
+                            }
+                        }
+                    }
+                }
+            }
+            & .heroFour {
+                & .sectionHeading {
+                    font-size: 28px;
+                }
+                & .sectionSubHeading {
+                }
+                & .bottomDivider {
+                }
+                & .createAnAccount {
+                    & .imgOuter {
+                    }
+                }
+            }
+        }
+    }
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin Index-mixin-max-xl() {
+    [page-name=mainSection] {
+        &.mainSecton {
+            & .heroSectionOne {
+                & .leftPart {
+                    & .findDeals {
+                        font-size: 30px;
+                        & .findDealsInner {
+                        }
+                    }
+                    & .listRes {
+                        font-size: 17px;
+                    }
+                    & .inpFildOuter {
+                        & .customTomOuter {
+                            & .customTom {
+                                & .ts-control {
+                                    & .item {
+                                    }
+                                    & input {
+                                    }
+                                    &::before {
+                                    }
+                                    &::after {
+                                    }
+                                }
+                                & .ts-dropdown {
+                                }
+                                &.focus {
+                                    & .ts-control {
+                                        &::after {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & .locationInpOuter {
+                            & .locationInp {
+                                &:focus-visible,
+                                &:focus {
+                                }
+                            }
+                            & .locateButton {
+                                & .btnIcon {
+                                }
+                            }
+                        }
+                        & .searchBtnOuter {
+                            & .searchBtn {
+                            }
+                        }
+                    }
+                    & .subHeading {
+                    }
+                    & .newAddedCarousel1 {
+                        & .owl-stage-outer {
+                            & .owl-stage {
+                                & .owl-item {
+                                    & .imgOuter {
+                                        & .imgInner {
+                                        }
+                                        & .dishTitle {
+                                        }
+                                        & .dishCat {
+                                        }
+                                        &:hover {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & .owl-nav  {
+                            & .owl-prev {
+                            }
+                            & .owl-next {
+                            }
+                        }
+                    }
+                }
+                & .rightPart {
+                    & .newAddedCarousel2 {
+                        height: auto;
+                        & .owl-stage-outer {
+                             & .owl-stage {
+                                & .owl-item {
+                                    & .imgOuter {
+                                    }
+                                }
+                             }
+                        }
+                        & .owl-nav  {
+                            & .owl-prev {
+                            }
+                            & .owl-next {
+                            }
+                        }
+                    }
+                }
+            }
+            & .heroTwo {
+                & .offerCards {
+                    height: 260px;
+                    width: 260px;
+                }
+            }
+            & .heroThree {
+                & .secHeading {
+                }
+                & .secSubHeading {
+                    &::before {
+                    }
+                }
+                & .newAddedCarousel3 {
+                    & .owl-stage-outer {
+                        & .owl-stage {
+                            & .owl-item {
+                                & .cardOuter {
+                                    & .cardMiddel {
+                                        & .cardTop {
+                                            & .promotedText {
+                                            }
+                                            & .customCheck {
+                                                &:focus {
+                                                }
+                                                &:checked {
+                                                }
+                                                &:active {
+                                                }
+                                            }
+                                            & .ratingOuter {
+                                                & .starImg {
+                                                }
+                                            }
+                                        }
+                                        & .cardBottom {
+                                            & .cardHeading {
+                                               &:hover {
+                                               }
+                                            }
+                                            & .cardSubHeading {
+                                                & ul {
+                                                    & li:first-child {
+                                                    }
+                                                }
+                                            }
+                                            & .timeOuter {
+                                                & .watchImg {
+                                                }
+                                            }
+                                            & .prizePerPerson {
+                                            }
+                                            & .codeOfferOuter {
+                                                & .codeOffer {
+                                                }
+                                            }
+    
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .owl-nav  {
+                        & .owl-prev {
+                            &.disabled {
+                            }
+                        }
+                        & .owl-next {
+                            &.disabled {
+                            }
+                        }
+                    }
+                }
+            }
+            & .heroFour {
+                & .sectionHeading {
+                }
+                & .sectionSubHeading {
+                }
+                & .bottomDivider {
+                }
+                & .createAnAccount {
+                    & .imgOuter {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin Index-mixin-330() {
+    
+}
+
+//! ###########################  Index Page End  ###########################
