@@ -130,3 +130,63 @@ $('.newAddedCarousel3').owlCarousel({
 });
 }
 //! ########################### mainSection Page End ###########################
+
+//? ###########################  Listing Page Start  ###########################
+
+if ($("[page-name=listing]").length) {
+  new TomSelect(".customSelect",{
+    create: true,
+    sortField: {
+      field: "text",
+      direction: "asc"
+    }
+  });
+
+  $('.listOlwCarsoul').owlCarousel({
+    loop: true,
+    items: 16,
+    margin: 3,
+    nav: true,
+    dots: false,
+    center: false,
+    freeDrag: false,
+    lazyLoad: true,
+    autoplay:true,
+    autoplayTimeout:1500,
+    autoplayHoverPause:true,
+    smartSpeed: 1200,
+    responsiveClass: true,
+    responsive: {
+        0: {
+            items: 3,
+        },
+        360: {
+          items: 3,
+        },
+        440: {
+          items:5,
+        },
+        576: {
+            items: 6,
+        },
+        768: {
+          items: 7,
+        },
+        992: {
+          items: 8,
+        },
+        1200: {
+          items: 9,
+          nav: true,
+        },
+        1400: {
+          items: 10,
+          nav: true,
+        },
+      },
+    navText: ["", ""]
+});
+
+}
+
+//! ########################### Listing Page End ###########################

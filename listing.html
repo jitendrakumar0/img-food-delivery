@@ -74,53 +74,354 @@
             <!-- Header End -->
 
             <!-- Main Start-->
-            <div class="col-12 px-0 flex-fill h-100 overflow-hidden">
-                <div class="h-100 overflow-y-auto ">
-                    <div class="mainSecton" page-name="mainSection">
-                        <div class="container-fluid heroSectionOne px-0">
-                            <div class="container-lg py-lg-5 py-sm-4 py-3 overflow-hidden">
+            <div class="col-12 px-0 flex-fill h-100 overflow-hidden customTranslate">
+                <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <div>
+                        I will not close if you click outside of me.
+                      </div>
+                    </div>
+                </div>
+                <div class="h-100 overflow-y-auto">
+                    <div class="listingMain" page-name="listing">
+                        <div class="container-fluid px-0 sectioPartOne">
+                            <div class="container-lg py-lg-5 py-sm-4 py-3">
                                 <div class="row my-lg-3">
+                                    <div class="col-auto mx-auto text-center">
+                                        <div class="sectionHeading">Offers Near You</div>
+                                        <div class="sectionSubHeading">Best deals at your favourite restaurants</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid px-0 sectionPartTwo">
+                            <div class="container-lg overflow-hidden py-lg-5 py-sm-4 py-3">
+                                <div class="row my-lg-3 gap-3">
                                     <div class="col-12">
-                                        <div class="row justify-content-between gap-4 gap-md-0">
-                                            <div class="col-md-8 col-12 leftPart">
-                                                <div class="row gap-xl-5 gap-3">
-                                                    <div class="col-12">
-                                                        <div class="findDeals"><span class="findDealsInner">Find Awesome Deals </span>Delhi</div>
-                                                        <div class="listRes">Lists of top restaurants, cafes, pubs, and bars in Melbourne, based on trends</div>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <form>
-                                                            <div class="row inpFildOuter gap-3 gap-sm-0">
-                                                                <div class="col-xl-3 col-sm-4 col-12 customTomOuter h-100">
-                                                                    <select  class="w-100 h-100 customTom singleSelect" data-placeholder="Quick Searches"  autocomplete="off">
-                                                                        <option selected disabled>Quick Searches</option>
-                                                                        <option>Breakfast</option>
-                                                                        <option>Lunch</option>
-                                                                        <option>Dinner</option>
-                                                                        <option>Cafes</option>
-                                                                        <option>Delivery</option>
-                                                                    </select>
-                                                                </div>
-                                                                <div class="col-xl-7 col-sm-6 col-12 locationInpOuter px-sm-0 position-relative h-100">
-                                                                    <input type="text" class="locationInp w-100 h-100 shadow-none" placeholder="Enter your delivery location">
-                                                                    <button type="button" class="btn btn-secondary position-absolute locateButton btn-style1 shadow-none border-0">
-                                                                        <div class="btnIcon"><img src="assets/img/center-of-gravity.png" class="w-100 h-100" alt=""></div>
-                                                                        Locate Me
-                                                                    </button>
-                                                                </div>
-                                                                <div class="col-sm-2 col-12 searchBtnOuter h-100">
-                                                                    <Button type="button" class="btn btn-theme1 h-100 btn-style1 searchBtn w-100 rounded-0 border-0">Search</Button>
-                                                                </div>
-                                                            </div>
-                                                        </form>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <div class="row mx-0">
-                                                            <div class="col-12 subHeading px-0 pb-2">
-                                                                E.g. Beverages, Pizzas, Chinese, Bakery, Indian...
-                                                            </div>
+                                        <div class="row">
+                                            <div class="col-sm col-12 secHeading">
+                                                Offers <span class="noOfRes">299 Restaurants</span>
+                                            </div>
+                                            <div class="col-sm-auto col-6 shortByDist">
+                                                <select class="customSelect" autocomplete="off">
+                                                    <option>Distance</option>
+                                                    <option>No of Offers</option>
+                                                    <option>Rating</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-auto col-6 d-lg-none d-block">
+                                                <button class="btn btn-outline-dark rounded-0 shadow-none btn-style1 w-100" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="offcanvasResponsive">Fillter</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-auto leftPart h-100 d-none d-lg-block">
+                                                <div class="row mx-0">
+                                                    <div class="col-12 px-0 leftInner">
+                                                        <div class="row mx-0 gap-4">
                                                             <div class="col-12">
-                                                                <div class="owl-carousel newAddedCarousel1 owl-loaded">
+                                                                <div class="row">
+                                                                    <div class="col-12 filterHeading py-2">Filter By</div>
+                                                                    <div class="col-12 filterOuter px-0">
+                                                                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                                                                            <div class="accordion-item rounded-0">
+                                                                              <h2 class="accordion-header" id="location-heading">
+                                                                                <button class="accordion-button shadow-none rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#locaton-accordion" aria-expanded="true" aria-controls="locaton-accordion">
+                                                                                  Location
+                                                                                </button>
+                                                                              </h2>
+                                                                              <div id="locaton-accordion" class="accordion-collapse collapse show" aria-labelledby="location-heading">
+                                                                                <div class="accordion-body">
+                                                                                    <div class="row">
+                                                                                        <div class="col-12">
+                                                                                            <ul class="list-unstyled m-0">
+                                                                                                <li>
+                                                                                                    <div class="form-check">
+                                                                                                        <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault1">
+                                                                                                        <label class="form-check-label" for="flexCheckDefault1">Jaipur Junction <span class="lebelCat">230</span></label>
+                                                                                                      </div>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <div class="form-check">
+                                                                                                        <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault2">
+                                                                                                        <label class="form-check-label" for="flexCheckDefault2">Chandpol <span class="lebelCat">140</span></label>
+                                                                                                      </div>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <div class="form-check">
+                                                                                                        <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault3">
+                                                                                                        <label class="form-check-label" for="flexCheckDefault3">Veshali Nagar <span class="lebelCat">59</span></label>
+                                                                                                      </div>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <div class="form-check">
+                                                                                                        <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault4">
+                                                                                                        <label class="form-check-label" for="flexCheckDefault4">Khatipura <span class="lebelCat">90</span></label>
+                                                                                                      </div>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <div class="form-check">
+                                                                                                        <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault5">
+                                                                                                        <label class="form-check-label" for="flexCheckDefault5">Civil Lines <span class="lebelCat">176</span></label>
+                                                                                                      </div>
+                                                                                                </li>
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                        <div class="col-12">
+                                                                                            <a href="javascript:;" class="text-decoration-none seeAllLink">See all</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                            <div class="accordion-item rounded-0">
+                                                                              <h2 class="accordion-header" id="all-cuisines-heading">
+                                                                                <button class="accordion-button shadow-none rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#all-cuisines" aria-expanded="false" aria-controls="all-cuisines">
+                                                                                    All cuisines
+                                                                                </button>
+                                                                              </h2>
+                                                                              <div id="all-cuisines" class="accordion-collapse collapse show" aria-labelledby="all-cuisines-heading">
+                                                                                <div class="accordion-body">
+                                                                                    <div class="row">
+                                                                                        <div class="col-12 pb-3">
+                                                                                            <div class="customSearchOuter w-100">
+                                                                                                <input type="text" class="customSearch Input" placeholder="Start typing to search">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-12">
+                                                                                            <ul class="list-unstyled m-0">
+                                                                                                <li>
+                                                                                                    <div class="form-check">
+                                                                                                        <input class="form-check-input shadow-none" type="checkbox" value="" id="cuisines1">
+                                                                                                        <label class="form-check-label" for="cuisines1">American <span class="lebelCat">156</span></label>
+                                                                                                      </div>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <div class="form-check">
+                                                                                                        <input class="form-check-input shadow-none" type="checkbox" value="" id="cuisines2">
+                                                                                                        <label class="form-check-label" for="cuisines2">Pizza <span class="lebelCat">178</span></label>
+                                                                                                      </div>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <div class="form-check">
+                                                                                                        <input class="form-check-input shadow-none" type="checkbox" value="" id="cuisines3">
+                                                                                                        <label class="form-check-label" for="cuisines3">Healthy <span class="lebelCat">43</span></label>
+                                                                                                      </div>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <div class="form-check">
+                                                                                                        <input class="form-check-input shadow-none" type="checkbox" value="" id="cuisines4">
+                                                                                                        <label class="form-check-label" for="cuisines4">Vegetarian <span class="lebelCat">143</span></label>
+                                                                                                      </div>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <div class="form-check">
+                                                                                                        <input class="form-check-input shadow-none" type="checkbox" value="" id="cuisines5">
+                                                                                                        <label class="form-check-label" for="cuisines5">Chinese <span class="lebelCat">45</span></label>
+                                                                                                      </div>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <div class="form-check">
+                                                                                                        <input class="form-check-input shadow-none" type="checkbox" value="" id="cuisines6">
+                                                                                                        <label class="form-check-label" for="cuisines6">Humburgers<span class="lebelCat">165</span></label>
+                                                                                                      </div>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <div class="form-check">
+                                                                                                        <input class="form-check-input shadow-none" type="checkbox" value="" id="cuisines7">
+                                                                                                        <label class="form-check-label" for="cuisines7">Dessert <span class="lebelCat">130</span></label>
+                                                                                                      </div>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <div class="form-check">
+                                                                                                        <input class="form-check-input shadow-none" type="checkbox" value="" id="cuisines8">
+                                                                                                        <label class="form-check-label" for="cuisines8">Chicken <span class="lebelCat">180</span></label>
+                                                                                                      </div>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <div class="form-check">
+                                                                                                        <input class="form-check-input shadow-none" type="checkbox" value="" id="cuisines9">
+                                                                                                        <label class="form-check-label" for="cuisines9">Indian <span class="lebelCat">105</span></label>
+                                                                                                      </div>
+                                                                                                </li>
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                        <div class="col-12">
+                                                                                            <a href="javascript:;" class="text-decoration-none seeAllLink">See all</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                            <div class="accordion-item rounded-0">
+                                                                              <h2 class="accordion-header" id="feature-heading">
+                                                                                <button class="accordion-button shadow-none rounded-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#feature" aria-expanded="false" aria-controls="feature">
+                                                                                    Feature 
+                                                                                </button>
+                                                                              </h2>
+                                                                              <div id="feature" class="accordion-collapse collapse" aria-labelledby="feature-heading">
+                                                                                <div class="accordion-body">
+                                                                                    <div class="row">
+                                                                                        <div class="col-12">
+                                                                                            <ul class="list-unstyled m-0">
+                                                                                                <li>
+                                                                                                    <div class="form-check">
+                                                                                                        <input class="form-check-input shadow-none" type="checkbox" value="" id="features1">
+                                                                                                        <label class="form-check-label" for="features1">Free Delivery <span class="lebelCat">168</span></label>
+                                                                                                      </div>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <div class="form-check">
+                                                                                                        <input class="form-check-input shadow-none" type="checkbox" value="" id="features2">
+                                                                                                        <label class="form-check-label" for="features2">Coupons <span class="lebelCat">140</span></label>
+                                                                                                      </div>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <div class="form-check">
+                                                                                                        <input class="form-check-input shadow-none" type="checkbox" value="" id="features3">
+                                                                                                        <label class="form-check-label" for="features3">Open Now [1:31am] <span class="lebelCat">59</span></label>
+                                                                                                      </div>
+                                                                                                </li>
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                            <div class="accordion-item rounded-0">
+                                                                                <h2 class="accordion-header" id="delivery-time-heading">
+                                                                                  <button class="accordion-button shadow-none rounded-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#delivery-time" aria-expanded="false" aria-controls="delivery-time">
+                                                                                      Delivery Time 
+                                                                                  </button>
+                                                                                </h2>
+                                                                                <div id="delivery-time" class="accordion-collapse collapse" aria-labelledby="delivery-time-heading">
+                                                                                    <div class="accordion-body">
+                                                                                        <div class="row">
+                                                                                            <div class="col-12">
+                                                                                                <ul class="list-unstyled m-0">
+                                                                                                    <li>
+                                                                                                        <div class="form-check">
+                                                                                                            <input class="form-check-input shadow-none" type="checkbox" value="" id="delivery-time1">
+                                                                                                            <label class="form-check-label" for="delivery-time1">Any Time</label>
+                                                                                                          </div>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <div class="form-check">
+                                                                                                            <input class="form-check-input shadow-none" type="checkbox" value="" id="delivery-time2">
+                                                                                                            <label class="form-check-label" for="delivery-time2">20 min</label>
+                                                                                                          </div>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <div class="form-check">
+                                                                                                            <input class="form-check-input shadow-none" type="checkbox" value="" id="delivery-time3">
+                                                                                                            <label class="form-check-label" for="delivery-time3">30 min</label>
+                                                                                                          </div>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <div class="form-check">
+                                                                                                            <input class="form-check-input shadow-none" type="checkbox" value="" id="delivery-time4">
+                                                                                                            <label class="form-check-label" for="delivery-time4">40 min</label>
+                                                                                                          </div>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <div class="form-check">
+                                                                                                            <input class="form-check-input shadow-none" type="checkbox" value="" id="delivery-time5">
+                                                                                                            <label class="form-check-label" for="delivery-time5">50 min</label>
+                                                                                                          </div>
+                                                                                                    </li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                            <div class="col-12">
+                                                                                                <a href="javascript:;" class="text-decoration-none seeAllLink">See all</a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="accordion-item rounded-0">
+                                                                                <h2 class="accordion-header" id="category-heading">
+                                                                                  <button class="accordion-button shadow-none rounded-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#category" aria-expanded="false" aria-controls="category">
+                                                                                      Category 
+                                                                                  </button>
+                                                                                </h2>
+                                                                                <div id="category" class="accordion-collapse collapse show" aria-labelledby="category-heading">
+                                                                                    <div class="accordion-body">
+                                                                                        <div class="row">
+                                                                                            <div class="col-12">
+                                                                                                <ul class="list-unstyled m-0">
+                                                                                                    <li>
+                                                                                                        <div class="form-check">
+                                                                                                            <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault1">
+                                                                                                            <label class="form-check-label" for="flexCheckDefault1">Delivery <span class="lebelCat">157</span></label>
+                                                                                                          </div>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <div class="form-check">
+                                                                                                            <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault2">
+                                                                                                            <label class="form-check-label" for="flexCheckDefault2">Dine-out <span class="lebelCat">140</span></label>
+                                                                                                          </div>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <div class="form-check">
+                                                                                                            <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault3">
+                                                                                                            <label class="form-check-label" for="flexCheckDefault3">Cafe's <span class="lebelCat">59</span></label>
+                                                                                                          </div>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 bg-white py-3">
+                                                                <div class="row mx-0">
+                                                                    <div class="col-12 foodDeliveryMode">
+                                                                        <ul class="list-unstyled m-0 pb-3">
+                                                                            <li>
+                                                                                <div class="form-check">
+                                                                                    <input class="form-check-input shadow-none" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                                                    <label class="form-check-label" for="flexRadioDefault1">Gold Partner</label>
+                                                                                  </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="form-check">
+                                                                                    <input class="form-check-input shadow-none" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                                                                    <label class="form-check-label" for="flexRadioDefault2">Order Food Online</label>
+                                                                                  </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="form-check">
+                                                                                    <input class="form-check-input shadow-none" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                                                                                    <label class="form-check-label" for="flexRadioDefault3">Cash on Delivery</label>
+                                                                                  </div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="col-12 text-success offerCode py-3">
+                                                                        <span>Use code <span class="code">imgf50</span> to get 50% OFF (up to <span>₹</span>200 ) on first <span>5 </span> orders. T&C apply.</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col rightPart">
+                                                <div class="row mx-0">
+                                                    <div class="col-12 rightInner px-0">
+                                                        <div class="row mx-0 gap-4">
+                                                            <div class="col-12 px-sm-0">
+                                                                <div class="owl-carousel listOlwCarsoul owl-loaded">
                                                                     <div class="owl-stage-outer">
                                                                         <div class="owl-stage">
                                                                             <div class="owl-item">
@@ -235,511 +536,589 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="row g-sm-4 g-3">
+                                                                    <div class="col-xxl-4 col-sm-6 col-12">
+                                                                        <div class="row mx-0">
+                                                                            <div class="col-12 cardOuter px-0">
+                                                                                <div class="row cardMiddel mx-0">
+                                                                                    <a href="javascript:;" class="col-12 cardTop p-3 text-decoration-none">
+                                                                                        <div class="row h-100 mx-0">
+                                                                                            <div class="col-12 px-0">
+                                                                                                <div class="row justify-content-between mx-0">
+                                                                                                    <div class="col-auto px-0">
+                                                                                                        <div class="promotedText bg-secondary shadow">Promoted</div>
+                                                                                                    </div>
+                                                                                                    <div class="col-auto px-0">
+                                                                                                        <div class="form-check">
+                                                                                                            <input class="form-check-input customCheck border-0 shadow" type="checkbox">
+                                                                                                          </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-12 px-0">
+                                                                                                <div class="row mx-0 h-100">
+                                                                                                    <div class="col-auto ms-auto mt-auto shadow ratingOuter bg-warning text-dark">
+                                                                                                        <div class="starImg">
+                                                                                                            <img src="assets/img/star-dark.png" class="w-100 h-100" alt="">
+                                                                                                        </div>
+                                                                                                        <span>3.1</span><span>(300+)</span>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </a>
+                                                                                    <div class="col-12 cardBottom p-3">
+                                                                                        <div class="row mx-0 gap-2">
+                                                                                            <a href="javascript:;" class="col-12 px-0 cardHeading text-decoration-none">
+                                                                                                Bite Me Sandwiches
+                                                                                            </a>
+                                                                                            <div class="col-12 px-0 cardSubHeading">
+                                                                                                <ul class="m-0 p-0 d-flex gap-3">
+                                                                                                    <li>North Indian</li>
+                                                                                                    <li>American</li>
+                                                                                                    <li>Pure Veg</li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                            <div class="col-12 px-0">
+                                                                                                <div class="row mx-0 justify-content-between">
+                                                                                                    <div class="col-auto timeOuter d-flex align-items-center gap-1">
+                                                                                                        <div class="watchImg">
+                                                                                                            <img src="assets/img/clock-arrow.png" class="w-100 h-100" alt="">
+                                                                                                        </div>
+                                                                                                        <span>15-20</span><span>min</span>
+                                                                                                    </div>
+                                                                                                    <div class="col-auto px-0 prizePerPerson">
+                                                                                                        <span>₹<span>150</span></span> <span>For Two</span>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-12 px-0 codeOfferOuter">
+                                                                                                <span class="codeOffer bg-success">Offer</span><span>65<span>%</span> <span>off</span> <span>|</span> </span><span>Use Coupon <span class="text-uppercase">IMGF60</span></span>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-xxl-4 col-sm-6 col-12">
+                                                                        <div class="row mx-0">
+                                                                            <div class="col-12 cardOuter px-0">
+                                                                                <div class="row cardMiddel mx-0">
+                                                                                    <a href="javascript:;" class="col-12 cardTop p-3 text-decoration-none">
+                                                                                        <div class="row h-100 mx-0">
+                                                                                            <div class="col-12 px-0">
+                                                                                                <div class="row justify-content-between mx-0">
+                                                                                                    <div class="col-auto px-0">
+                                                                                                        <div class="promotedText bg-secondary shadow">Promoted</div>
+                                                                                                    </div>
+                                                                                                    <div class="col-auto px-0">
+                                                                                                        <div class="form-check">
+                                                                                                            <input class="form-check-input customCheck border-0 shadow" type="checkbox">
+                                                                                                          </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-12 px-0">
+                                                                                                <div class="row mx-0 h-100">
+                                                                                                    <div class="col-auto ms-auto mt-auto shadow ratingOuter bg-warning text-dark">
+                                                                                                        <div class="starImg">
+                                                                                                            <img src="assets/img/star-dark.png" class="w-100 h-100" alt="">
+                                                                                                        </div>
+                                                                                                        <span>3.1</span><span>(300+)</span>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </a>
+                                                                                    <div class="col-12 cardBottom p-3">
+                                                                                        <div class="row mx-0 gap-2">
+                                                                                            <a href="javascript:;" class="col-12 px-0 cardHeading text-decoration-none">
+                                                                                                Bite Me Sandwiches
+                                                                                            </a>
+                                                                                            <div class="col-12 px-0 cardSubHeading">
+                                                                                                <ul class="m-0 p-0 d-flex gap-3">
+                                                                                                    <li>North Indian</li>
+                                                                                                    <li>American</li>
+                                                                                                    <li>Pure Veg</li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                            <div class="col-12 px-0">
+                                                                                                <div class="row mx-0 justify-content-between">
+                                                                                                    <div class="col-auto timeOuter d-flex align-items-center gap-1">
+                                                                                                        <div class="watchImg">
+                                                                                                            <img src="assets/img/clock-arrow.png" class="w-100 h-100" alt="">
+                                                                                                        </div>
+                                                                                                        <span>15-20</span><span>min</span>
+                                                                                                    </div>
+                                                                                                    <div class="col-auto px-0 prizePerPerson">
+                                                                                                        <span>₹<span>150</span></span> <span>For Two</span>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-12 px-0 codeOfferOuter">
+                                                                                                <span class="codeOffer bg-success">Offer</span><span>65<span>%</span> <span>off</span> <span>|</span> </span><span>Use Coupon <span class="text-uppercase">IMGF60</span></span>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-xxl-4 col-sm-6 col-12">
+                                                                        <div class="row mx-0">
+                                                                            <div class="col-12 cardOuter px-0">
+                                                                                <div class="row cardMiddel mx-0">
+                                                                                    <a href="javascript:;" class="col-12 cardTop p-3 text-decoration-none">
+                                                                                        <div class="row h-100 mx-0">
+                                                                                            <div class="col-12 px-0">
+                                                                                                <div class="row justify-content-between mx-0">
+                                                                                                    <div class="col-auto px-0">
+                                                                                                        <div class="promotedText bg-secondary shadow">Promoted</div>
+                                                                                                    </div>
+                                                                                                    <div class="col-auto px-0">
+                                                                                                        <div class="form-check">
+                                                                                                            <input class="form-check-input customCheck border-0 shadow" type="checkbox">
+                                                                                                          </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-12 px-0">
+                                                                                                <div class="row mx-0 h-100">
+                                                                                                    <div class="col-auto ms-auto mt-auto shadow ratingOuter bg-warning text-dark">
+                                                                                                        <div class="starImg">
+                                                                                                            <img src="assets/img/star-dark.png" class="w-100 h-100" alt="">
+                                                                                                        </div>
+                                                                                                        <span>3.1</span><span>(300+)</span>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </a>
+                                                                                    <div class="col-12 cardBottom p-3">
+                                                                                        <div class="row mx-0 gap-2">
+                                                                                            <a href="javascript:;" class="col-12 px-0 cardHeading text-decoration-none">
+                                                                                                Bite Me Sandwiches
+                                                                                            </a>
+                                                                                            <div class="col-12 px-0 cardSubHeading">
+                                                                                                <ul class="m-0 p-0 d-flex gap-3">
+                                                                                                    <li>North Indian</li>
+                                                                                                    <li>American</li>
+                                                                                                    <li>Pure Veg</li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                            <div class="col-12 px-0">
+                                                                                                <div class="row mx-0 justify-content-between">
+                                                                                                    <div class="col-auto timeOuter d-flex align-items-center gap-1">
+                                                                                                        <div class="watchImg">
+                                                                                                            <img src="assets/img/clock-arrow.png" class="w-100 h-100" alt="">
+                                                                                                        </div>
+                                                                                                        <span>15-20</span><span>min</span>
+                                                                                                    </div>
+                                                                                                    <div class="col-auto px-0 prizePerPerson">
+                                                                                                        <span>₹<span>150</span></span> <span>For Two</span>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-12 px-0 codeOfferOuter">
+                                                                                                <span class="codeOffer bg-success">Offer</span><span>65<span>%</span> <span>off</span> <span>|</span> </span><span>Use Coupon <span class="text-uppercase">IMGF60</span></span>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-xxl-4 col-sm-6 col-12">
+                                                                        <div class="row mx-0">
+                                                                            <div class="col-12 cardOuter px-0">
+                                                                                <div class="row cardMiddel mx-0">
+                                                                                    <a href="javascript:;" class="col-12 cardTop p-3 text-decoration-none">
+                                                                                        <div class="row h-100 mx-0">
+                                                                                            <div class="col-12 px-0">
+                                                                                                <div class="row justify-content-between mx-0">
+                                                                                                    <div class="col-auto px-0">
+                                                                                                        <div class="promotedText bg-secondary shadow">Promoted</div>
+                                                                                                    </div>
+                                                                                                    <div class="col-auto px-0">
+                                                                                                        <div class="form-check">
+                                                                                                            <input class="form-check-input customCheck border-0 shadow" type="checkbox">
+                                                                                                          </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-12 px-0">
+                                                                                                <div class="row mx-0 h-100">
+                                                                                                    <div class="col-auto ms-auto mt-auto shadow ratingOuter bg-warning text-dark">
+                                                                                                        <div class="starImg">
+                                                                                                            <img src="assets/img/star-dark.png" class="w-100 h-100" alt="">
+                                                                                                        </div>
+                                                                                                        <span>3.1</span><span>(300+)</span>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </a>
+                                                                                    <div class="col-12 cardBottom p-3">
+                                                                                        <div class="row mx-0 gap-2">
+                                                                                            <a href="javascript:;" class="col-12 px-0 cardHeading text-decoration-none">
+                                                                                                Bite Me Sandwiches
+                                                                                            </a>
+                                                                                            <div class="col-12 px-0 cardSubHeading">
+                                                                                                <ul class="m-0 p-0 d-flex gap-3">
+                                                                                                    <li>North Indian</li>
+                                                                                                    <li>American</li>
+                                                                                                    <li>Pure Veg</li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                            <div class="col-12 px-0">
+                                                                                                <div class="row mx-0 justify-content-between">
+                                                                                                    <div class="col-auto timeOuter d-flex align-items-center gap-1">
+                                                                                                        <div class="watchImg">
+                                                                                                            <img src="assets/img/clock-arrow.png" class="w-100 h-100" alt="">
+                                                                                                        </div>
+                                                                                                        <span>15-20</span><span>min</span>
+                                                                                                    </div>
+                                                                                                    <div class="col-auto px-0 prizePerPerson">
+                                                                                                        <span>₹<span>150</span></span> <span>For Two</span>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-12 px-0 codeOfferOuter">
+                                                                                                <span class="codeOffer bg-success">Offer</span><span>65<span>%</span> <span>off</span> <span>|</span> </span><span>Use Coupon <span class="text-uppercase">IMGF60</span></span>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-xxl-4 col-sm-6 col-12">
+                                                                        <div class="row mx-0">
+                                                                            <div class="col-12 cardOuter px-0">
+                                                                                <div class="row cardMiddel mx-0">
+                                                                                    <a href="javascript:;" class="col-12 cardTop p-3 text-decoration-none">
+                                                                                        <div class="row h-100 mx-0">
+                                                                                            <div class="col-12 px-0">
+                                                                                                <div class="row justify-content-between mx-0">
+                                                                                                    <div class="col-auto px-0">
+                                                                                                        <div class="promotedText bg-secondary shadow">Promoted</div>
+                                                                                                    </div>
+                                                                                                    <div class="col-auto px-0">
+                                                                                                        <div class="form-check">
+                                                                                                            <input class="form-check-input customCheck border-0 shadow" type="checkbox">
+                                                                                                          </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-12 px-0">
+                                                                                                <div class="row mx-0 h-100">
+                                                                                                    <div class="col-auto ms-auto mt-auto shadow ratingOuter bg-warning text-dark">
+                                                                                                        <div class="starImg">
+                                                                                                            <img src="assets/img/star-dark.png" class="w-100 h-100" alt="">
+                                                                                                        </div>
+                                                                                                        <span>3.1</span><span>(300+)</span>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </a>
+                                                                                    <div class="col-12 cardBottom p-3">
+                                                                                        <div class="row mx-0 gap-2">
+                                                                                            <a href="javascript:;" class="col-12 px-0 cardHeading text-decoration-none">
+                                                                                                Bite Me Sandwiches
+                                                                                            </a>
+                                                                                            <div class="col-12 px-0 cardSubHeading">
+                                                                                                <ul class="m-0 p-0 d-flex gap-3">
+                                                                                                    <li>North Indian</li>
+                                                                                                    <li>American</li>
+                                                                                                    <li>Pure Veg</li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                            <div class="col-12 px-0">
+                                                                                                <div class="row mx-0 justify-content-between">
+                                                                                                    <div class="col-auto timeOuter d-flex align-items-center gap-1">
+                                                                                                        <div class="watchImg">
+                                                                                                            <img src="assets/img/clock-arrow.png" class="w-100 h-100" alt="">
+                                                                                                        </div>
+                                                                                                        <span>15-20</span><span>min</span>
+                                                                                                    </div>
+                                                                                                    <div class="col-auto px-0 prizePerPerson">
+                                                                                                        <span>₹<span>150</span></span> <span>For Two</span>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-12 px-0 codeOfferOuter">
+                                                                                                <span class="codeOffer bg-success">Offer</span><span>65<span>%</span> <span>off</span> <span>|</span> </span><span>Use Coupon <span class="text-uppercase">IMGF60</span></span>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-xxl-4 col-sm-6 col-12">
+                                                                        <div class="row mx-0">
+                                                                            <div class="col-12 cardOuter px-0">
+                                                                                <div class="row cardMiddel mx-0">
+                                                                                    <a href="javascript:;" class="col-12 cardTop p-3 text-decoration-none">
+                                                                                        <div class="row h-100 mx-0">
+                                                                                            <div class="col-12 px-0">
+                                                                                                <div class="row justify-content-between mx-0">
+                                                                                                    <div class="col-auto px-0">
+                                                                                                        <div class="promotedText bg-secondary shadow">Promoted</div>
+                                                                                                    </div>
+                                                                                                    <div class="col-auto px-0">
+                                                                                                        <div class="form-check">
+                                                                                                            <input class="form-check-input customCheck border-0 shadow" type="checkbox">
+                                                                                                          </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-12 px-0">
+                                                                                                <div class="row mx-0 h-100">
+                                                                                                    <div class="col-auto ms-auto mt-auto shadow ratingOuter bg-warning text-dark">
+                                                                                                        <div class="starImg">
+                                                                                                            <img src="assets/img/star-dark.png" class="w-100 h-100" alt="">
+                                                                                                        </div>
+                                                                                                        <span>3.1</span><span>(300+)</span>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </a>
+                                                                                    <div class="col-12 cardBottom p-3">
+                                                                                        <div class="row mx-0 gap-2">
+                                                                                            <a href="javascript:;" class="col-12 px-0 cardHeading text-decoration-none">
+                                                                                                Bite Me Sandwiches
+                                                                                            </a>
+                                                                                            <div class="col-12 px-0 cardSubHeading">
+                                                                                                <ul class="m-0 p-0 d-flex gap-3">
+                                                                                                    <li>North Indian</li>
+                                                                                                    <li>American</li>
+                                                                                                    <li>Pure Veg</li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                            <div class="col-12 px-0">
+                                                                                                <div class="row mx-0 justify-content-between">
+                                                                                                    <div class="col-auto timeOuter d-flex align-items-center gap-1">
+                                                                                                        <div class="watchImg">
+                                                                                                            <img src="assets/img/clock-arrow.png" class="w-100 h-100" alt="">
+                                                                                                        </div>
+                                                                                                        <span>15-20</span><span>min</span>
+                                                                                                    </div>
+                                                                                                    <div class="col-auto px-0 prizePerPerson">
+                                                                                                        <span>₹<span>150</span></span> <span>For Two</span>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-12 px-0 codeOfferOuter">
+                                                                                                <span class="codeOffer bg-success">Offer</span><span>65<span>%</span> <span>off</span> <span>|</span> </span><span>Use Coupon <span class="text-uppercase">IMGF60</span></span>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-xxl-4 col-sm-6 col-12">
+                                                                        <div class="row mx-0">
+                                                                            <div class="col-12 cardOuter px-0">
+                                                                                <div class="row cardMiddel mx-0">
+                                                                                    <a href="javascript:;" class="col-12 cardTop p-3 text-decoration-none">
+                                                                                        <div class="row h-100 mx-0">
+                                                                                            <div class="col-12 px-0">
+                                                                                                <div class="row justify-content-between mx-0">
+                                                                                                    <div class="col-auto px-0">
+                                                                                                        <div class="promotedText bg-secondary shadow">Promoted</div>
+                                                                                                    </div>
+                                                                                                    <div class="col-auto px-0">
+                                                                                                        <div class="form-check">
+                                                                                                            <input class="form-check-input customCheck border-0 shadow" type="checkbox">
+                                                                                                          </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-12 px-0">
+                                                                                                <div class="row mx-0 h-100">
+                                                                                                    <div class="col-auto ms-auto mt-auto shadow ratingOuter bg-warning text-dark">
+                                                                                                        <div class="starImg">
+                                                                                                            <img src="assets/img/star-dark.png" class="w-100 h-100" alt="">
+                                                                                                        </div>
+                                                                                                        <span>3.1</span><span>(300+)</span>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </a>
+                                                                                    <div class="col-12 cardBottom p-3">
+                                                                                        <div class="row mx-0 gap-2">
+                                                                                            <a href="javascript:;" class="col-12 px-0 cardHeading text-decoration-none">
+                                                                                                Bite Me Sandwiches
+                                                                                            </a>
+                                                                                            <div class="col-12 px-0 cardSubHeading">
+                                                                                                <ul class="m-0 p-0 d-flex gap-3">
+                                                                                                    <li>North Indian</li>
+                                                                                                    <li>American</li>
+                                                                                                    <li>Pure Veg</li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                            <div class="col-12 px-0">
+                                                                                                <div class="row mx-0 justify-content-between">
+                                                                                                    <div class="col-auto timeOuter d-flex align-items-center gap-1">
+                                                                                                        <div class="watchImg">
+                                                                                                            <img src="assets/img/clock-arrow.png" class="w-100 h-100" alt="">
+                                                                                                        </div>
+                                                                                                        <span>15-20</span><span>min</span>
+                                                                                                    </div>
+                                                                                                    <div class="col-auto px-0 prizePerPerson">
+                                                                                                        <span>₹<span>150</span></span> <span>For Two</span>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-12 px-0 codeOfferOuter">
+                                                                                                <span class="codeOffer bg-success">Offer</span><span>65<span>%</span> <span>off</span> <span>|</span> </span><span>Use Coupon <span class="text-uppercase">IMGF60</span></span>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-xxl-4 col-sm-6 col-12">
+                                                                        <div class="row mx-0">
+                                                                            <div class="col-12 cardOuter px-0">
+                                                                                <div class="row cardMiddel mx-0">
+                                                                                    <a href="javascript:;" class="col-12 cardTop p-3 text-decoration-none">
+                                                                                        <div class="row h-100 mx-0">
+                                                                                            <div class="col-12 px-0">
+                                                                                                <div class="row justify-content-between mx-0">
+                                                                                                    <div class="col-auto px-0">
+                                                                                                        <div class="promotedText bg-secondary shadow">Promoted</div>
+                                                                                                    </div>
+                                                                                                    <div class="col-auto px-0">
+                                                                                                        <div class="form-check">
+                                                                                                            <input class="form-check-input customCheck border-0 shadow" type="checkbox">
+                                                                                                          </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-12 px-0">
+                                                                                                <div class="row mx-0 h-100">
+                                                                                                    <div class="col-auto ms-auto mt-auto shadow ratingOuter bg-warning text-dark">
+                                                                                                        <div class="starImg">
+                                                                                                            <img src="assets/img/star-dark.png" class="w-100 h-100" alt="">
+                                                                                                        </div>
+                                                                                                        <span>3.1</span><span>(300+)</span>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </a>
+                                                                                    <div class="col-12 cardBottom p-3">
+                                                                                        <div class="row mx-0 gap-2">
+                                                                                            <a href="javascript:;" class="col-12 px-0 cardHeading text-decoration-none">
+                                                                                                Bite Me Sandwiches
+                                                                                            </a>
+                                                                                            <div class="col-12 px-0 cardSubHeading">
+                                                                                                <ul class="m-0 p-0 d-flex gap-3">
+                                                                                                    <li>North Indian</li>
+                                                                                                    <li>American</li>
+                                                                                                    <li>Pure Veg</li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                            <div class="col-12 px-0">
+                                                                                                <div class="row mx-0 justify-content-between">
+                                                                                                    <div class="col-auto timeOuter d-flex align-items-center gap-1">
+                                                                                                        <div class="watchImg">
+                                                                                                            <img src="assets/img/clock-arrow.png" class="w-100 h-100" alt="">
+                                                                                                        </div>
+                                                                                                        <span>15-20</span><span>min</span>
+                                                                                                    </div>
+                                                                                                    <div class="col-auto px-0 prizePerPerson">
+                                                                                                        <span>₹<span>150</span></span> <span>For Two</span>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-12 px-0 codeOfferOuter">
+                                                                                                <span class="codeOffer bg-success">Offer</span><span>65<span>%</span> <span>off</span> <span>|</span> </span><span>Use Coupon <span class="text-uppercase">IMGF60</span></span>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-xxl-4 col-sm-6 col-12">
+                                                                        <div class="row mx-0">
+                                                                            <div class="col-12 cardOuter px-0">
+                                                                                <div class="row cardMiddel mx-0">
+                                                                                    <a href="javascript:;" class="col-12 cardTop p-3 text-decoration-none">
+                                                                                        <div class="row h-100 mx-0">
+                                                                                            <div class="col-12 px-0">
+                                                                                                <div class="row justify-content-between mx-0">
+                                                                                                    <div class="col-auto px-0">
+                                                                                                        <div class="promotedText bg-secondary shadow">Promoted</div>
+                                                                                                    </div>
+                                                                                                    <div class="col-auto px-0">
+                                                                                                        <div class="form-check">
+                                                                                                            <input class="form-check-input customCheck border-0 shadow" type="checkbox">
+                                                                                                          </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-12 px-0">
+                                                                                                <div class="row mx-0 h-100">
+                                                                                                    <div class="col-auto ms-auto mt-auto shadow ratingOuter bg-warning text-dark">
+                                                                                                        <div class="starImg">
+                                                                                                            <img src="assets/img/star-dark.png" class="w-100 h-100" alt="">
+                                                                                                        </div>
+                                                                                                        <span>3.1</span><span>(300+)</span>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </a>
+                                                                                    <div class="col-12 cardBottom p-3">
+                                                                                        <div class="row mx-0 gap-2">
+                                                                                            <a href="javascript:;" class="col-12 px-0 cardHeading text-decoration-none">
+                                                                                                Bite Me Sandwiches
+                                                                                            </a>
+                                                                                            <div class="col-12 px-0 cardSubHeading">
+                                                                                                <ul class="m-0 p-0 d-flex gap-3">
+                                                                                                    <li>North Indian</li>
+                                                                                                    <li>American</li>
+                                                                                                    <li>Pure Veg</li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                            <div class="col-12 px-0">
+                                                                                                <div class="row mx-0 justify-content-between">
+                                                                                                    <div class="col-auto timeOuter d-flex align-items-center gap-1">
+                                                                                                        <div class="watchImg">
+                                                                                                            <img src="assets/img/clock-arrow.png" class="w-100 h-100" alt="">
+                                                                                                        </div>
+                                                                                                        <span>15-20</span><span>min</span>
+                                                                                                    </div>
+                                                                                                    <div class="col-auto px-0 prizePerPerson">
+                                                                                                        <span>₹<span>150</span></span> <span>For Two</span>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-12 px-0 codeOfferOuter">
+                                                                                                <span class="codeOffer bg-success">Offer</span><span>65<span>%</span> <span>off</span> <span>|</span> </span><span>Use Coupon <span class="text-uppercase">IMGF60</span></span>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-auto col-12 rightPart">
-                                                <div class="row h-100 align-items-end mx-0 mx-md-n3">
-                                                    <div class="col-12 pt-xl-4 pt-xxl-3 ps-lg-4 ps-xl-5">
-                                                        <div class="owl-carousel pt-1 pt-xxl-0 newAddedCarousel2 owl-loaded">
-                                                            <div class="owl-stage-outer">
-                                                                <div class="owl-stage">
-                                                                    <div class="owl-item">
-                                                                        <a href="javascript:;" class="imgOuter">
-                                                                            <img src="assets/img/slider.png" class="w-100 h-100" alt="">
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="owl-item">
-                                                                        <a href="javascript:;" class="imgOuter">
-                                                                            <img src="assets/img/slider1.png" class="w-100 h-100" alt="">
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="owl-item">
-                                                                        <a href="javascript:;" class="imgOuter">
-                                                                            <img src="assets/img/slider.png" class="w-100 h-100" alt="">
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="owl-item">
-                                                                        <a href="javascript:;" class="imgOuter">
-                                                                            <img src="assets/img/slider.png" class="w-100 h-100" alt="">
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="owl-item">
-                                                                        <a href="javascript:;" class="imgOuter">
-                                                                            <img src="assets/img/slider1.png" class="w-100 h-100" alt="">
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="owl-item">
-                                                                        <a href="javascript:;" class="imgOuter">
-                                                                            <img src="assets/img/slider.png" class="w-100 h-100" alt="">
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container-fluid heroTwo px-0">
-                            <div class="container-lg py-lg-5 py-sm-4 py-3">
-                                <div class="row my-lg-3 g-sm-4 g-3 gy-md-0">
-                                    <div class="col-md-3 col-6">
-                                       <div class="offerCards rounded-3 overflow-hidden">
-                                            <a href="javascript:;" class="">
-                                                <img src="assets/img/pro4.jpg" class="img-fluid" alt="">
-                                            </a>
-                                       </div>
-                                    </div>
-                                    <div class="col-md-3 col-6">
-                                        <div class="offerCards rounded-3 overflow-hidden">
-                                            <a href="javascript:;" class="">
-                                                <img src="assets/img/pro3.jpg" class="img-fluid" alt="">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-6">
-                                        <div class="offerCards rounded-3 overflow-hidden">
-                                            <a href="javascript:;" class="">
-                                                <img src="assets/img/pro2.jpg" class="img-fluid" alt="">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-6">
-                                        <div class="offerCards rounded-3 overflow-hidden">
-                                            <a href="javascript:;" class="">
-                                                <img src="assets/img/pro1.jpg" class="img-fluid" alt="">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container-fluid heroThree px-0">
-                            <div class="container-lg py-lg-5 py-sm-4 py-3">
-                                <div class="row my-lg-3 mx-0">
-                                    <div class="col-12 text-center pb-5">
-                                        <div class="secHeading">Popular Brands</div>
-                                        <div class="secSubHeading">Top restaurants, cafes, pubs, and bars in Ludhiana, based on trends</div>
-                                    </div>
-                                    <div class="col-12 pt-4">
-                                        <div class="row mx-0">
-                                            <div class="col-12 px-2 ">
-                                                <div class="owl-carousel newAddedCarousel3 owl-loaded">
-                                                    <div class="owl-stage-outer">
-                                                        <div class="owl-stage">
-                                                            <div class="owl-item">
-                                                                <div class="row mx-0">
-                                                                    <div class="col-12 cardOuter">
-                                                                        <div class="row cardMiddel">
-                                                                            <a href="javascript:;" class="col-12 cardTop p-2 text-decoration-none">
-                                                                                <div class="row h-100 mx-0">
-                                                                                    <div class="col-12 px-0">
-                                                                                        <div class="row justify-content-between mx-0">
-                                                                                            <div class="col-auto px-0">
-                                                                                                <div class="promotedText bg-secondary shadow">Promoted</div>
-                                                                                            </div>
-                                                                                            <div class="col-auto px-0">
-                                                                                                <div class="form-check">
-                                                                                                    <input class="form-check-input customCheck border-0 shadow" type="checkbox">
-                                                                                                  </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="col-12 px-0">
-                                                                                        <div class="row mx-0 h-100">
-                                                                                            <div class="col-auto ms-auto mt-auto shadow ratingOuter bg-warning text-dark">
-                                                                                                <div class="starImg">
-                                                                                                    <img src="assets/img/star-dark.png" class="w-100 h-100" alt="">
-                                                                                                </div>
-                                                                                                <span>3.1</span><span>(300+)</span>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </a>
-                                                                            <div class="col-12 cardBottom p-2">
-                                                                                <div class="row mx-0 gap-2">
-                                                                                    <a href="javascript:;" class="col-12 px-0 cardHeading text-decoration-none">
-                                                                                        Bite Me Sandwiches
-                                                                                    </a>
-                                                                                    <div class="col-12 px-0 cardSubHeading">
-                                                                                        <ul class="m-0 p-0 d-flex gap-3">
-                                                                                            <li>North Indian</li>
-                                                                                            <li>American</li>
-                                                                                            <li>Pure Veg</li>
-                                                                                        </ul>
-                                                                                    </div>
-                                                                                    <div class="col-12 px-0">
-                                                                                        <div class="row mx-0 justify-content-between">
-                                                                                            <div class="col-auto timeOuter d-flex align-items-center gap-1">
-                                                                                                <div class="watchImg">
-                                                                                                    <img src="assets/img/clock-arrow.png" class="w-100 h-100" alt="">
-                                                                                                </div>
-                                                                                                <span>15-20</span><span>min</span>
-                                                                                            </div>
-                                                                                            <div class="col-auto px-0 prizePerPerson">
-                                                                                                <span>₹<span>150</span></span> <span>For Two</span>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="col-12 px-0 codeOfferOuter">
-                                                                                        <span class="codeOffer">Offer</span><span>65<span>%</span> <span>off</span> <span>|</span> </span><span>Use Coupon <span class="text-uppercase">IMGF60</span></span>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="owl-item">
-                                                                <div class="row mx-0">
-                                                                    <div class="col-12 cardOuter">
-                                                                        <div class="row cardMiddel">
-                                                                            <a href="javascript:;" class="col-12 cardTop p-2 text-decoration-none">
-                                                                                <div class="row h-100 mx-0">
-                                                                                    <div class="col-12 px-0">
-                                                                                        <div class="row justify-content-between mx-0">
-                                                                                            <div class="col-auto px-0">
-                                                                                                <div class="promotedText bg-theme1 shadow">Promoted</div>
-                                                                                            </div>
-                                                                                            <div class="col-auto px-0">
-                                                                                                <div class="form-check">
-                                                                                                    <input class="form-check-input customCheck border-0 shadow" type="checkbox">
-                                                                                                  </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="col-12 px-0">
-                                                                                        <div class="row mx-0 h-100">
-                                                                                            <div class="col-auto ms-auto mt-auto shadow ratingOuter bg-success text-white">
-                                                                                                <div class="starImg">
-                                                                                                    <img src="assets/img/star-white.png" class="w-100 h-100" alt="">
-                                                                                                </div>
-                                                                                                <span>3.1</span><span>(300+)</span>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </a>
-                                                                            <div class="col-12 cardBottom p-2">
-                                                                                <div class="row mx-0 gap-2">
-                                                                                    <a href="javascript:;" class="col-12 px-0 cardHeading text-decoration-none">
-                                                                                        Bite Me Sandwiches
-                                                                                    </a>
-                                                                                    <div class="col-12 px-0 cardSubHeading">
-                                                                                        <ul class="m-0 p-0 d-flex gap-3">
-                                                                                            <li>North Indian</li>
-                                                                                            <li>American</li>
-                                                                                            <li>Pure Veg</li>
-                                                                                        </ul>
-                                                                                    </div>
-                                                                                    <div class="col-12 px-0">
-                                                                                        <div class="row mx-0 justify-content-between">
-                                                                                            <div class="col-auto timeOuter d-flex align-items-center gap-1">
-                                                                                                <div class="watchImg">
-                                                                                                    <img src="assets/img/clock-arrow.png" class="w-100 h-100" alt="">
-                                                                                                </div>
-                                                                                                <span>15-20</span><span>min</span>
-                                                                                            </div>
-                                                                                            <div class="col-auto px-0 prizePerPerson">
-                                                                                                <span>₹<span>150</span></span> <span>For Two</span>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="col-12 px-0 codeOfferOuter">
-                                                                                        <span class="codeOffer">Offer</span><span>65<span>%</span> <span>off</span> <span>|</span> </span><span>Use Coupon <span class="text-uppercase">IMGF60</span></span>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="owl-item">
-                                                                <div class="row mx-0">
-                                                                    <div class="col-12 cardOuter">
-                                                                        <div class="row cardMiddel">
-                                                                            <a href="javascript:;" class="col-12 cardTop p-2 text-decoration-none">
-                                                                                <div class="row h-100 mx-0">
-                                                                                    <div class="col-12 px-0">
-                                                                                        <div class="row justify-content-between mx-0">
-                                                                                            <div class="col-auto px-0">
-                                                                                                <div class="promotedText bg-secondary shadow">Promoted</div>
-                                                                                            </div>
-                                                                                            <div class="col-auto px-0">
-                                                                                                <div class="form-check">
-                                                                                                    <input class="form-check-input customCheck border-0 shadow" type="checkbox">
-                                                                                                  </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="col-12 px-0">
-                                                                                        <div class="row mx-0 h-100">
-                                                                                            <div class="col-auto ms-auto mt-auto shadow ratingOuter bg-warning text-dark">
-                                                                                                <div class="starImg">
-                                                                                                    <img src="assets/img/star-dark.png" class="w-100 h-100" alt="">
-                                                                                                </div>
-                                                                                                <span>3.1</span><span>(300+)</span>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </a>
-                                                                            <div class="col-12 cardBottom p-2">
-                                                                                <div class="row mx-0 gap-2">
-                                                                                    <a href="javascript:;" class="col-12 px-0 cardHeading text-decoration-none">
-                                                                                        Bite Me Sandwiches
-                                                                                    </a>
-                                                                                    <div class="col-12 px-0 cardSubHeading">
-                                                                                        <ul class="m-0 p-0 d-flex gap-3">
-                                                                                            <li>North Indian</li>
-                                                                                            <li>American</li>
-                                                                                            <li>Pure Veg</li>
-                                                                                        </ul>
-                                                                                    </div>
-                                                                                    <div class="col-12 px-0">
-                                                                                        <div class="row mx-0 justify-content-between">
-                                                                                            <div class="col-auto timeOuter d-flex align-items-center gap-1">
-                                                                                                <div class="watchImg">
-                                                                                                    <img src="assets/img/clock-arrow.png" class="w-100 h-100" alt="">
-                                                                                                </div>
-                                                                                                <span>15-20</span><span>min</span>
-                                                                                            </div>
-                                                                                            <div class="col-auto px-0 prizePerPerson">
-                                                                                                <span>₹<span>150</span></span> <span>For Two</span>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="col-12 px-0 codeOfferOuter">
-                                                                                        <span class="codeOffer">Offer</span><span>65<span>%</span> <span>off</span> <span>|</span> </span><span>Use Coupon <span class="text-uppercase">IMGF60</span></span>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="owl-item">
-                                                                <div class="row mx-0">
-                                                                    <div class="col-12 cardOuter">
-                                                                        <div class="row cardMiddel">
-                                                                            <a href="javascript:;" class="col-12 cardTop p-2 text-decoration-none">
-                                                                                <div class="row h-100 mx-0">
-                                                                                    <div class="col-12 px-0">
-                                                                                        <div class="row justify-content-between mx-0">
-                                                                                            <div class="col-auto px-0">
-                                                                                                <div class="promotedText bg-theme1 shadow">Promoted</div>
-                                                                                            </div>
-                                                                                            <div class="col-auto px-0">
-                                                                                                <div class="form-check">
-                                                                                                    <input class="form-check-input customCheck border-0 shadow" type="checkbox">
-                                                                                                  </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="col-12 px-0">
-                                                                                        <div class="row mx-0 h-100">
-                                                                                            <div class="col-auto ms-auto mt-auto shadow ratingOuter bg-success text-white">
-                                                                                                <div class="starImg">
-                                                                                                    <img src="assets/img/star-white.png" class="w-100 h-100" alt="">
-                                                                                                </div>
-                                                                                                <span>3.1</span><span>(300+)</span>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </a>
-                                                                            <div class="col-12 cardBottom p-2">
-                                                                                <div class="row mx-0 gap-2">
-                                                                                    <a href="javascript:;" class="col-12 px-0 cardHeading text-decoration-none">
-                                                                                        Bite Me Sandwiches
-                                                                                    </a>
-                                                                                    <div class="col-12 px-0 cardSubHeading">
-                                                                                        <ul class="m-0 p-0 d-flex gap-3">
-                                                                                            <li>North Indian</li>
-                                                                                            <li>American</li>
-                                                                                            <li>Pure Veg</li>
-                                                                                        </ul>
-                                                                                    </div>
-                                                                                    <div class="col-12 px-0">
-                                                                                        <div class="row mx-0 justify-content-between">
-                                                                                            <div class="col-auto timeOuter d-flex align-items-center gap-1">
-                                                                                                <div class="watchImg">
-                                                                                                    <img src="assets/img/clock-arrow.png" class="w-100 h-100" alt="">
-                                                                                                </div>
-                                                                                                <span>15-20</span><span>min</span>
-                                                                                            </div>
-                                                                                            <div class="col-auto px-0 prizePerPerson">
-                                                                                                <span>₹<span>150</span></span> <span>For Two</span>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="col-12 px-0 codeOfferOuter">
-                                                                                        <span class="codeOffer">Offer</span><span>65<span>%</span> <span>off</span> <span>|</span> </span><span>Use Coupon <span class="text-uppercase">IMGF60</span></span>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="owl-item">
-                                                                <div class="row mx-0">
-                                                                    <div class="col-12 cardOuter">
-                                                                        <div class="row cardMiddel">
-                                                                            <a href="javascript:;" class="col-12 cardTop p-2 text-decoration-none">
-                                                                                <div class="row h-100 mx-0">
-                                                                                    <div class="col-12 px-0">
-                                                                                        <div class="row justify-content-between mx-0">
-                                                                                            <div class="col-auto px-0">
-                                                                                                <div class="promotedText bg-secondary shadow">Promoted</div>
-                                                                                            </div>
-                                                                                            <div class="col-auto px-0">
-                                                                                                <div class="form-check">
-                                                                                                    <input class="form-check-input customCheck border-0 shadow" type="checkbox">
-                                                                                                  </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="col-12 px-0">
-                                                                                        <div class="row mx-0 h-100">
-                                                                                            <div class="col-auto ms-auto mt-auto shadow ratingOuter bg-warning text-dark">
-                                                                                                <div class="starImg">
-                                                                                                    <img src="assets/img/star-dark.png" class="w-100 h-100" alt="">
-                                                                                                </div>
-                                                                                                <span>3.1</span><span>(300+)</span>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </a>
-                                                                            <div class="col-12 cardBottom p-2">
-                                                                                <div class="row mx-0 gap-2">
-                                                                                    <a href="javascript:;" class="col-12 px-0 cardHeading text-decoration-none">
-                                                                                        Bite Me Sandwiches
-                                                                                    </a>
-                                                                                    <div class="col-12 px-0 cardSubHeading">
-                                                                                        <ul class="m-0 p-0 d-flex gap-3">
-                                                                                            <li>North Indian</li>
-                                                                                            <li>American</li>
-                                                                                            <li>Pure Veg</li>
-                                                                                        </ul>
-                                                                                    </div>
-                                                                                    <div class="col-12 px-0">
-                                                                                        <div class="row mx-0 justify-content-between">
-                                                                                            <div class="col-auto timeOuter d-flex align-items-center gap-1">
-                                                                                                <div class="watchImg">
-                                                                                                    <img src="assets/img/clock-arrow.png" class="w-100 h-100" alt="">
-                                                                                                </div>
-                                                                                                <span>15-20</span><span>min</span>
-                                                                                            </div>
-                                                                                            <div class="col-auto px-0 prizePerPerson">
-                                                                                                <span>₹<span>150</span></span> <span>For Two</span>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="col-12 px-0 codeOfferOuter">
-                                                                                        <span class="codeOffer">Offer</span><span>65<span>%</span> <span>off</span> <span>|</span> </span><span>Use Coupon <span class="text-uppercase">IMGF60</span></span>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="owl-item">
-                                                                <div class="row mx-0">
-                                                                    <div class="col-12 cardOuter">
-                                                                        <div class="row cardMiddel">
-                                                                            <a href="javascript:;" class="col-12 cardTop p-2 text-decoration-none">
-                                                                                <div class="row h-100 mx-0">
-                                                                                    <div class="col-12 px-0">
-                                                                                        <div class="row justify-content-between mx-0">
-                                                                                            <div class="col-auto px-0">
-                                                                                                <div class="promotedText bg-theme1 shadow">Promoted</div>
-                                                                                            </div>
-                                                                                            <div class="col-auto px-0">
-                                                                                                <div class="form-check">
-                                                                                                    <input class="form-check-input customCheck border-0 shadow" type="checkbox">
-                                                                                                  </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="col-12 px-0">
-                                                                                        <div class="row mx-0 h-100">
-                                                                                            <div class="col-auto ms-auto mt-auto shadow ratingOuter bg-success text-white">
-                                                                                                <div class="starImg">
-                                                                                                    <img src="assets/img/star-white.png" class="w-100 h-100" alt="">
-                                                                                                </div>
-                                                                                                <span>3.1</span><span>(300+)</span>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </a>
-                                                                            <div class="col-12 cardBottom p-2">
-                                                                                <div class="row mx-0 gap-2">
-                                                                                    <a href="javascript:;" class="col-12 px-0 cardHeading text-decoration-none">
-                                                                                        Bite Me Sandwiches
-                                                                                    </a>
-                                                                                    <div class="col-12 px-0 cardSubHeading">
-                                                                                        <ul class="m-0 p-0 d-flex gap-3">
-                                                                                            <li>North Indian</li>
-                                                                                            <li>American</li>
-                                                                                            <li>Pure Veg</li>
-                                                                                        </ul>
-                                                                                    </div>
-                                                                                    <div class="col-12 px-0">
-                                                                                        <div class="row mx-0 justify-content-between">
-                                                                                            <div class="col-auto timeOuter d-flex align-items-center gap-1">
-                                                                                                <div class="watchImg">
-                                                                                                    <img src="assets/img/clock-arrow.png" class="w-100 h-100" alt="">
-                                                                                                </div>
-                                                                                                <span>15-20</span><span>min</span>
-                                                                                            </div>
-                                                                                            <div class="col-auto px-0 prizePerPerson">
-                                                                                                <span>₹<span>150</span></span> <span>For Two</span>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="col-12 px-0 codeOfferOuter">
-                                                                                        <span class="codeOffer">Offer</span><span>65<span>%</span> <span>off</span> <span>|</span> </span><span>Use Coupon <span class="text-uppercase">IMGF60</span></span>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="continer-fluid px-0 heroFour border-bottom border-secondary border-opacity-25">
-                            <div class="container-lg py-lg-5 y-sm-4 py-3">
-                                <div class="row my-lg-3">
-                                    <div class="col-12 text-center">
-                                        <div class="row flex-column">
-                                            <div class="col-auto mx-auto">
-                                                <div class="sectionHeading">Become a Member</div>
-                                                <div class="sectionSubHeading">Lorem ipsum dolor sit amet.</div>
-                                                <div class="bottomDivider mt-4"></div>
-                                            </div>
-                                            <div class="col-auto mx-auto pt-4">
-                                                <a href="javascript:;" class="btn btn-success createAnAccount rounded-0 btn-style1 d-flex align-items-center gap-3 py-2 px-3">Create an Account 
-                                                    <div class="imgOuter"><img src="assets/img/right.png" class="w-100 h-100" alt=""></div>
-                                                </a>
                                             </div>
                                         </div>
                                     </div>
