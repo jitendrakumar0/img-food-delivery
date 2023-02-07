@@ -190,3 +190,57 @@ if ($("[page-name=listing]").length) {
 }
 
 //! ########################### Listing Page End ###########################
+
+
+//? ###########################  Details Page Start  ###########################
+
+if ($("[page-name=Details]").length) {
+
+  $('.mostPopularCarsoul').owlCarousel({
+    loop: false,
+    items: 16,
+    margin: 15,
+    nav: true,
+    dots: false,
+    center: false,
+    freeDrag: false,
+    lazyLoad: true,
+    autoplay:false,
+    autoplayTimeout:1500,
+    autoplayHoverPause:true,
+    smartSpeed: 1200,
+    responsiveClass: true,
+    responsive: {
+        0: {
+            items: 3,
+        },
+        360: {
+          items: 3,
+        },
+        440: {
+          items:1,
+        },
+        576: {
+            items: 2,
+        },
+        768: {
+          items: 3,
+        },
+        992: {
+          items: 4,
+        },
+        1200: {
+          items: 5,
+          nav: true,
+        },
+        1400: {
+          items: 6,
+          nav: true,
+        },
+      },
+    navText: ["", ""]
+});
+
+}
+
+//! ########################### Details Page End ###########################

@@ -75,21 +75,312 @@
 
             <!-- Main Start-->
             <div class="col-12 px-0 flex-fill h-100 overflow-hidden customTranslate">
-                <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                <div class="offcanvas offcanvas-start filterOffcanvas" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
                     <div class="offcanvas-header">
-                      <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      <h5 class="offcanvas-title fw-bold" id="staticBackdropLabel">Filter By</h5>
+                      <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                    <div class="offcanvas-body">
-                      <div>
-                        I will not close if you click outside of me.
-                      </div>
+                    <div class="offcanvas-body p-0 overflow-x-hidden">
+                        <div class="row">
+                            <div class="col-12 leftInner">
+                                <div class="row gap-4">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <!-- <div class="col-12 filterHeading py-2">Filter By</div> -->
+                                            <div class="col-12 filterOuter">
+                                                <div class="accordion" id="accordionPanelsStayOpenExample">
+                                                    <div class="accordion-item rounded-0">
+                                                      <h2 class="accordion-header" id="location-heading">
+                                                        <button class="accordion-button shadow-none rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#locaton-accordion" aria-expanded="true" aria-controls="locaton-accordion">
+                                                          Location
+                                                        </button>
+                                                      </h2>
+                                                      <div id="locaton-accordion" class="accordion-collapse collapse show" aria-labelledby="location-heading">
+                                                        <div class="accordion-body">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <ul class="list-unstyled m-0">
+                                                                        <li>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault1">
+                                                                                <label class="form-check-label" for="flexCheckDefault1">Jaipur Junction <span class="lebelCat">230</span></label>
+                                                                              </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault2">
+                                                                                <label class="form-check-label" for="flexCheckDefault2">Chandpol <span class="lebelCat">140</span></label>
+                                                                              </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault3">
+                                                                                <label class="form-check-label" for="flexCheckDefault3">Veshali Nagar <span class="lebelCat">59</span></label>
+                                                                              </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault4">
+                                                                                <label class="form-check-label" for="flexCheckDefault4">Khatipura <span class="lebelCat">90</span></label>
+                                                                              </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault5">
+                                                                                <label class="form-check-label" for="flexCheckDefault5">Civil Lines <span class="lebelCat">176</span></label>
+                                                                              </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <a href="javascript:;" class="text-decoration-none seeAllLink">See all</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="accordion-item rounded-0">
+                                                      <h2 class="accordion-header" id="all-cuisines-heading">
+                                                        <button class="accordion-button shadow-none rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#all-cuisines" aria-expanded="false" aria-controls="all-cuisines">
+                                                            All cuisines
+                                                        </button>
+                                                      </h2>
+                                                      <div id="all-cuisines" class="accordion-collapse collapse show" aria-labelledby="all-cuisines-heading">
+                                                        <div class="accordion-body">
+                                                            <div class="row">
+                                                                <div class="col-12 pb-3">
+                                                                    <div class="customSearchOuter w-100">
+                                                                        <input type="text" class="customSearch Input" placeholder="Start typing to search">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <ul class="list-unstyled m-0">
+                                                                        <li>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input shadow-none" type="checkbox" value="" id="cuisines1">
+                                                                                <label class="form-check-label" for="cuisines1">American <span class="lebelCat">156</span></label>
+                                                                              </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input shadow-none" type="checkbox" value="" id="cuisines2">
+                                                                                <label class="form-check-label" for="cuisines2">Pizza <span class="lebelCat">178</span></label>
+                                                                              </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input shadow-none" type="checkbox" value="" id="cuisines3">
+                                                                                <label class="form-check-label" for="cuisines3">Healthy <span class="lebelCat">43</span></label>
+                                                                              </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input shadow-none" type="checkbox" value="" id="cuisines4">
+                                                                                <label class="form-check-label" for="cuisines4">Vegetarian <span class="lebelCat">143</span></label>
+                                                                              </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input shadow-none" type="checkbox" value="" id="cuisines5">
+                                                                                <label class="form-check-label" for="cuisines5">Chinese <span class="lebelCat">45</span></label>
+                                                                              </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input shadow-none" type="checkbox" value="" id="cuisines6">
+                                                                                <label class="form-check-label" for="cuisines6">Humburgers<span class="lebelCat">165</span></label>
+                                                                              </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input shadow-none" type="checkbox" value="" id="cuisines7">
+                                                                                <label class="form-check-label" for="cuisines7">Dessert <span class="lebelCat">130</span></label>
+                                                                              </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input shadow-none" type="checkbox" value="" id="cuisines8">
+                                                                                <label class="form-check-label" for="cuisines8">Chicken <span class="lebelCat">180</span></label>
+                                                                              </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input shadow-none" type="checkbox" value="" id="cuisines9">
+                                                                                <label class="form-check-label" for="cuisines9">Indian <span class="lebelCat">105</span></label>
+                                                                              </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <a href="javascript:;" class="text-decoration-none seeAllLink">See all</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="accordion-item rounded-0">
+                                                      <h2 class="accordion-header" id="feature-heading">
+                                                        <button class="accordion-button shadow-none rounded-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#feature" aria-expanded="false" aria-controls="feature">
+                                                            Feature 
+                                                        </button>
+                                                      </h2>
+                                                      <div id="feature" class="accordion-collapse collapse" aria-labelledby="feature-heading">
+                                                        <div class="accordion-body">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <ul class="list-unstyled m-0">
+                                                                        <li>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input shadow-none" type="checkbox" value="" id="features1">
+                                                                                <label class="form-check-label" for="features1">Free Delivery <span class="lebelCat">168</span></label>
+                                                                              </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input shadow-none" type="checkbox" value="" id="features2">
+                                                                                <label class="form-check-label" for="features2">Coupons <span class="lebelCat">140</span></label>
+                                                                              </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input shadow-none" type="checkbox" value="" id="features3">
+                                                                                <label class="form-check-label" for="features3">Open Now [1:31am] <span class="lebelCat">59</span></label>
+                                                                              </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="accordion-item rounded-0">
+                                                        <h2 class="accordion-header" id="delivery-time-heading">
+                                                          <button class="accordion-button shadow-none rounded-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#delivery-time" aria-expanded="false" aria-controls="delivery-time">
+                                                              Delivery Time 
+                                                          </button>
+                                                        </h2>
+                                                        <div id="delivery-time" class="accordion-collapse collapse" aria-labelledby="delivery-time-heading">
+                                                            <div class="accordion-body">
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <ul class="list-unstyled m-0">
+                                                                            <li>
+                                                                                <div class="form-check">
+                                                                                    <input class="form-check-input shadow-none" type="checkbox" value="" id="delivery-time1">
+                                                                                    <label class="form-check-label" for="delivery-time1">Any Time</label>
+                                                                                  </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="form-check">
+                                                                                    <input class="form-check-input shadow-none" type="checkbox" value="" id="delivery-time2">
+                                                                                    <label class="form-check-label" for="delivery-time2">20 min</label>
+                                                                                  </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="form-check">
+                                                                                    <input class="form-check-input shadow-none" type="checkbox" value="" id="delivery-time3">
+                                                                                    <label class="form-check-label" for="delivery-time3">30 min</label>
+                                                                                  </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="form-check">
+                                                                                    <input class="form-check-input shadow-none" type="checkbox" value="" id="delivery-time4">
+                                                                                    <label class="form-check-label" for="delivery-time4">40 min</label>
+                                                                                  </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="form-check">
+                                                                                    <input class="form-check-input shadow-none" type="checkbox" value="" id="delivery-time5">
+                                                                                    <label class="form-check-label" for="delivery-time5">50 min</label>
+                                                                                  </div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <a href="javascript:;" class="text-decoration-none seeAllLink">See all</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item rounded-0">
+                                                        <h2 class="accordion-header" id="category-heading">
+                                                          <button class="accordion-button shadow-none rounded-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#category" aria-expanded="false" aria-controls="category">
+                                                              Category 
+                                                          </button>
+                                                        </h2>
+                                                        <div id="category" class="accordion-collapse collapse show" aria-labelledby="category-heading">
+                                                            <div class="accordion-body">
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <ul class="list-unstyled m-0">
+                                                                            <li>
+                                                                                <div class="form-check">
+                                                                                    <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault1">
+                                                                                    <label class="form-check-label" for="flexCheckDefault1">Delivery <span class="lebelCat">157</span></label>
+                                                                                  </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="form-check">
+                                                                                    <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault2">
+                                                                                    <label class="form-check-label" for="flexCheckDefault2">Dine-out <span class="lebelCat">140</span></label>
+                                                                                  </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="form-check">
+                                                                                    <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault3">
+                                                                                    <label class="form-check-label" for="flexCheckDefault3">Cafe's <span class="lebelCat">59</span></label>
+                                                                                  </div>
+                                                                            </li>
+                                                                            <li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 bg-white py-3 px-3">
+                                        <div class="row mx-0">
+                                            <div class="col-12 foodDeliveryMode">
+                                                <ul class="list-unstyled m-0 pb-3">
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input shadow-none" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                            <label class="form-check-label" for="flexRadioDefault1">Gold Partner</label>
+                                                          </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input shadow-none" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                                            <label class="form-check-label" for="flexRadioDefault2">Order Food Online</label>
+                                                          </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input shadow-none" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                                                            <label class="form-check-label" for="flexRadioDefault3">Cash on Delivery</label>
+                                                          </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-12 text-success offerCode py-3">
+                                                <span>Use code <span class="code">imgf50</span> to get 50% OFF (up to <span>₹</span>200 ) on first <span>5 </span> orders. T&C apply.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="h-100 overflow-y-auto">
                     <div class="listingMain" page-name="listing">
                         <div class="container-fluid px-0 sectioPartOne">
-                            <div class="container-lg py-lg-5 py-sm-4 py-3">
+                            <div class="container-lg py-5">
                                 <div class="row my-lg-3">
                                     <div class="col-auto mx-auto text-center">
                                         <div class="sectionHeading">Offers Near You</div>
@@ -102,25 +393,27 @@
                             <div class="container-lg overflow-hidden py-lg-5 py-sm-4 py-3">
                                 <div class="row my-lg-3 gap-3">
                                     <div class="col-12">
-                                        <div class="row">
-                                            <div class="col-sm col-12 secHeading">
+                                        <div class="row gap-3 gap-sm-0">
+                                            <div class="col-sm col-12 secHeading order-sm-1 order-3">
                                                 Offers <span class="noOfRes">299 Restaurants</span>
                                             </div>
-                                            <div class="col-sm-auto col-6 shortByDist">
+                                            <div class="col-sm-auto col-12 shortByDist order-sm-2 order-1">
                                                 <select class="customSelect" autocomplete="off">
                                                     <option>Distance</option>
                                                     <option>No of Offers</option>
                                                     <option>Rating</option>
                                                 </select>
                                             </div>
-                                            <div class="col-sm-auto col-6 d-lg-none d-block">
-                                                <button class="btn btn-outline-dark rounded-0 shadow-none btn-style1 w-100" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="offcanvasResponsive">Fillter</button>
+                                            <div class="col-sm-auto col-12 d-lg-none d-block order-sm-3 order-2">
+                                                <button class="btn btn-outline-dark justify-content-center gap-2 fitletBtn rounded-0 shadow-none btn-style1 py-2 w-100 d-flex align-items-center" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="offcanvasResponsive">
+                                                    <div class="imgOuter"></div>  Fillter 
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <div class="row">
-                                            <div class="col-auto leftPart h-100 d-none d-lg-block">
+                                        <div class="row position-relative">
+                                            <div class="col-auto leftPart h-100 d-none d-lg-block position-stickey top-0">
                                                 <div class="row mx-0">
                                                     <div class="col-12 px-0 leftInner">
                                                         <div class="row mx-0 gap-4">

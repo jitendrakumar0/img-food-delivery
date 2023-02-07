@@ -10,6 +10,12 @@
         color: $white;
     }
 }
+.btn-outline-theme1 {
+    color: $theme1;
+    &:hover {
+        color: $white;
+    }
+}
 
 @media(max-width:768px) {
     .btn-style1 {
