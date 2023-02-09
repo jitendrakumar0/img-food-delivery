@@ -492,7 +492,13 @@
         }
     }
 }
-
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+    border-color: $danger !important;
+}
+.invalid-feedback {
+    font-size: 12px;
+}
 // Small devices (landscape phones, 576px and up)
 @mixin Index-mixin-min-sm() {
     
@@ -3636,6 +3642,175 @@
                                     display: flex;
                                     align-items: center;
                                 }
+                            }
+                        }
+                    }
+                    & .tabForth {
+                        & .sectionHeading {
+                            font-size: 20px;
+                            font-weight: bold;
+                            color: $black;
+                        }
+                        & .customLabel {
+                            font-size: 13px;
+                            font-weight: bold;
+                            color: $black;
+                        }
+                        & .customInput {
+                            font-size: 13px;
+                            font-weight: bold;
+                            color: $secondary;
+                            box-shadow: none;
+                            border-radius: 0px;
+                            border: 1px solid $black;
+                            &:focus {
+                            border: 1px solid $black;
+                            outline: none;
+                            }
+                        }
+                    }
+                    & .tabFifth {
+                        & .sectionHeading {
+                            font-size: 20px;
+                            font-weight: bold;
+                            color: $black;
+                        }
+                        & .customStars {
+                            width: 22px;
+                            height: 22px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        & .ratingNumbers {
+                            font-size: 16px;
+                            font-weight: bold;
+                            color: $black;
+                        }
+                        & .ratedText {
+                            font-size: 13px;
+                            font-weight: bold;
+                            color: $secondary;
+                        }
+                        & .progressText {
+                            font-size: 13px;
+                            font-weight: bold;
+                            color: $black;
+                        }
+                        & .customProgreess {
+                            border-radius: 0px;
+                            height: 20px;
+                            & .progress-bar {
+                                background-color: $theme1;
+                            }
+                        }
+                        & .userExRatingOuter {
+                            & .imgOuter {
+                                height: 50px;
+                                width: 50px;
+                                border-radius: 50%;
+                                overflow: hidden;
+                                & img {
+                                    object-fit: contain;
+                                    object-position: top center;
+                                }
+                            }
+                            & .userName {
+                                font-size: 15px;
+                                font-weight: bold;
+                                color: $black;
+                            }
+                            & .starImgOuter {
+                                width: 14px;
+                                height: 14px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                            & .subHeading {
+                                font-size: 12px;
+                                font-weight: bold;
+                                color: $secondary;
+                            }
+                            & .reviewText {
+                                font-size: 12px;
+                                font-weight: bold;
+                                color: $secondary;
+                            }
+                            & .likeCheck {
+                                padding: 0;
+                                & .form-check-input:checked ~ .form-check-label {
+                                    color: $success;
+                                    background-image: url('../img/like-success.png');
+                                    border-color: $success;
+                                }
+                                & .form-check-label {
+                                    font-size: 11px;
+                                    font-weight: bold;
+                                    color: $secondary;
+                                    border: 1.5px solid $secondary;
+                                    border-radius: 20px;
+                                    padding: 5px 8px 5px 20px;
+                                    cursor: pointer;
+                                    background-image: url('../img/like-secondary.png');
+                                    background-position: left 5px center;
+                                    background-size: 11px;
+                                    background-repeat: no-repeat;
+                                    background-color: $white;
+                                    transition: all 0.3s ease-in-out;
+                                }
+                            }
+                            & .dislikeCheck {
+                                padding: 0;
+                                & .form-check-input:checked ~ .form-check-label {
+                                    color: $danger;
+                                    background-image: url('../img/dislike-danger.png');
+                                    border-color: $danger;
+                                }
+                                & .form-check-label {
+                                    font-size: 11px;
+                                    font-weight: bold;
+                                    color: $secondary;
+                                    border: 1.5px solid $secondary;
+                                    border-radius: 20px;
+                                    padding: 5px 8px 5px 20px;
+                                    cursor: pointer;
+                                    background-image: url('../img/dislike-secondary.png');
+                                    background-position: left 5px center;
+                                    background-size: 11px;
+                                    background-repeat: no-repeat;
+                                    background-color: $white;
+                                    transition: all 0.3s ease-in-out;
+                                }
+                            }
+                        }
+                        & .sectionSubHeading {
+                            font-size: 14px;
+                            color: $secondary;
+                            font-weight: bold;
+                        }
+                        & .starImgOuterSubmiting {
+                            display: flex;
+                            flex-direction: row-reverse;
+                            gap: 5px;
+                            & .form-check-label {
+                                background-image: url('../img/star-secondary.png');
+                                background-repeat: no-repeat;
+                                background-size: 18px;
+                                background-position: center;
+                                height: 18px;
+                                width: 18px;
+                                cursor: pointer;
+                                &:hover {
+                                    background-image: url('../img/star-theme1.png');
+                                }
+                            }
+                            & :checked ~ label {
+                                background-image: url('../img/star-theme1.png');
+
+                            }
+                            & label:hover ~ label {
+                                background-image: url('../img/star-theme1.png');
                             }
                         }
                     }

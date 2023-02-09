@@ -12,6 +12,10 @@
 }
 .btn-outline-theme1 {
     color: $theme1;
+    &:active,
+    &:focus-visible {
+        color: $white !important;
+    }
     &:hover {
         color: $white;
     }
