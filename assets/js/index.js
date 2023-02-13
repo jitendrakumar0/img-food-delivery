@@ -230,19 +230,21 @@ if ($("[page-name=Details]").length) {
     responsiveClass: true,
     responsive: {
         0: {
-            items: 3,
+            items: 2,
         },
         360: {
           items: 3,
+          margin: 10,
         },
         440: {
-          items:1,
+          items:3,
+          margin: 10,
         },
         576: {
-            items: 2,
+            items: 4,
         },
         768: {
-          items: 3,
+          items: 5,
         },
         992: {
           items: 4,
@@ -257,6 +259,21 @@ if ($("[page-name=Details]").length) {
         },
       },
     navText: ["", ""]
+});
+
+$("#basicExample").justifiedGallery({
+  lastRow : 'nojustify', 
+  rowHeight : 140, 
+  margins : 10
+});
+
+var lightbox = GLightbox({
+touchNavigation: true,
+// loop: true,
+// autoplayVideos: true,
+// 'type': 'image',
+// 'title': 'My Title',
+// 'description': 'Example',
 });
 
 }

@@ -76,40 +76,40 @@
             <!-- Header End -->
 
             <!-- Main Start-->
-            <div class="col-12 px-0 flex-fill h-100 overflow-hidden">
+            <div class="col-12 px-0 flex-fill h-100 overflow-hidden border-top border-secondary border-opacity-25">
                 <div class="h-100 overflow-y-auto">
                     <div class="detailsMain" page-name="Details">
                         <div class="container-fluid px-0 partOne position-relative" style="background: url('assets/img/food-banner.png');">
                             <div class="gradientBackground"></div>
-                            <div class="container d-flex flex-column position-relative h-100">
-                                <div class="row mt-auto align-items-center py-3">
-                                    <div class="col-auto resImg h-100 d-flex align-items-center">
-                                        <div class="imgOuter">
+                            <div class="container-lg d-flex flex-column position-relative h-100">
+                                <div class="row mt-auto align-items-center py-3 flex-column gap-3 gap-md-0 flex-md-row justify-content-center">
+                                    <div class="col-md-auto col-12 resImg h-md-100 d-flex align-items-center justify-content-center">
+                                        <div class="imgOuter mx-auto">
                                             <img src="assets/img/imgfoodlogo.svg" class="w-100 h-100" alt="">
                                         </div>
                                     </div>
-                                    <div class="col resDetailsOuter h-100">
-                                        <div class="row mx-0 gap-1">
+                                    <div class="col-md col-auto text-center text-md-start resDetailsOuter h-md-100">
+                                        <div class="row mx-0 gap-1 justify-content-center flex-column">
                                             <div class="col-12 px-0 shopeName">Spice Hut Indian Restaurant</div>
-                                            <div class="col-12 px-0 shopeAddressOuter">
-                                                <div class="row mx-0 gap-2">
-                                                    <div class="col-auto px-0">
-                                                        <div class="imgOuter">
+                                            <div class="col-md-12 col-auto px-0 shopeAddressOuter">
+                                                <div class="row mx-0 gap-2 justify-content-center">
+                                                    <div class="col-sm-auto col-12 px-0">
+                                                        <div class="imgOuter mx-auto mx-sm-0">
                                                             <img src="assets/img/location.png" class="w-100 h-100" alt="">
                                                         </div>
                                                     </div>
-                                                    <div class="col px-0 shopeAddress"> 2036 2ND AVE, NEW YORK, NY 10029 <span class="shopeStatus ms-2">Open</span></div>
+                                                    <div class="col-md col-sm-auto col-12 px-0 shopeAddress"> 2036 2ND AVE, NEW YORK, NY 10029 <span class="shopeStatus ms-2">Open</span></div>
                                                 </div>
                                             </div>
-                                            <div class="col-12 px-0">
+                                            <div class="col-md-12 col-auto px-0">
                                                 <div class="row mx-0 gap-2">
-                                                    <div class="col-auto px-0 categoryWise">
-                                                        <div class="imgOuter">
+                                                    <div class="col-sm-auto col-12 px-0 categoryWise">
+                                                        <div class="imgOuter mx-auto mx-sm-0">
                                                             <img src="assets/img/dish-white.png" class="w-100 h-100" alt="">
                                                         </div>
                                                     </div>
                                                     <div class="col-auto px-0 categoryWiseText">
-                                                        <ul class="list-unstyled m-0 d-flex gap-2">
+                                                        <ul class="list-unstyled m-0 d-sm-flex gap-2 flex-wrap">
                                                             <li>North Indian</li>
                                                             <li>Chinese</li>
                                                             <li>Fast Food</li>
@@ -120,8 +120,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-auto h-100">
-                                        <div class="row mx-0 flex-column justify-content-between h-100">
+                                    <div class="col-auto h-md-100">
+                                        <div class="row mx-0 flex-column justify-content-md-between justify-content-center gap-2 h-md-100">
                                             <div class="col-auto px-0">
                                                <div class="watingTimeOuter">
                                                 <div class="imgOuter">
@@ -154,12 +154,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="container-fluid px-0 partTwo">
-                            <div class="bg-white shadow">
-                                <div class="container tabOuter">
+                        <div class="container-fluid px-0 partTwo position-sticky top-0 shadow z-2">
+                            <div class="bg-white">
+                                <div class="container-lg tabOuter">
                                     <div class="row">
-                                        <div class="col leftPart">
-                                            <ul class="nav nav-tabs gap-4" id="myTab" role="tablist">
+                                        <div class="col-md col-12 order-2 order-md-1 leftPart overflow-x-auto overflow-y-hidden">
+                                            <ul class="nav nav-tabs gap-lg-4 gap-md-2 gap-3 justify-content-between justify-content-md-start flex-nowrap" id="myTab" role="tablist">
                                                 <li class="nav-item" role="presentation">
                                                   <button class="nav-link active" id="OrderOnline" data-bs-toggle="tab" data-bs-target="#orderOnlineTab" type="button" role="tab" aria-controls="orderOnlineTab" aria-selected="true">Order Online</button>
                                                 </li>
@@ -177,18 +177,16 @@
                                                   </li>
                                               </ul>
                                         </div>
-                                        <div class="col-auto rightPart">
-                                            <div class="row h-100 mx-0">
-                                                <div class="col-auto d-flex align-items-center px-0">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input shadow-none customCheck" type="checkbox" value="" id="flexCheckDefault">
+                                        <div class="col-md-auto col-12 order-1 order-md-2 py-2 rightPart">
+                                            <div class="row h-100 mx-0 justify-content-between">
+                                                <div class="col-auto d-flex align-items-center px-0 gap-sm-2 gap-1">
+                                                        <input class="form-check-input shadow-none customCheck mt-0" type="checkbox" value="" id="flexCheckDefault">
                                                         <label class="form-check-label customCheckLabel" for="flexCheckDefault">
                                                           Mark as Favourite
                                                         </label>
-                                                    </div>
                                                 </div>
-                                                <div class="col-auto d-flex align-items-center">
-                                                    <div class="pureVegText d-flex align-items-center gap-2">
+                                                <div class="col-auto d-flex align-items-center pureVegTextOuter">
+                                                    <div class="pureVegText d-flex align-items-center gap-lg-2 gap-1">
                                                         <div class="imgOuter">
                                                             <img src="assets/img/cauliflower.png" class="w-100 h-100" alt="">
                                                             <!-- <img src="assets/img/non-vegetarian-food-symbol.png" class="w-100 h-100" alt=""> -->
@@ -197,7 +195,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-auto d-flex align-items-center px-0">
-                                                    <a href="javascript:;" class="btn btn-outline-theme1 offersButton">
+                                                    <a href="javascript:;" class="btn btn-outline-theme1 rounded-0 offersButton">
                                                         <div class="imgOuter"></div>
                                                         offers</a>
                                                 </div>
@@ -208,20 +206,20 @@
                             </div>
                         </div>
                         <div class="container-fluid px-0 bg-theme2 partThree">
-                            <div class="container py-4">
+                            <div class="container-lg py-md-4 py-3">
                                 <div class="row">
                                     <div class="col-12">
-                                        <div class="row mx-0">
-                                            <div class="col-8 px-0 leftPart">
+                                        <div class="row g-md-4 g-2">
+                                            <div class="col-lg-8 col-12 leftPart">
                                                 <div class="row mx-0">
                                                     <div class="col-12">
                                                         <div class="tab-content" id="myTabContent">
-                                                            <div class="tab-pane fade" id="orderOnlineTab" role="tabpanel" aria-labelledby="orderOnlineTab" tabindex="0">
+                                                            <div class="tab-pane fade show active" id="orderOnlineTab" role="tabpanel" aria-labelledby="orderOnlineTab" tabindex="0">
                                                                 <div class="row tabFirst">
                                                                     <div class="col-12">
-                                                                        <div class="row gap-4">
-                                                                            <div class="col-12 p-4 secFirst bg-white rounded-1">
-                                                                                <div class="row gap-4 mx-0">
+                                                                        <div class="row gap-md-4 gap-2">
+                                                                            <div class="col-12 p-md-4 p-2 secFirst bg-white rounded-1">
+                                                                                <div class="row gap-md-4 gap-2 mx-0">
                                                                                     <div class="col-12 secHeading px-0">
                                                                                         Recommended
                                                                                     </div>
@@ -345,17 +343,17 @@
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-12 px-0 secSecond rounded-1">
-                                                                                <div class="row gap-4 mx-0">
+                                                                                <div class="row gap-md-4 gap-2 mx-0">
                                                                                     <div class="col-12 secHeading px-0">
                                                                                         Best Sellers
                                                                                     </div>
                                                                                     <div class="col-12 px-0">
-                                                                                        <div class="row g-4">
-                                                                                            <div class="col-md-4">
+                                                                                        <div class="row g-md-4 g-3">
+                                                                                            <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6 col-12">
                                                                                                 <div class="row mx-0">
                                                                                                     <div class="col-12 cardOuter px-0 shadow-sm">
                                                                                                         <div class="row cardMiddel mx-0">
-                                                                                                            <a href="javascript:;" class="col-12 cardTop p-3 text-decoration-none">
+                                                                                                            <a href="javascript:;" class="col-12 cardTop p-md-3 p-2 text-decoration-none">
                                                                                                                 <div class="row h-100 mx-0">
                                                                                                                     <div class="col-12 px-0">
                                                                                                                         <div class="row justify-content-between mx-0">
@@ -381,7 +379,7 @@
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                             </a>
-                                                                                                            <div class="col-12 cardBottom p-3">
+                                                                                                            <div class="col-12 cardBottom p-md-3 p-2">
                                                                                                                 <div class="row mx-0 gap-2">
                                                                                                                     <a href="javascript:;" class="col-12 px-0 cardHeading text-decoration-none">
                                                                                                                         Bite Me Sandwiches
@@ -414,11 +412,11 @@
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <div class="col-md-4">
+                                                                                            <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6 col-12">
                                                                                                 <div class="row mx-0">
                                                                                                     <div class="col-12 cardOuter px-0 shadow-sm">
                                                                                                         <div class="row cardMiddel mx-0">
-                                                                                                            <a href="javascript:;" class="col-12 cardTop p-3 text-decoration-none">
+                                                                                                            <a href="javascript:;" class="col-12 cardTop p-md-3 p-2 text-decoration-none">
                                                                                                                 <div class="row h-100 mx-0">
                                                                                                                     <div class="col-12 px-0">
                                                                                                                         <div class="row justify-content-between mx-0">
@@ -444,7 +442,7 @@
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                             </a>
-                                                                                                            <div class="col-12 cardBottom p-3">
+                                                                                                            <div class="col-12 cardBottom p-md-3 p-2">
                                                                                                                 <div class="row mx-0 gap-2">
                                                                                                                     <a href="javascript:;" class="col-12 px-0 cardHeading text-decoration-none">
                                                                                                                         Bite Me Sandwiches
@@ -477,11 +475,11 @@
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <div class="col-md-4">
+                                                                                            <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6 col-12">
                                                                                                 <div class="row mx-0">
                                                                                                     <div class="col-12 cardOuter px-0 shadow-sm">
                                                                                                         <div class="row cardMiddel mx-0">
-                                                                                                            <a href="javascript:;" class="col-12 cardTop p-3 text-decoration-none">
+                                                                                                            <a href="javascript:;" class="col-12 cardTop p-md-3 p-2 text-decoration-none">
                                                                                                                 <div class="row h-100 mx-0">
                                                                                                                     <div class="col-12 px-0">
                                                                                                                         <div class="row justify-content-between mx-0">
@@ -507,7 +505,7 @@
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                             </a>
-                                                                                                            <div class="col-12 cardBottom p-3">
+                                                                                                            <div class="col-12 cardBottom p-md-3 p-2">
                                                                                                                 <div class="row mx-0 gap-2">
                                                                                                                     <a href="javascript:;" class="col-12 px-0 cardHeading text-decoration-none">
                                                                                                                         Bite Me Sandwiches
@@ -545,13 +543,13 @@
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-12 px-0 secThird rounded-1">
-                                                                                <div class="row gap-4 mx-0">
+                                                                                <div class="row gap-md-4 gap-2 mx-0">
                                                                                     <div class="col-12 secHeading px-0">
                                                                                        Quick Bites <span class="subHeading">3 Itmes</span>
                                                                                     </div>
                                                                                     <div class="col-12 px-0 shadow-sm bg-white">
                                                                                         <div class="row mx-0">
-                                                                                            <div class="col-12 border-bottom border-secondary border-opacity-25 border-1 dishDetails p-3">
+                                                                                            <div class="col-12 border-bottom border-secondary border-opacity-25 border-1 dishDetails p-md-3 p-2">
                                                                                                 <div class="row mx-0 align-items-center">
                                                                                                     <div class="col px-0">
                                                                                                         <div class="row mx-0">
@@ -576,7 +574,7 @@
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <div class="col-12 border-bottom border-secondary border-opacity-25 border-1 dishDetails p-3">
+                                                                                            <div class="col-12 border-bottom border-secondary border-opacity-25 border-1 dishDetails p-md-3 p-2">
                                                                                                 <div class="row mx-0 align-items-center">
                                                                                                     <div class="col px-0">
                                                                                                         <div class="row mx-0">
@@ -601,7 +599,7 @@
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <div class="col-12 border-bottom border-secondary border-opacity-25 border-1 dishDetails p-3">
+                                                                                            <div class="col-12 border-bottom border-secondary border-opacity-25 border-1 dishDetails p-md-3 p-2">
                                                                                                 <div class="row mx-0 align-items-center">
                                                                                                     <div class="col px-0">
                                                                                                         <div class="row mx-0">
@@ -631,13 +629,13 @@
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-12 px-0 secThird secForth rounded-1">
-                                                                                <div class="row gap-4 mx-0">
+                                                                                <div class="row gap-md-4 gap-2 mx-0">
                                                                                     <div class="col-12 secHeading px-0">
                                                                                        Starters <span class="subHeading">3 Itmes</span>
                                                                                     </div>
                                                                                     <div class="col-12 px-0 shadow-sm bg-white">
                                                                                         <div class="row mx-0">
-                                                                                            <div class="col-12 border-bottom border-secondary border-opacity-25 border-1 dishDetails p-3">
+                                                                                            <div class="col-12 border-bottom border-secondary border-opacity-25 border-1 dishDetails p-md-3 p-2">
                                                                                                 <div class="row mx-0 align-items-center">
                                                                                                     <div class="col px-0">
                                                                                                         <div class="row mx-0">
@@ -662,7 +660,7 @@
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <div class="col-12 border-bottom border-secondary border-opacity-25 border-1 dishDetails p-3">
+                                                                                            <div class="col-12 border-bottom border-secondary border-opacity-25 border-1 dishDetails p-md-3 p-2">
                                                                                                 <div class="row mx-0 align-items-center">
                                                                                                     <div class="col px-0">
                                                                                                         <div class="row mx-0">
@@ -687,7 +685,7 @@
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <div class="col-12 border-bottom border-secondary border-opacity-25 border-1 dishDetails p-3">
+                                                                                            <div class="col-12 border-bottom border-secondary border-opacity-25 border-1 dishDetails p-md-3 p-2">
                                                                                                 <div class="row mx-0 align-items-center">
                                                                                                     <div class="col px-0">
                                                                                                         <div class="row mx-0">
@@ -717,13 +715,13 @@
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-12 px-0 secThird rounded-1">
-                                                                                <div class="row gap-4 mx-0">
+                                                                                <div class="row gap-md-4 gap-2 mx-0">
                                                                                     <div class="col-12 secHeading px-0">
                                                                                        Soups <span class="subHeading">8 Itmes</span>
                                                                                     </div>
                                                                                     <div class="col-12 px-0 shadow-sm bg-white">
                                                                                         <div class="row mx-0">
-                                                                                            <div class="col-12 border-bottom border-secondary border-opacity-25 border-1 dishDetails p-3">
+                                                                                            <div class="col-12 border-bottom border-secondary border-opacity-25 border-1 dishDetails p-md-3 p-2">
                                                                                                 <div class="row mx-0 align-items-center">
                                                                                                     <div class="col px-0">
                                                                                                         <div class="row mx-0">
@@ -749,7 +747,7 @@
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <div class="col-12 border-bottom border-secondary border-opacity-25 border-1 dishDetails p-3">
+                                                                                            <div class="col-12 border-bottom border-secondary border-opacity-25 border-1 dishDetails p-md-3 p-2">
                                                                                                 <div class="row mx-0 align-items-center">
                                                                                                     <div class="col px-0">
                                                                                                         <div class="row mx-0">
@@ -775,7 +773,7 @@
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <div class="col-12 border-bottom border-secondary border-opacity-25 border-1 dishDetails p-3">
+                                                                                            <div class="col-12 border-bottom border-secondary border-opacity-25 border-1 dishDetails p-md-3 p-2">
                                                                                                 <div class="row mx-0 align-items-center">
                                                                                                     <div class="col px-0">
                                                                                                         <div class="row mx-0">
@@ -800,7 +798,7 @@
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <div class="col-12 border-bottom border-secondary border-opacity-25 border-1 dishDetails p-3">
+                                                                                            <div class="col-12 border-bottom border-secondary border-opacity-25 border-1 dishDetails p-md-3 p-2">
                                                                                                 <div class="row mx-0 align-items-center">
                                                                                                     <div class="col px-0">
                                                                                                         <div class="row mx-0">
@@ -826,7 +824,7 @@
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <div class="col-12 border-bottom border-secondary border-opacity-25 border-1 dishDetails p-3">
+                                                                                            <div class="col-12 border-bottom border-secondary border-opacity-25 border-1 dishDetails p-md-3 p-2">
                                                                                                 <div class="row mx-0 align-items-center">
                                                                                                     <div class="col px-0">
                                                                                                         <div class="row mx-0">
@@ -852,7 +850,7 @@
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <div class="col-12 border-bottom border-secondary border-opacity-25 border-1 dishDetails p-3">
+                                                                                            <div class="col-12 border-bottom border-secondary border-opacity-25 border-1 dishDetails p-md-3 p-2">
                                                                                                 <div class="row mx-0 align-items-center">
                                                                                                     <div class="col px-0">
                                                                                                         <div class="row mx-0">
@@ -877,7 +875,7 @@
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <div class="col-12 border-bottom border-secondary border-opacity-25 border-1 dishDetails p-3">
+                                                                                            <div class="col-12 border-bottom border-secondary border-opacity-25 border-1 dishDetails p-md-3 p-2">
                                                                                                 <div class="row mx-0 align-items-center">
                                                                                                     <div class="col px-0">
                                                                                                         <div class="row mx-0">
@@ -903,7 +901,7 @@
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <div class="col-12 border-bottom border-secondary border-opacity-25 border-1 dishDetails p-3">
+                                                                                            <div class="col-12 border-bottom border-secondary border-opacity-25 border-1 dishDetails p-md-3 p-2">
                                                                                                 <div class="row mx-0 align-items-center">
                                                                                                     <div class="col px-0">
                                                                                                         <div class="row mx-0">
@@ -939,7 +937,7 @@
                                                             </div>
                                                             <div class="tab-pane fade" id="galleryTab" role="tabpanel" aria-labelledby="galleryTab" tabindex="0">
                                                                 <div class="row tabSecond">
-                                                                    <div class="col-12 bg-white rounded-1 p-2">
+                                                                    <div class="col-12 bg-white rounded-1 p-md-2 p-0">
                                                                         <div id="basicExample">
                                                                             <a href="assets/img/galler1.png" class="rounded glightbox customImgClassOuter" data-gallery="gallery1">
                                                                                 <img alt="" class="customImgClass" src="assets/img/galler1.png"/>
@@ -980,15 +978,15 @@
                                                             </div>
                                                             <div class="tab-pane fade " id="restaurantInfoTab" role="tabpanel" aria-labelledby="restaurantInfoTab" tabindex="0">
                                                                 <div class="row tabThird bg-white rounded-1">
-                                                                    <div class="col-12 p-4">
-                                                                        <div class="row mx-0 gap-3">
+                                                                    <div class="col-12 p-md-4 p-2">
+                                                                        <div class="row mx-0 gap-md-3 gap-2">
                                                                             <div class="col-12 px-0">
-                                                                                <div class="row mx-0">
-                                                                                    <div class="col px-0">
+                                                                                <div class="row mx-0 gap-3 gap-md-0">
+                                                                                    <div class="col-md col-12 px-0">
                                                                                         <div class="row mx-0 flex-column gap-2">
                                                                                             <div class="col px-0 seHeading">Restaurant Info</div>
                                                                                             <div class="col px-0">
-                                                                                                <div class="resAddress mt-1">
+                                                                                                <div class="resAddress mt-md-1">
                                                                                                     Jagjit Nagar, Near Railway Crossing,  Near Model Town, Ludhiana, PUNJAB
                                                                                                 </div>
                                                                                             </div>
@@ -1034,7 +1032,7 @@
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
-                                                                                    <div class="col-auto px-0">
+                                                                                    <div class="col-md-auto col-12 px-0">
                                                                                         <div class="mapOuter rounded-1 overflow-hidden">
                                                                                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.7614542830047!2d75.7353919152843!3d26.911064766638855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db4ec307539f5%3A0x9d37e773648dad58!2sIMG%20Global%20Infotech%20Private%20Limited!5e0!3m2!1sen!2sin!4v1675766889170!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                                                                         </div>
@@ -1051,12 +1049,12 @@
                                                                                         <div class="row mx-0 flex-column gap-2">
                                                                                             <div class="col-12 px-0 seHeading">More Info</div>
                                                                                             <div class="col-12 px-0">
-                                                                                                <div class="secSubHeading mt-1">
+                                                                                                <div class="secSubHeading mt-md-1">
                                                                                                     Dal Makhani, Panneer Butter Masala, Kadhai Paneer, Raita, Veg Thali, Laccha Paratha, Butter Naan
                                                                                                 </div>
                                                                                             </div>
                                                                                             <div class="col-12 px-0 facilityesOuter">
-                                                                                                <div class="row mx-0 gap-3">
+                                                                                                <div class="row mx-0 gap-md-3 gap-2">
                                                                                                     <div class="col-auto facilityesText text-success">
                                                                                                         <div class="imgOuter">
                                                                                                             <img src="assets/img/checkmark-success.png" class="w-100 h-100" alt="">
@@ -1147,7 +1145,7 @@
                                                                                             <div class="invalid-feedback">Please choose date & time.</div>
                                                                                         </div>
                                                                                         <div class="col-12 text-end">
-                                                                                            <button type="submit" class="btn btn-theme1 btn-style1">Submit</button>
+                                                                                            <button type="submit" class="btn btn-theme1 btn-style1 rounded-0 shadow-none">Submit</button>
                                                                                         </div>
                                                                                     </div>
                                                                                 </form>
@@ -1156,11 +1154,11 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="tab-pane fade show active" id="rating&reviewsTab" role="tabpanel" aria-labelledby="rating&reviewsTab" tabindex="0">
+                                                            <div class="tab-pane fade" id="rating&reviewsTab" role="tabpanel" aria-labelledby="rating&reviewsTab" tabindex="0">
                                                                 <div class="row tabFifth">
-                                                                    <div class="col-12">
+                                                                    <div class="col-12 px-0">
                                                                         <div class="row mx-0 gap-3">
-                                                                            <div class="col-12 p-4 bg-white rounded-1">
+                                                                            <div class="col-12 p-4 bg-white rounded-1 shadow-sm">
                                                                                 <div class="row mx-0 gap-4">
                                                                                     <div class="col-12 px-0 sectionHeading">
                                                                                         Ratings and Reviews
@@ -1243,7 +1241,7 @@
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="col-12 px-0 bg-white rounded-1">
+                                                                            <div class="col-12 px-0 bg-white rounded-1 shadow-sm">
                                                                                 <div class="row mx-0">
                                                                                     <div class="col-12 p-4 pb-0">
                                                                                         <div class="row mx-0">
@@ -1371,32 +1369,47 @@
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
+                                                                                    <div class="col-12 p-3">
+                                                                                        <div class="row mx-0">
+                                                                                            <div class="col-auto mx-auto">
+                                                                                                <a href="javascript:;" class="seeAllReview">See All Review</a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="col-12 p-4 bg-white rounded-1">
-                                                                                <div class="row mx-0">
-                                                                                    <div class="col-12 px-0 sectionHeading">
-                                                                                        Leave Comments
-                                                                                    </div>
+                                                                            <div class="col-12 p-4 bg-white rounded-1 shadow-sm">
+                                                                                <div class="row mx-0 gap-1">
+                                                                                    <div class="col-12 px-0 sectionHeading mb-3">Leave Comments</div>
                                                                                     <div class="col-12 px-0 sectionSubHeading">Rate the Place</div>
                                                                                     <div class="col-12 px-0">
-                                                                                        <form>
-                                                                                            <div class="row mx-0">
+                                                                                        <form class="needs-validation" novalidate>
+                                                                                            <div class="row mx-0 gap-3">
                                                                                                 <div class="col-12 px-0">
                                                                                                     <div class="row mx-0">
                                                                                                         <div class="col-auto px-0 starImgOuterSubmiting">
-                                                                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" hidden id="starLike1">
+                                                                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" hidden required id="starLike1">
                                                                                                             <label class="form-check-label" for="starLike1"></label>
-                                                                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" hidden id="starLike2">
+                                                                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" hidden required id="starLike2">
                                                                                                             <label class="form-check-label" for="starLike2"></label>
-                                                                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" hidden id="starLike3">
+                                                                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" hidden required id="starLike3">
                                                                                                             <label class="form-check-label" for="starLike3"></label>
-                                                                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" hidden id="starLike4">
+                                                                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" hidden required id="starLike4">
                                                                                                             <label class="form-check-label" for="starLike4"></label>
-                                                                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" hidden id="starLike5">
+                                                                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" hidden required id="starLike5">
                                                                                                             <label class="form-check-label" for="starLike5"></label>
                                                                                                         </div>
+                                                                                                        <input type="radio" hidden name="flexRadioDefault">
+                                                                                                        <div class="invalid-feedback px-0">Please rate this place</div>
                                                                                                     </div>
+                                                                                                </div>
+                                                                                                <div class="col-12 px-0 customTextArea">
+                                                                                                    <label for="exampleFormControlTextarea1" class="form-label">Your Comment</label>
+                                                                                                    <textarea class="form-control shadow-none" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                                                                                                    <div class="invalid-feedback">Please write your comment.</div>
+                                                                                                </div>
+                                                                                                <div class="col-12 text-end px-0">
+                                                                                                    <button type="submit" class="btn btn-outline-theme1 btn-style1 rounded-0 shadow-none">Submit Comment</button>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </form>
@@ -1411,7 +1424,278 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-4 px-0"></div>
+                                            <div class="col-lg-4 col-12 rightPart">
+                                                <div class="row mx-0 gap-md-4 gap-2 rightPartInner">
+                                                    <div class="col-12 p-md-4 p-2 offterOuter bg-white rounded-1">
+                                                        <div class="row mx-0">
+                                                            <div class="col-auto px-0">
+                                                                <div class="imgOuter">
+                                                                    <img src="assets/img/earn-score-icon.png" class="w-100 h-100" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col pe-0">
+                                                                <div class="headingMain">Offer</div>
+                                                                <div class="subheading">60% off on orders above $99 | Use coupon <span class="code">IMG50</span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 px-0 cartOuter rounded-1">
+                                                        <div class="row mx-0">
+                                                            <div class="col-12 p-md-4 p-2">
+                                                                <div class="row mx-0 gap-3">
+                                                                    <div class="col-12 px-0">
+                                                                        <div class="secHeading">Your Order</div>
+                                                                        <div class="items">6 Items</div>
+                                                                    </div>
+                                                                    <div class="col-12 px-0 bg-white border border-secondary border-opacity-25 rounded-1">
+                                                                        <div class="row mx-0">
+                                                                            <div class="col-12 border-bottom border-secondary border-opacity-25 border-1 dishDetails p-2">
+                                                                                <div class="row mx-0 align-items-center">
+                                                                                    <div class="col px-0">
+                                                                                        <div class="row mx-0">
+                                                                                            <div class="col-auto px-0">
+                                                                                                <div class="imgOuter mt-1">
+                                                                                                    <img src="assets/img/vegetarian-food-symbol.png" class="w-100 h-100" alt="">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col">
+                                                                                                <div class="dishName">Lemon Coriander Soup</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-auto px-0">
+                                                                                        <!-- <button class="btn btn-outline-secondary btn-style1 rounded-0 text-uppercase addBtn">Add</button> -->
+                                                                                        <span class="addRemoveItems">
+                                                                                            <span class="border border-secondary clickButton">-</span>
+                                                                                            <span class="bg-secondary text-white border border-secondary outPut">1</span>
+                                                                                            <span class="border border-secondary clickButton">+</span>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="col-auto pe-0">
+                                                                                        <div class="dishDisc">₹ 320 </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-12 border-bottom border-secondary border-opacity-25 border-1 dishDetails p-2">
+                                                                                <div class="row mx-0 align-items-center">
+                                                                                    <div class="col px-0">
+                                                                                        <div class="row mx-0">
+                                                                                            <div class="col-auto px-0">
+                                                                                                <div class="imgOuter mt-1">
+                                                                                                    <!-- <img src="assets/img/vegetarian-food-symbol.png" class="w-100 h-100" alt=""> -->
+                                                                                                    <img src="assets/img/non-vegetarian-food-symbol.png" class="w-100 h-100" alt="">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col">
+                                                                                                <div class="dishName">Chicken Burgar</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-auto px-0">
+                                                                                        <!-- <button class="btn btn-outline-secondary btn-style1 rounded-0 text-uppercase addBtn">Add</button> -->
+                                                                                        <span class="addRemoveItems">
+                                                                                            <span class="border border-secondary clickButton">-</span>
+                                                                                            <span class="bg-secondary text-white border border-secondary outPut">1</span>
+                                                                                            <span class="border border-secondary clickButton">+</span>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="col-auto pe-0">
+                                                                                        <div class="dishDisc">₹ 120 </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-12 border-bottom border-secondary border-opacity-25 border-1 dishDetails p-2">
+                                                                                <div class="row mx-0 align-items-center">
+                                                                                    <div class="col px-0">
+                                                                                        <div class="row mx-0">
+                                                                                            <div class="col-auto px-0">
+                                                                                                <div class="imgOuter mt-1">
+                                                                                                    <!-- <img src="assets/img/vegetarian-food-symbol.png" class="w-100 h-100" alt=""> -->
+                                                                                                    <img src="assets/img/non-vegetarian-food-symbol.png" class="w-100 h-100" alt="">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col">
+                                                                                                <div class="dishName">Chicken Tikka Sub</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-auto px-0">
+                                                                                        <!-- <button class="btn btn-outline-secondary btn-style1 rounded-0 text-uppercase addBtn">Add</button> -->
+                                                                                        <span class="addRemoveItems">
+                                                                                            <span class="border border-secondary clickButton">-</span>
+                                                                                            <span class="bg-secondary text-white border border-secondary outPut">1</span>
+                                                                                            <span class="border border-secondary clickButton">+</span>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="col-auto pe-0">
+                                                                                        <div class="dishDisc">₹ 250 </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-12 border-bottom border-secondary border-opacity-25 border-1 dishDetails p-2">
+                                                                                <div class="row mx-0 align-items-center">
+                                                                                    <div class="col px-0">
+                                                                                        <div class="row mx-0">
+                                                                                            <div class="col-auto px-0">
+                                                                                                <div class="imgOuter mt-1">
+                                                                                                    <img src="assets/img/vegetarian-food-symbol.png" class="w-100 h-100" alt="">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col">
+                                                                                                <div class="dishName">Cheese corn Roll</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-auto px-0">
+                                                                                        <!-- <button class="btn btn-outline-secondary btn-style1 rounded-0 text-uppercase addBtn">Add</button> -->
+                                                                                        <span class="addRemoveItems">
+                                                                                            <span class="border border-secondary clickButton">-</span>
+                                                                                            <span class="bg-secondary text-white border border-secondary outPut">1</span>
+                                                                                            <span class="border border-secondary clickButton">+</span>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="col-auto pe-0">
+                                                                                        <div class="dishDisc">₹ 314 </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-12 border-bottom border-secondary border-opacity-25 border-1 dishDetails p-2">
+                                                                                <div class="row mx-0 align-items-center">
+                                                                                    <div class="col px-0">
+                                                                                        <div class="row mx-0">
+                                                                                            <div class="col-auto px-0">
+                                                                                                <div class="imgOuter mt-1">
+                                                                                                    <img src="assets/img/vegetarian-food-symbol.png" class="w-100 h-100" alt="">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col">
+                                                                                                <div class="dishName">Lemon Coriander Soup</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-auto px-0">
+                                                                                        <!-- <button class="btn btn-outline-secondary btn-style1 rounded-0 text-uppercase addBtn">Add</button> -->
+                                                                                        <span class="addRemoveItems">
+                                                                                            <span class="border border-secondary clickButton">-</span>
+                                                                                            <span class="bg-secondary text-white border border-secondary outPut">1</span>
+                                                                                            <span class="border border-secondary clickButton">+</span>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="col-auto pe-0">
+                                                                                        <div class="dishDisc">₹ 320 </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-12 border-bottom border-secondary border-opacity-25 border-1 dishDetails p-2">
+                                                                                <div class="row mx-0 align-items-center">
+                                                                                    <div class="col px-0">
+                                                                                        <div class="row mx-0">
+                                                                                            <div class="col-auto px-0">
+                                                                                                <div class="imgOuter mt-1">
+                                                                                                    <!-- <img src="assets/img/vegetarian-food-symbol.png" class="w-100 h-100" alt=""> -->
+                                                                                                    <img src="assets/img/non-vegetarian-food-symbol.png" class="w-100 h-100" alt="">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col">
+                                                                                                <div class="dishName">Chicken Burgar</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-auto px-0">
+                                                                                        <!-- <button class="btn btn-outline-secondary btn-style1 rounded-0 text-uppercase addBtn">Add</button> -->
+                                                                                        <span class="addRemoveItems">
+                                                                                            <span class="border border-secondary clickButton">-</span>
+                                                                                            <span class="bg-secondary text-white border border-secondary outPut">1</span>
+                                                                                            <span class="border border-secondary clickButton">+</span>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="col-auto pe-0">
+                                                                                        <div class="dishDisc">₹ 120 </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-12 border-bottom border-secondary border-opacity-25 border-1 dishDetails p-2">
+                                                                                <div class="row mx-0 align-items-center">
+                                                                                    <div class="col px-0">
+                                                                                        <div class="row mx-0">
+                                                                                            <div class="col-auto px-0">
+                                                                                                <div class="imgOuter mt-1">
+                                                                                                    <!-- <img src="assets/img/vegetarian-food-symbol.png" class="w-100 h-100" alt=""> -->
+                                                                                                    <img src="assets/img/non-vegetarian-food-symbol.png" class="w-100 h-100" alt="">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col">
+                                                                                                <div class="dishName">Chicken Tikka Sub</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-auto px-0">
+                                                                                        <!-- <button class="btn btn-outline-secondary btn-style1 rounded-0 text-uppercase addBtn">Add</button> -->
+                                                                                        <span class="addRemoveItems">
+                                                                                            <span class="border border-secondary clickButton">-</span>
+                                                                                            <span class="bg-secondary text-white border border-secondary outPut">1</span>
+                                                                                            <span class="border border-secondary clickButton">+</span>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="col-auto pe-0">
+                                                                                        <div class="dishDisc">₹ 250 </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-12 border-bottom border-secondary border-opacity-25 border-1 dishDetails p-2">
+                                                                                <div class="row mx-0 align-items-center">
+                                                                                    <div class="col px-0">
+                                                                                        <div class="row mx-0">
+                                                                                            <div class="col-auto px-0">
+                                                                                                <div class="imgOuter mt-1">
+                                                                                                    <img src="assets/img/vegetarian-food-symbol.png" class="w-100 h-100" alt="">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col">
+                                                                                                <div class="dishName">Cheese corn Roll</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-auto px-0">
+                                                                                        <!-- <button class="btn btn-outline-secondary btn-style1 rounded-0 text-uppercase addBtn">Add</button> -->
+                                                                                        <span class="addRemoveItems">
+                                                                                            <span class="border border-secondary clickButton">-</span>
+                                                                                            <span class="bg-secondary text-white border border-secondary outPut">1</span>
+                                                                                            <span class="border border-secondary clickButton">+</span>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="col-auto pe-0">
+                                                                                        <div class="dishDisc">₹ 314 </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 bg-white p-2 border border-secondary border-opacity-25 subTotalOuter rounded-1">
+                                                                        <div class="row mx-0">
+                                                                            <div class="col-auto px-0">
+                                                                                <div class="imgOuter">
+                                                                                    <img src="assets/img/wallet-icon.png" class="w-100 h-100" alt="">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col pe-0 text-end">
+                                                                                <div class="subTotalText">
+                                                                                    <span>Subtotal : <span class="text-theme1">₹ 920 </span></span>
+                                                                                </div>
+                                                                                <div class="extraCharge">Extra charges may apply</div>
+                                                                                <div class="youSaved">You have saved ₹ 120 on the bill</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 px-0">
+                                                                        <button type="button" class="btn btn-success w-100 shadow-none btn-style1 rounded-1 checkoutBtn p-2">Checkout</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1440,22 +1724,5 @@
     <script src="assets/libs/glightbox/glightbox.min.js"></script>
     <!-- Custom Js -->
     <script src="assets/js/index.js"></script>
-    <script>
-        $("#basicExample").justifiedGallery({
-            lastRow : 'nojustify', 
-            rowHeight : 140, 
-            margins : 10
-        });
-
-         var lightbox = GLightbox({
-        touchNavigation: true,
-        // loop: true,
-        // autoplayVideos: true,
-        // 'type': 'image',
-        // 'title': 'My Title',
-        // 'description': 'Example',
-    });
-
-    </script>
 </body>
 </html>
