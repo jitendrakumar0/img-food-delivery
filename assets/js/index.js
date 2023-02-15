@@ -279,3 +279,111 @@ touchNavigation: true,
 }
 
 //! ########################### Details Page End ###########################
+
+//? ###########################  Checkout Page Start  ###########################
+
+if ($("[page-name=Checkout]").length) {
+
+  $('.mostPopularCarsoul').owlCarousel({
+    loop: false,
+    items: 16,
+    margin: 15,
+    nav: true,
+    dots: false,
+    center: false,
+    freeDrag: false,
+    lazyLoad: true,
+    autoplay:false,
+    autoplayTimeout:1500,
+    autoplayHoverPause:true,
+    smartSpeed: 1200,
+    responsiveClass: true,
+    responsive: {
+        0: {
+            items: 2,
+        },
+        360: {
+          items: 3,
+          margin: 10,
+        },
+        440: {
+          items:3,
+          margin: 10,
+        },
+        576: {
+            items: 4,
+        },
+        768: {
+          items: 5,
+        },
+        992: {
+          items: 4,
+        },
+        1200: {
+          items: 5,
+          nav: true,
+        },
+        1400: {
+          items: 3,
+          nav: true,
+        },
+      },
+    navText: ["", ""]
+});
+
+
+$('.buttons button').on('click', function () {
+  var $self = $(this);
+  if (!$self.hasClass('active')) {
+    var toggle = $self.data('toggle'); 
+
+    // Switch active buttons
+    $('.active').removeClass('active');
+    $self.addClass('active');
+
+    // Switch active forms
+    $('form.option').attr('disabled', true);
+    $(toggle).addClass('active').attr('disabled', false);
+
+    setFormHeight();
+  }
+});
+
+$(function () {
+  // Set form height on document ready
+  setFormHeight();
+
+  // Set up formatting for Credit Card fields
+  $('#credit .cc-number').formatCardNumber();
+  $('#credit .cc-expires').formatCardExpiry();
+  $('#credit .cc-cvc').formatCardCVC();
+});
+
+// Set the height of the container to the height of the active form elements
+function setFormHeight () {
+  var activeHeight = $('.option.active').height(),
+      submitHeight = $('.form-submit').outerHeight();
+  $('.input').animate({
+    height: activeHeight + submitHeight + 5
+  }, 350);
+}
+
+let addressCard = document.querySelectorAll('.addressCard');
+let showmoreBtn = document.querySelectorAll('.addressLabel');
+    showmoreBtn.forEach(showmorebtns => {
+        showmorebtns.addEventListener('click', (e) => {
+            for(i=0; i<addressCard.length; i++){
+                addressCard[i].classList.remove('active');
+            }
+            let a = e.currentTarget.getAttribute('check-aria');
+            let b = document.getElementById(a);
+            b.classList.add('active');
+        })
+    })
+
+
+
+
+}
+
+//! ########################### Checkout Page End ###########################

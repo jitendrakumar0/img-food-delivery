@@ -8,6 +8,7 @@
   @include Index-mixin-min-sm();
   @include Listing-mixin-min-sm();
   @include Details-mixin-min-sm();
+  @include Checkout-mixin-min-sm();
 }
 
 // Medium devices (tablets, 768px and up)
@@ -17,6 +18,7 @@
   @include Index-mixin-min-md();
   @include Listing-mixin-min-md();
   @include Details-mixin-min-md();
+  @include Checkout-mixin-min-md();
 }
 
 // Large devices (desktops, 992px and up)
@@ -26,6 +28,7 @@
   @include Index-mixin-min-lg();
   @include Listing-mixin-min-lg();
   @include Details-mixin-min-lg();
+  @include Checkout-mixin-min-lg();
 }
 
 // X-Large devices (large desktops, 1200px and up)
@@ -35,6 +38,7 @@
   @include Index-mixin-min-xl();
   @include Listing-mixin-min-xl();
   @include Details-mixin-min-xl();
+  @include Checkout-mixin-min-xl();
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
@@ -44,6 +48,7 @@
   @include Index-mixin-min-xxl();
   @include Listing-mixin-min-xxl();
   @include Details-mixin-min-xxl();
+  @include Checkout-mixin-min-xxl();
 }
 
 // X-Large devices (large desktops, less than 1400px)
@@ -53,6 +58,7 @@
   @include Index-mixin-max-xl();
   @include Listing-mixin-max-xl();
   @include Details-mixin-max-xl();
+  @include Checkout-mixin-max-xl();
 }
 
 
@@ -63,6 +69,7 @@
   @include Index-mixin-max-lg();
   @include Listing-mixin-max-lg();
   @include Details-mixin-max-lg();
+  @include Checkout-mixin-max-lg();
 }
 
 // Medium devices (tablets, less than 992px)
@@ -72,6 +79,7 @@
   @include Index-mixin-max-md();
   @include Listing-mixin-max-md();
   @include Details-mixin-max-md();
+  @include Checkout-mixin-max-md();
 }
 
 // Small devices (landscape phones, less than 768px)
@@ -81,6 +89,7 @@
   @include Index-mixin-max-sm();
   @include Listing-mixin-max-sm();
   @include Details-mixin-max-sm();
+  @include Checkout-mixin-max-sm();
 }
 
 // X-Small devices (portrait phones, less than 576px)
@@ -90,6 +99,7 @@
   @include Index-mixin-max-xs();
   @include Listing-mixin-max-xs();
   @include Details-mixin-max-xs();
+  @include Checkout-mixin-max-xs();
 }
 
 @media(max-width: 330px) {
@@ -98,6 +108,7 @@
   @include Index-mixin-330();
   @include Listing-mixin-330();
   @include Details-mixin-330();
+  @include Checkout-mixin-330();
 }
 
 // XX-Large devices (larger desktops)

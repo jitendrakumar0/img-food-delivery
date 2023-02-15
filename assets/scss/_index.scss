@@ -3338,7 +3338,6 @@
                                 overflow: hidden;
                                 & .cardMiddel {
                                     & .cardTop {
-                                        background-image: url('../img/8.png');
                                         background-repeat: no-repeat;
                                         background-size: cover;
                                         height: 200px;
@@ -8771,106 +8770,136 @@
 //? ################################## Checkout Page Start ###################################
 
 
-[page-name=Details] {
+[page-name=Checkout] {
     &.checkoutMain {
-        
-        & .partThree {
+        & .partOne {
             & .leftPart {
-                & .tab-content {
-                    & .tabFirst {
-                        & .secFirst {
-                            & .secHeading {
-                                font-size: 20px;
-                                font-weight: bold;
-                                color: $black;
-                            }
-                            & .customSearchBarOuter {
-                                position: relative;
-                                & .customSearchBar {
-                                    width: 100%;
-                                    border: 1px solid $secondary;
-                                    height: 40px;
-                                    border-radius: 3px;
-                                    padding: 5px;
-                                    &:focus {
-                                        outline: none;
-                                    }
-                                }
-                                & .imgOuter {
-                                    position: absolute;
-                                    right: 0;
-                                    top: 50%;
-                                    width: 18px;
-                                    height: 18px;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    transform: translate(-10px, -50%);
-                                    cursor: pointer;
-                                    z-index: 0;
-                                }
-                            }
-                            & .mostPopularOuter {
-                                & .secSubHeading {
-                                    font-size: 16px;
-                                    font-weight: bold;
-                                    color: $black;
-                                    & .tagOuter {
-                                        font-size: 10px;
-                                        font-weight: bold;
-                                        border-radius: 3px;
-                                        padding: 2px 6px;
-                                        & .imgOuter {
-                                            width: 12px;
-                                            height: 12px;
-                                            display: flex;
-                                            align-items: center;
-                                            justify-content: center;
-                                        }
-                                    }
-                                }
-                                & .mostPopularCarsoul {
-                                    position: relative;
-                                    & .owl-stage-outer {
-                                        & .owl-stage {
-                                            & .owl-item {
-                                                & .imgOuter {
+                & .secFirst {
+                    & .secSubHeading {
+                        font-size: 18px;
+                        font-weight: bold;
+                        color: $black;
+                    }
+                    & .mostPopularCarsoul {
+                        position: relative;
+                        & .owl-stage-outer {
+                            & .owl-stage {
+                                & .owl-item {
+                                    & .cardOuter {
+                                        border: 1px solid lighten($secondary, 30);
+                                        background-color: $white;
+                                        border-radius: 4px;
+                                        overflow: hidden;
+                                        & .cardMiddel {
+                                            & .cardTop {
+                                                background-repeat: no-repeat;
+                                                background-size: cover;
+                                                height: 180px;
+                                                & .promotedText {
+                                                    font-size: 12px;
+                                                    font-weight: bold;
+                                                    color: $white;
+                                                    padding: 3px 6px;
+                                                    border-radius: 2px;
+                                                    overflow: hidden;
+                                                }
+                                                & .customCheck {
+                                                    background-image: url('../img/heart.png');
+                                                    background-repeat: no-repeat;
+                                                    background-size: 15px;
+                                                    background-position: center;
+                                                    width: 26px;
+                                                    height: 26px;
+                                                    border-radius: 50%;
+                                                    overflow: hidden;
                                                     background-color: $white;
+                                                    transition: all 0.3s ease-in-out;
+                                                    cursor: pointer;
+                                                    &:focus {
+                                                        border: none;
+                                                    }
+                                                    &:checked {
+                                                        background-color: $white;
+                                                        background-image: url('../img/heats-theme1.png');
+                                                    }
+                                                    &:active {
+                                                        background-color: $white;
+                                                        filter: none;
+                                                    }
+                                                }
+                                                & .ratingOuter {
+                                                    font-size: 11px;
+                                                    font-weight: bold;
                                                     display: flex;
                                                     align-items: center;
-                                                    justify-content: center;
-                                                    flex-direction: column;
+                                                    padding: 4px;
                                                     border-radius: 3px;
-                                                    overflow: hidden;
-                                                    text-decoration: none;
-                                                    border: 0.5px solid $secondary;
-                                                    padding-bottom: 10px;
-                                                    & .imgInner {
-                                                        width: 100%;
-                                                        height: 100px;
-                                                        overflow: hidden;
-                                                        & img {
-                                                            object-fit: cover;
-                                                            object-position: center;
+                                                    gap: 3px;
+                                                    line-height: normal;
+                                                    & .starImg {
+                                                        width: 13px;
+                                                        height: 13px;
+                                                        display: flex;
+                                                        align-items: center;
+                                                        justify-content: center;
+                                                    }
+                                                }
+                                            }
+                                            & .cardBottom {
+                                                & .cardHeading {
+                                                   font-size: 14px;
+                                                   font-weight: bold;
+                                                   color: $black;
+                                                   transition: all 0.3s ease-in-out;
+                                                   line-height: normal;
+                                                   &:hover {
+                                                    color: darken($theme1, 10);
+                                                   }
+                                                }
+                                                & .cardSubHeading {
+                                                    font-size: 12px;
+                                                    font-weight: bold;
+                                                    color: $secondary;
+                                                    & ul {
+                                                        & li:first-child {
+                                                            list-style: none;
                                                         }
                                                     }
-                                                    & .dishTitle {
-                                                        font-size: 14px;
-                                                        font-weight: bold;
-                                                        color: $black;
-                                                    }
-                                                    & .dishCat {
-                                                        color: $theme1;
-                                                        font-size: 11px;
-                                                        font-weight: normal;
-                                                        background-color: lighten($secondary,50);
+                                                }
+                                                & .prizePerPerson {
+                                                    font-size: 12px;
+                                                    font-weight: bold;
+                                                    color: $secondary;
+                                                    display: flex;
+                                                    align-items: center;
+                                                    gap: 2px;
+                                                    & .newText {
+                                                        font-size: 9px;
                                                         text-transform: uppercase;
-                                                        font-weight: bold;
-                                                        padding: 1px 4px;
-                                                        border-radius: 3px;
+                                                        padding: 1px 5px;
+                                                        border-radius: 2px;
+                                                    }
+                                                }
+                                                & .addBtn {
+                                                    font-size: 10px;
+                                                    padding: 4px 12px;
+                                                }
+                                                & .addRemoveItems {
+                                                    font-size: 11px;
+                                                    display: flex;
+                                                    align-items: center;
+                                                    font-weight: bold;
+                                                    & .outPut {
+                                                        padding: 3px 10px;
+                                                    }
+                                                    & .clickButton {
+                                                        background-color: $white;
+                                                        color: $secondary;
+                                                        padding: 3px 10px;
                                                         transition: all 0.3s ease-in-out;
+                                                        cursor: pointer;
                                                         &:hover {
-                                                            background-color: $theme1;
+                                                            background-color: $secondary;
                                                             color: $white;
                                                         }
                                                     }
@@ -8878,567 +8907,213 @@
                                             }
                                         }
                                     }
-                                    & .owl-nav  {
-                                        & .owl-prev {
-                                            position: absolute;
-                                            top: 50%;
-                                            transform: translate(-13.5px, -13.5px);
-                                            left: 0;
-                                            width: 27px;
-                                            height: 27px;
-                                            border-radius: 50%;
-                                            overflow: hidden;
-                                            background-image: url('../img/chevron-left.png');
-                                            background-repeat: no-repeat;
-                                            background-position: center;
-                                            background-size: 16px;
-                                            background-color: white;
-                                            box-shadow: 0px 0px 5px gray;
-                                        }
-                                        & .owl-next {
-                                            position: absolute;
-                                            top: 50%;
-                                            transform: translate(13.5px, -13.5px);
-                                            right: 0;
-                                            width: 27px;
-                                            height: 27px;
-                                            border-radius: 50%;
-                                            overflow: hidden;
-                                            background-image: url('../img/chevron-right.png');
-                                            background-repeat: no-repeat;
-                                            background-position: center;
-                                            background-size: 16px;
-                                            background-color: white;
-                                            box-shadow: 0px 0px 5px gray;
-                                        }
-                                    }
                                 }
                             }
                         }
-                        & .secSecond {
-                            & .secHeading {
-                                font-size: 20px;
-                                font-weight: bold;
-                                color: $black;
-                            }
-                            & .cardOuter {
-                                background-color: $white;
-                                border-radius: 4px;
-                                overflow: hidden;
-                                & .cardMiddel {
-                                    & .cardTop {
-                                        background-image: url('../img/8.png');
-                                        background-repeat: no-repeat;
-                                        background-size: cover;
-                                        height: 200px;
-                                        & .promotedText {
-                                            font-size: 12px;
-                                            font-weight: bold;
-                                            color: $white;
-                                            padding: 3px 6px;
-                                            border-radius: 2px;
-                                            overflow: hidden;
-                                        }
-                                        & .customCheck {
-                                            background-image: url('../img/heart.png');
-                                            background-repeat: no-repeat;
-                                            background-size: 15px;
-                                            background-position: center;
-                                            width: 26px;
-                                            height: 26px;
-                                            border-radius: 50%;
-                                            overflow: hidden;
-                                            background-color: $white;
-                                            transition: all 0.3s ease-in-out;
-                                            cursor: pointer;
-                                            &:focus {
-                                                border: none;
-                                            }
-                                            &:checked {
-                                                background-color: $white;
-                                                background-image: url('../img/heats-theme1.png');
-                                            }
-                                            &:active {
-                                                background-color: $white;
-                                                filter: none;
-                                            }
-                                        }
-                                        & .ratingOuter {
-                                            font-size: 11px;
-                                            font-weight: bold;
-                                            display: flex;
-                                            align-items: center;
-                                            padding: 4px;
-                                            border-radius: 3px;
-                                            gap: 3px;
-                                            line-height: normal;
-                                            & .starImg {
-                                                width: 13px;
-                                                height: 13px;
-                                                display: flex;
-                                                align-items: center;
-                                                justify-content: center;
-                                            }
-                                        }
-                                    }
-                                    & .cardBottom {
-                                        & .cardHeading {
-                                           font-size: 16px;
-                                           font-weight: bold;
-                                           color: $black;
-                                           transition: all 0.3s ease-in-out;
-                                           line-height: normal;
-                                           &:hover {
-                                            color: darken($theme1, 10);
-                                           }
-                                        }
-                                        & .cardSubHeading {
-                                            font-size: 14px;
-                                            font-weight: bold;
-                                            color: $secondary;
-                                            & ul {
-                                                & li:first-child {
-                                                    list-style: none;
-                                                }
-                                            }
-                                        }
-                                        & .prizePerPerson {
-                                            font-size: 14px;
-                                            font-weight: bold;
-                                            color: $secondary;
-                                            display: flex;
-                                            align-items: center;
-                                            gap: 2px;
-                                            & .newText {
-                                                font-size: 10px;
-                                                text-transform: uppercase;
-                                                padding: 1px 5px;
-                                                border-radius: 2px;
-                                            }
-                                        }
-                                        & .addBtn {
-                                            font-size: 12px;
-                                            padding: 4px 12px;
-                                        }
-                                        & .addRemoveItems {
-                                            font-size: 13px;
-                                            display: flex;
-                                            align-items: center;
-                                            font-weight: bold;
-                                            & .outPut {
-                                                padding: 3px 10px;
-                                            }
-                                            & .clickButton {
-                                                background-color: $white;
-                                                color: $secondary;
-                                                padding: 3px 10px;
-                                                transition: all 0.3s ease-in-out;
-                                                cursor: pointer;
-                                                &:hover {
-                                                    background-color: $secondary;
-                                                    color: $white;
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        & .secThird {
-                            & .secHeading {
-                                font-size: 20px;
-                                font-weight: bold;
-                                color: $black;
-                                & .subHeading {
-                                    font-size: 16px;
-                                    color: $secondary;
-                                    text-transform: uppercase;
-                                }
-                            }
-                            & .dishDetails {
-                                & .imgOuter {
-                                    width: 18px;
-                                    height: 18px;
-                                    display: flex;
-                                    align-items: center;
-                                }
-                                & .dishName {
-                                   font-size: 16px;
-                                   font-weight: bold;
-                                   color: $black;
-                                   & .dishTag {
-                                        color: white;
-                                        font-size: 12px;
-                                        text-transform: uppercase;
-                                        border-radius: 2px;
-                                        padding: 2px 5px;
-                                        white-space: nowrap;
-                                   }
-                                }
-                                & .dishDisc {
-                                    font-size: 14px;
-                                    font-weight: bold;
-                                    color: $secondary;
-                                }
-                                & .addBtn {
-                                    font-size: 12px;
-                                    padding: 4px 12px;
-                                }
-                                
-                                & .addRemoveItems {
-                                    font-size: 13px;
-                                    display: flex;
-                                    align-items: center;
-                                    font-weight: bold;
-                                    & .outPut {
-                                        padding: 3px 10px;
-                                    }
-                                    & .clickButton {
-                                        background-color: $white;
-                                        color: $secondary;
-                                        padding: 3px 10px;
-                                        transition: all 0.3s ease-in-out;
-                                        cursor: pointer;
-                                        &:hover {
-                                            background-color: $secondary;
-                                            color: $white;
-                                        }
-                                    }
-                                }
-                            }
-                            &.secForth {
-                                & .dishDetails {
-                                    & .imgOuter {
-                                        height: 45px;
-                                        width: 45px;
-                                        border-radius: 50%;
-                                        overflow: hidden;
-                                        margin-top: 0 !important;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    & .tabSecond {
-                        & .customImgClassOuter {
-                            & .customImgClass {
-                                width: calc(100% + 50px) !important;
-                                max-width: calc(100% + 50px);
-                                transition: opacity 0.35s, transform 0.35s;
-                                transform: translate3d(-40px, 0, 0);
-                            }
-                            &::after {
-                                content: "";
-                                width: 100%;
-                                height: 100%;
+                        & .owl-nav  {
+                            & .owl-prev {
                                 position: absolute;
-                                inset: 0;
-                                background-color: transparent;
-                                transition: all 0.3s ease-in-out;
-                            }
-                            &:hover {
-                               & .customImgClass {
-                                transform: translate3d(0, 0, 0);
-                                transition: opacity 0.35s, transform 0.35s;
-                               }
-                               &::after {
-                                background-color: rgba($black, $alpha: 0.2);
-                               } 
-                            }
-                        }
-                    }
-                    & .tabThird {
-                        & .seHeading {
-                            font-size: 20px;
-                            font-weight: bold;
-                            color: $black;
-                        }
-                        & .resAddress {
-                            font-size: 13px;
-                            font-weight: bold;
-                            color: $secondary;
-                            max-width: 300px;
-                        }
-                        & .contactDetails {
-                            & .imgOuter {
-                                width: 13px;
-                                height: 13px;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                            }
-                            & .textOuter {
-                                font-size: 13px;
-                                font-weight: bold;
-                                color: $black;
-                                text-decoration: none;
-                                & .customBadge {
-                                    font-size: 10px;
-                                    border-radius: 2px;
-                                    padding: 1px 4px;
-                                }
-                            }
-                        }
-                        & .mapOuter {
-                            width: 100%;
-                            height: auto;
-                            position: relative;
-                            &::after {
-                                content: "";
-                                width: 100%;
-                                height: 100%;
-                                position: absolute;
-                                inset: 0;
-                                background-color: rgba($black, 0.1);
-                                transition: all 0.3s ease-in-out;
-                            }
-                            &:hover {
-                                &::after {
-                                    background-color: transparent;
-                                    z-index: -1;
-                                    transition: all 0.3s ease-in-out;
-                                }
-                            }
-                        }
-                        & .venueMapTextOuter {
-                            font-size: 13px;
-                            font-weight: bold;
-                            color: $black;
-                            & .venueMapText {
-                                color: $info;
-                                text-decoration: none;
-                                margin-left: 5px;
-                            }
-                        }
-                        & .secSubHeading {
-                            font-size: 13px;
-                            color: $secondary;
-                            font-weight: bold;
-                        }
-                        & .facilityesOuter {
-                            & .facilityesText {
-                                font-size: 13px;
-                                font-weight: bold;
-                                display: flex;
-                                align-items: center;
-                                gap: 5px;
-                                border: 1px solid rgba($secondary, 0.5);
-                                width: max-content;
-                                padding: 5px 10px;
-                                border-radius: 3px;
-                                & .imgOuter {
-                                    width: 18px;
-                                    height: 18px;
-                                    display: flex;
-                                    align-items: center;
-                                }
-                            }
-                        }
-                    }
-                    & .tabForth {
-                        & .sectionHeading {
-                            font-size: 20px;
-                            font-weight: bold;
-                            color: $black;
-                        }
-                        & .customLabel {
-                            font-size: 13px;
-                            font-weight: bold;
-                            color: $black;
-                        }
-                        & .customInput {
-                            font-size: 13px;
-                            font-weight: bold;
-                            color: $secondary;
-                            box-shadow: none;
-                            border-radius: 0px;
-                            border: 1px solid $black;
-                            &:focus {
-                            border: 1px solid $black;
-                            outline: none;
-                            }
-                        }
-                    }
-                    & .tabFifth {
-                        & .sectionHeading {
-                            font-size: 20px;
-                            font-weight: bold;
-                            color: $black;
-                        }
-                        & .customStars {
-                            width: 22px;
-                            height: 22px;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                        }
-                        & .ratingNumbers {
-                            font-size: 16px;
-                            font-weight: bold;
-                            color: $black;
-                        }
-                        & .ratedText {
-                            font-size: 13px;
-                            font-weight: bold;
-                            color: $secondary;
-                        }
-                        & .progressText {
-                            font-size: 13px;
-                            font-weight: bold;
-                            color: $black;
-                        }
-                        & .customProgreess {
-                            border-radius: 0px;
-                            height: 20px;
-                            & .progress-bar {
-                                background-color: $theme1;
-                            }
-                        }
-                        & .userExRatingOuter {
-                            & .imgOuter {
-                                height: 50px;
-                                width: 50px;
+                                top: 50%;
+                                transform: translate(-13.5px, -13.5px);
+                                left: 0;
+                                width: 27px;
+                                height: 27px;
                                 border-radius: 50%;
                                 overflow: hidden;
-                                & img {
-                                    object-fit: contain;
-                                    object-position: top center;
-                                }
+                                background-image: url('../img/chevron-left.png');
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: 16px;
+                                background-color: white;
+                                box-shadow: 0px 0px 5px gray;
                             }
-                            & .userName {
-                                font-size: 15px;
+                            & .owl-next {
+                                position: absolute;
+                                top: 50%;
+                                transform: translate(13.5px, -13.5px);
+                                right: 0;
+                                width: 27px;
+                                height: 27px;
+                                border-radius: 50%;
+                                overflow: hidden;
+                                background-image: url('../img/chevron-right.png');
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: 16px;
+                                background-color: white;
+                                box-shadow: 0px 0px 5px gray;
+                            }
+                        }
+                    }
+                }
+                & .secSecond {
+                    & .secheading {
+                        font-size: 22px;
+                        font-weight: bold;
+                        color: $black;
+                    }
+                    & .secSubHeading {
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                    & .addressCard {
+                        border: 1px solid lighten($secondary, 30);
+                        &.active {
+                            border-color: $success;
+                            & .secHeading {
+                                color: $black;
+                            }
+                            & .addressText {
+                                color: $black;
+                            }
+                        }
+                        & .imgOuter {
+                            width: 35px;
+                            height: 35px;
+                        }
+                        & .secHeading {
+                            font-size: 18px;
+                            font-weight: bold;
+                            color: $secondary;
+                        }
+                        & .addressText {
+                            font-size: 13px;
+                            font-weight: bold;
+                            color: $secondary;
+                        }
+                        & .addressCheck {
+                            & .form-check-label {
+                                background-color: $secondary;
+                                color: $white;
+                                font-size: 12px;
+                                font-weight: bold;
+                                padding: 5px 10px;
+                                border-radius: 1px;
+                                text-transform: uppercase;
+                                cursor: pointer;
+                            }
+                            & .form-check-input:checked  ~ .form-check-label {
+                                background-color: $success;
+                            }
+                            & .timeRunnig {
+                                font-size: 12px;
                                 font-weight: bold;
                                 color: $black;
                             }
-                            & .starImgOuter {
-                                width: 14px;
-                                height: 14px;
+                        }
+                        & .newAddressBtn {
+                            padding: 4px 8px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+                & .secThird {
+                    & .secHeading {
+                        font-size: 22px;
+                        font-weight: bold;
+                        color: $black;
+                    }
+                    & .secSubHeading {
+                        font-size: 16px;
+                        font-weight: bold;
+                        color: $secondary;
+                    }
+                    & .leftPart {
+                        width: 250px;
+                        & .paymentTabs {
+                            & .nav-link {
+                                border-radius: 0px;
+                                background-color: $white;
+                                color: $black;
+                                border-radius: 3px 0px 0px 3px;
+                                font-size: 14px;
+                                font-weight: bold;
+                                color: $black;
+                                display: flex;
+                                align-items: center;
+                                gap: 15px;
+                                &.active {
+                                    background-color: $theme2;
+                                    & .imgouter {
+                                        background-color: $black;
+                                    }
+                                }
+                                & .imgouter {
+                                    width: 30px;
+                                    height: 30px;
+                                    border-radius: 50%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    padding: 6px;
+                                    background-color: lighten($black, 20);
+                                }
+                            }
+                        }
+                    }
+                    & .rightPart {
+                        width: calc(100% - 250px);
+                        background-color: $theme2;
+                        & .customTab {
+                            & .tabHeading {
+                                font-size: 18px;
+                                font-weight: bold;
+                                color: $black;
+                            }
+                            & .weAcceptText {
+                                font-size: 12px;
+                                font-weight: bold;
+                                color: $secondary;
+                                text-transform: uppercase;
+                            }
+                            & .acceptCardImg {
+                                width: 45px;
+                                height: 30px;
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
-                            }
-                            & .subHeading {
-                                font-size: 12px;
-                                font-weight: bold;
-                                color: $secondary;
-                            }
-                            & .reviewText {
-                                font-size: 12px;
-                                font-weight: bold;
-                                color: $secondary;
-                            }
-                            & .likeCheck {
-                                padding: 0;
-                                & .form-check-input:checked ~ .form-check-label {
-                                    color: $success;
-                                    background-image: url('../img/like-success.png');
-                                    border-color: $success;
+                                & img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    object-position: center;
                                 }
-                                & .form-check-label {
-                                    font-size: 11px;
+                            }
+                            & .tabInput {
+                                & .form-label {
+                                    font-size: 13px;
+                                    color: $black;
                                     font-weight: bold;
-                                    color: $secondary;
-                                    border: 1.5px solid $secondary;
-                                    border-radius: 20px;
-                                    padding: 5px 8px 5px 20px;
-                                    cursor: pointer;
-                                    background-image: url('../img/like-secondary.png');
-                                    background-position: left 5px center;
-                                    background-size: 11px;
-                                    background-repeat: no-repeat;
-                                    background-color: $white;
-                                    transition: all 0.3s ease-in-out;
-                                    &:hover {
-                                        color: $success;
-                                        background-image: url('../img/like-success.png');
-                                        border-color: $success;
+                                }
+                                &.firstInp {
+                                    position: relative;
+                                    & .form-control {
+                                        padding: 9px 35px 9px 9px;
+                                    }
+                                    & .imgOuter {
+                                        position: absolute;
+                                        top: 0;
+                                        right: 0;
+                                        transform: translate(-10px, 40px);
+                                        width: 20px;
+                                        height: 20px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        & img {
+                                            filter: brightness(0);
+                                        }
                                     }
                                 }
-                            }
-                            & .dislikeCheck {
-                                padding: 0;
-                                & .form-check-input:checked ~ .form-check-label {
-                                    color: $danger;
-                                    background-image: url('../img/dislike-danger.png');
-                                    border-color: $danger;
-                                }
-                                & .form-check-label {
-                                    font-size: 11px;
+                                & .form-control {
+                                    font-size: 13px;
                                     font-weight: bold;
                                     color: $secondary;
-                                    border: 1.5px solid $secondary;
-                                    border-radius: 20px;
-                                    padding: 5px 8px 5px 20px;
-                                    cursor: pointer;
-                                    background-image: url('../img/dislike-secondary.png');
-                                    background-position: left 5px center;
-                                    background-size: 11px;
-                                    background-repeat: no-repeat;
-                                    background-color: $white;
-                                    transition: all 0.3s ease-in-out;
-                                    &:hover {
-                                        color: $danger;
-                                        background-image: url('../img/dislike-danger.png');
-                                        border-color: $danger;
+                                    padding: 9px;
+                                    border: 1px solid $secondary;
+                                    &:focus {
+                                        border-color: $secondary;
                                     }
-                                }
-                            }
-                        }
-                        & .seeAllReview {
-                            color: $theme1;
-                            text-decoration: none;
-                            font-size: 13px;
-                            font-weight: bold;
-                            &:hover,
-                            &:active,
-                            &.active {
-                                color: darken($theme1, 10) !important;
-                            }
-                        }
-                        & .sectionSubHeading {
-                            font-size: 13px;
-                            color: $secondary;
-                            font-weight: bold;
-                        }
-                        & .starImgOuterSubmiting {
-                            display: flex;
-                            flex-direction: row-reverse;
-                            gap: 5px;
-                            & .form-check-label {
-                                background-image: url('../img/star-secondary.png');
-                                background-repeat: no-repeat;
-                                background-size: 22px;
-                                background-position: center;
-                                height: 22px;
-                                width: 22px;
-                                cursor: pointer;
-                                transition: all 0.3s ease-in-out;
-                                &:hover {
-                                    background-image: url('../img/star-theme1.png');
-                                }
-                            }
-                            & :checked ~ label {
-                                background-image: url('../img/star-theme1.png');
-
-                            }
-                            & label:hover ~ label {
-                                background-image: url('../img/star-theme1.png');
-                            }
-                        }
-                        & .customTextArea {
-                            & .form-label {
-                                font-size: 13px;
-                                font-weight: bold;
-                                color: $black;
-                            }
-                            & .form-control {
-                                font-size: 12px;
-                                color: $secondary;
-                                font-weight: normal;
-                                border: 1px solid lighten($secondary, 20);
-                                border-radius: 0px;
-                                &:focus {
-                                    border: 1px solid lighten($secondary, 20);
                                 }
                             }
                         }
@@ -9448,37 +9123,10 @@
             & .rightPart {
                 & .rightPartInner {
                     position: sticky;
-                    top: 70px;
-                }
-                & .offterOuter {
-                    & .imgOuter {
-                        height: 60px;
-                        width: 60px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                    }
-                    & .headingMain {
-                        font-size: 18px;
-                        font-weight: bold;
-                        color: $theme1;
-                        text-transform: uppercase;
-                    }
-                    & .subheading {
-                        font-size: 13px;
-                        font-weight: bold;
-                        color: $secondary;
-                        & .code {
-                            color: $theme1;
-                            text-transform: uppercase;
-                            cursor: pointer;
-                        }
-                    }
+                    top: 24px;
                 }
                 & .cartOuter {
                     background-color: $white;
-                    // background: rgb(255,48,8);
-                    // background: linear-gradient(158deg, rgba(255,48,8,1) 0%, rgba(255,48,8,0.8968181022408963) 50%, rgba(255,48,8,0.7231486344537815) 100%);
                     & .secHeading {
                         font-size: 18px;
                         font-weight: bold;
@@ -9582,13 +9230,93 @@
     }
 }
 
+.addAddressModal {
+    & .modal-dialog {
+        & .modal-content {
+            & .modal-header {
+                & .modal-title {
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: $black;
+                }
+                & .btn-close {
+
+                }
+            }
+            & .modal-body {
+                & .modalInp {
+                    & .form-label {
+                        font-size: 14px;
+                        font-weight: bold;
+                        color: $black;
+                    }
+                    & .form-control {
+                        font-size: 13px;
+                        font-weight: bold;
+                        color: $secondary;
+                        padding: 9px;
+                        border: 1px solid lighten($secondary, 30);
+                        &:focus {
+                            border-color: lighten($secondary, 30);
+                        }
+                    }
+                }
+                & .nickNameText {
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: $black;
+                }
+                & .nickNameOuter {
+                    display: flex;
+                    & .form-check-input {
+                        &:checked ~ .form-check-label {
+                            background-color: $secondary;
+                        }
+                    }
+                    & .form-check-label {
+                        font-weight: bold;
+                        font-size: 14px;
+                        color: $white;
+                        background-color: lighten($secondary, 10);
+                        text-align: center;
+                        width: 100%;
+                        padding: 8px;
+                    }
+                }
+                & .locInput {
+                    position: relative;
+                    & .form-control {
+                        padding: 9px 115px 9px 8px;
+                    }
+                    & .locateButton {
+                        display: flex;
+                        align-items: center;
+                        gap: 6px;
+                        top: 0%;
+                        right: 0%;
+                        font-size: 12px;
+                        transform: translate(-5px, 4.5px,);
+                        & .btnIcon {
+                            width: 14px;
+                            height: 14px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 // Small devices (landscape phones, 576px and up)
-@mixin Details-mixin-min-sm() {
-    [page-name=Details] {
+@mixin Checkout-mixin-min-sm() {
+    [page-name=Checkout] {
         &.checkoutMain {
             
-            & .partThree {
+            & .partOne {
                 & .leftPart {
                     & .tab-content {
                         & .tabFirst {
@@ -9917,11 +9645,11 @@
     }
 }
 // Medium devices (tablets, 768px and up)
-@mixin Details-mixin-min-md() {
-    [page-name=Details] {
+@mixin Checkout-mixin-min-md() {
+    [page-name=Checkout] {
         &.checkoutMain {
             
-            & .partThree {
+            & .partOne {
                 & .leftPart {
                     & .tab-content {
                         & .tabFirst {
@@ -10250,11 +9978,11 @@
     }
 }
 // Large devices (desktops, 992px and up)
-@mixin Details-mixin-min-lg() {
-    [page-name=Details] {
+@mixin Checkout-mixin-min-lg() {
+    [page-name=Checkout] {
         &.checkoutMain {
             
-            & .partThree {
+            & .partOne {
                 & .leftPart {
                     & .tab-content {
                         & .tabFirst {
@@ -10583,11 +10311,11 @@
     }
 }
 // X-Large devices (large desktops, 1200px and up)
-@mixin Details-mixin-min-xl() {
-    [page-name=Details] {
+@mixin Checkout-mixin-min-xl() {
+    [page-name=Checkout] {
         &.checkoutMain {
             
-            & .partThree {
+            & .partOne {
                 & .leftPart {
                     & .tab-content {
                         & .tabFirst {
@@ -10916,11 +10644,11 @@
     }
 }
 // XX-Large devices (larger desktops, 1400px and up)
-@mixin Details-mixin-min-xxl() {
-    [page-name=Details] {
+@mixin Checkout-mixin-min-xxl() {
+    [page-name=Checkout] {
         &.checkoutMain {
             
-            & .partThree {
+            & .partOne {
                 & .leftPart {
                     & .tab-content {
                         & .tabFirst {
@@ -11249,11 +10977,11 @@
     }
 }
 // X-Small devices (portrait phones, less than 576px)
-@mixin Details-mixin-max-xs() {
-    [page-name=Details] {
+@mixin Checkout-mixin-max-xs() {
+    [page-name=Checkout] {
         &.checkoutMain {
             
-            & .partThree {
+            & .partOne {
                 & .leftPart {
                     & .tab-content {
                         & .tabFirst {
@@ -11597,11 +11325,11 @@
     }
 }
 // Small devices (landscape phones, less than 768px)
-@mixin Details-mixin-max-sm() {
-    [page-name=Details] {
+@mixin Checkout-mixin-max-sm() {
+    [page-name=Checkout] {
         &.checkoutMain {
            
-            & .partThree {
+            & .partOne {
                 & .leftPart {
                     & .tab-content {
                         & .tabFirst {
@@ -11975,11 +11703,11 @@
     }
 }
 // Medium devices (tablets, less than 992px)
-@mixin Details-mixin-max-md() {
-    [page-name=Details] {
+@mixin Checkout-mixin-max-md() {
+    [page-name=Checkout] {
         &.checkoutMain {
             
-            & .partThree {
+            & .partOne {
                 & .leftPart {
                     & .tab-content {
                         & .tabFirst {
@@ -12308,11 +12036,11 @@
     }
 }
 // Large devices (desktops, less than 1200px)
-@mixin Details-mixin-max-lg() {
-    [page-name=Details] {
+@mixin Checkout-mixin-max-lg() {
+    [page-name=Checkout] {
         &.checkoutMain {
             
-            & .partThree {
+            & .partOne {
                 & .leftPart {
                     & .tab-content {
                         & .tabFirst {
@@ -12641,11 +12369,11 @@
     }
 }
 // X-Large devices (large desktops, less than 1400px)
-@mixin Details-mixin-max-xl() {
-    [page-name=Details] {
+@mixin Checkout-mixin-max-xl() {
+    [page-name=Checkout] {
         &.checkoutMain {
             
-            & .partThree {
+            & .partOne {
                 & .leftPart {
                     & .tab-content {
                         & .tabFirst {
@@ -12979,11 +12707,11 @@
     }
 }
 
-@mixin Details-mixin-330() {
-    [page-name=Details] {
+@mixin Checkout-mixin-330() {
+    [page-name=Checkout] {
         &.checkoutMain {
             
-            & .partThree {
+            & .partOne {
                 & .leftPart {
                     & .tab-content {
                         & .tabFirst {
