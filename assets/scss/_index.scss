@@ -9032,6 +9032,7 @@
                                 display: flex;
                                 align-items: center;
                                 gap: 15px;
+                                padding: 20px;
                                 &.active {
                                     background-color: $theme2;
                                     & .imgouter {
@@ -9064,7 +9065,7 @@
                                 font-size: 12px;
                                 font-weight: bold;
                                 color: $secondary;
-                                text-transform: uppercase;
+                                text-transform: capitalize;
                             }
                             & .acceptCardImg {
                                 width: 45px;
@@ -9089,6 +9090,12 @@
                                     position: relative;
                                     & .form-control {
                                         padding: 9px 35px 9px 9px;
+                                        &:invalid {
+                                            background-position: right calc(2.5em + 0.1875rem) center;
+                                        }
+                                        &:valid {
+                                            background-position: right calc(2.5em + 0.1875rem) center;
+                                        }
                                     }
                                     & .imgOuter {
                                         position: absolute;
@@ -9114,6 +9121,45 @@
                                     &:focus {
                                         border-color: $secondary;
                                     }
+                                }
+                            }
+                            & .form-check-input {
+                                border-color: $secondary;
+                                height: 14px;
+                                width: 14px;
+                                border-radius: 2px;
+                                cursor: pointer;
+                                user-select: none;
+                                &:checked {
+                                    background-color: $theme1;
+                                    border-color: $theme1;
+                                }
+                            }
+                            & .form-check-label {
+                                font-size: 12px;
+                                font-weight: bold;
+                                color: $black;
+                                cursor: pointer;
+                                
+                            }
+                            & .payBtn {
+                                display: flex;
+                                align-items: center;
+                                gap: 5px;
+                                text-align: center;
+                                justify-content: center;
+                                &:hover {
+                                    & .imgOuter {
+                                        transform: translateX(15px);
+                                    }
+                                }
+                                & .imgOuter {
+                                    width: 18px;
+                                    height: 18px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    transition: all 0.3s ease-in-out;
                                 }
                             }
                         }
