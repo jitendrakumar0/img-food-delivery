@@ -719,7 +719,7 @@
                                                                             <button class="nav-link" id="foodCards-tab" data-bs-toggle="pill" data-bs-target="#foodCards" type="button" role="tab" aria-controls="foodCards" aria-selected="false">
                                                                                 <div class="imgouter"><img src="assets/img/icon/foodCards.svg" class="w-100 h-100" alt=""></div>Food Cards
                                                                             </button>
-                                                                            <button class="nav-link" id="credit-tab" data-bs-toggle="pill" data-bs-target="#credit" type="button" role="tab" aria-controls="credit#credit" aria-selected="false" >
+                                                                            <button class="nav-link" id="credit-tab" data-bs-toggle="pill" data-bs-target="#creditTab" type="button" role="tab" aria-controls="creditTab" aria-selected="false" >
                                                                                 <div class="imgouter"><img src="assets/img/icon/credit.svg" class="w-100 h-100" alt=""></div>Credit
                                                                             </button>
                                                                             <button class="nav-link" id="netbanking-tab" data-bs-toggle="pill" data-bs-target="#netbanking" type="button" role="tab" aria-controls="netbanking" aria-selected="false">
@@ -732,7 +732,7 @@
                                                                     </div>
                                                                     <div class="col-auto px-0 rightPart">
                                                                         <div class="tab-content h-100" id="v-pills-tabContent">
-                                                                            <div class="tab-pane fade show active customTab" id="creditDebit" role="tabpanel" aria-labelledby="creditDebit-tab" tabindex="0">
+                                                                            <div class="tab-pane fade customTab" id="creditDebit" role="tabpanel" aria-labelledby="creditDebit-tab" tabindex="0">
                                                                                 <div class="row mx-0">
                                                                                     <div class="col-12 p-4">
                                                                                         <div class="row mx-0 gap-3">
@@ -774,8 +774,8 @@
                                                                                             <div class="col-12 px-0">
                                                                                                 <form class="row mx-0 gap-3 needs-validation" id="credit" novalidate>
                                                                                                     <div class="col-12 px-0 tabInput firstInp">
-                                                                                                        <label for="exampleInputEmail1" class="form-label">Card Number</label>
-                                                                                                        <input type="tel" class="form-control rounded-0 shadow-none cc-number" pattern="\d*" maxlength="19" id="exampleInputEmail1" placeholder="Card number" aria-describedby="emailHelp" required>
+                                                                                                        <label for="cardNumber" class="form-label">Card Number</label>
+                                                                                                        <input type="tel" class="form-control rounded-0 shadow-none cc-number" pattern="\d*" maxlength="19" id="cardNumber" placeholder="Card number" aria-describedby="emailHelp" required>
                                                                                                         <div class="imgOuter"><img src="assets/img/icon/debit.svg" class="w-100 h-100" alt=""></div>
                                                                                                         <div class="invalid-feedback">Please enter card number.</div>
                                                                                                     </div>
@@ -793,6 +793,11 @@
                                                                                                             </div>
                                                                                                         </div>
                                                                                                     </div>
+                                                                                                    <div class="col-12 px-0 tabInput">
+                                                                                                        <label for="nameOnCard" class="form-label">Name on card</label>
+                                                                                                        <input type="tel" class="form-control rounded-0 shadow-none" id="nameOnCard" placeholder="Name on card" aria-describedby="emailHelp" required>
+                                                                                                        <div class="invalid-feedback">Please enter on card.</div>
+                                                                                                    </div>
                                                                                                     <div class="col-12 px-0">
                                                                                                         <div class="form-check">
                                                                                                             <input class="form-check-input shadow-none" type="checkbox" value="" id="saveCard">
@@ -800,7 +805,7 @@
                                                                                                           </div>
                                                                                                     </div>
                                                                                                     <div class="col-12 px-0">
-                                                                                                        <button type="button" class="btn btn-success w-100 shadow-none btn-style1 rounded-0 payBtn p-2 text-uppercase">Pay <span> ₹ 920 </span>
+                                                                                                        <button type="submit" class="btn btn-success w-100 shadow-none btn-style1 rounded-0 payBtn p-2 text-uppercase">Pay <span> ₹ 920 </span>
                                                                                                             <span class="imgOuter"><img src="assets/img/right-arrow-white.png" class="w-100 h-100" alt=""></span>
                                                                                                         </button>
                                                                                                     </div>
@@ -810,10 +815,214 @@
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="tab-pane fade customTab" id="foodCards" role="tabpanel" aria-labelledby="foodCards-tab" tabindex="0"></div>
-                                                                            <div class="tab-pane fade customTab" id="credit#credit" role="tabpanel" aria-labelledby="credit-tab" tabindex="0">...</div>
-                                                                            <div class="tab-pane fade customTab" id="netbanking" role="tabpanel" aria-labelledby="netbanking-tab" tabindex="0">...</div>
-                                                                            <div class="tab-pane fade customTab" id="payOnDelivery" role="tabpanel" aria-labelledby="payOnDelivery-tab" tabindex="0">...</div>
+                                                                            <div class="tab-pane fade customTab" id="foodCards" role="tabpanel" aria-labelledby="foodCards-tab" tabindex="0">
+                                                                                <div class="row mx-0">
+                                                                                    <div class="col-12 p-4">
+                                                                                        <div class="row mx-0 gap-3">
+                                                                                            <div class="col-12 px-0">
+                                                                                                <div class="tabHeading">Add new food card</div>
+                                                                                            </div>
+                                                                                            <div class="col-12 px-2">
+                                                                                                <div class="row gap-3 align-items-center">
+                                                                                                    <div class="col px-0">
+                                                                                                        <div class="row mx-0">
+                                                                                                            <div class="col-auto px-0 acceptCardImg">
+                                                                                                                <img src="assets/img/icon/sage.svg" class="" alt="">
+                                                                                                            </div>
+                                                                                                            <div class="col-auto px-0 acceptCardImg">
+                                                                                                                <img src="assets/img/icon/stripe.svg" class="" alt="">
+                                                                                                            </div>
+                                                                                                            <div class="col-auto px-0 acceptCardImg">
+                                                                                                                <img src="assets/img/icon/google.svg" class="" alt="">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-12 px-0">
+                                                                                                <form class="row mx-0 gap-3 needs-validation" id="foodCredit" novalidate>
+                                                                                                    <div class="col-12 px-0 tabInput firstInp">
+                                                                                                        <label for="cardNumber2" class="form-label">Card Number</label>
+                                                                                                        <input type="tel" class="form-control rounded-0 shadow-none cc-number" pattern="\d*" maxlength="19" id="cardNumber2" placeholder="Card number" aria-describedby="emailHelp" required>
+                                                                                                        <div class="imgOuter"><img src="assets/img/icon/debit.svg" class="w-100 h-100" alt=""></div>
+                                                                                                        <div class="invalid-feedback">Please enter card number.</div>
+                                                                                                    </div>
+                                                                                                    <div class="col-12 px-0">
+                                                                                                        <div class="row">
+                                                                                                            <div class="col-8 tabInput">
+                                                                                                                <label for="validThrough2" class="form-label">Valid through(MM/YY)</label>
+                                                                                                                <input type="tel" class="form-control rounded-0 shadow-none cc-expires" pattern="\d*" maxlength="7" id="validThrough2" placeholder="MM/YY" aria-describedby="emailHelp" required>
+                                                                                                                <div class="invalid-feedback">Please enter (MM/YY).</div>
+                                                                                                            </div>
+                                                                                                            <div class="col-4 tabInput">
+                                                                                                                <label for="cvv2" class="form-label">CVV</label>
+                                                                                                                <input type="tel" class="form-control rounded-0 shadow-none cc-cvc" pattern="\d*" maxlength="3" id="cvv2" placeholder="Enter CVV" aria-describedby="emailHelp" required>
+                                                                                                                <div class="invalid-feedback">Please enter CVV.</div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="col-12 px-0 tabInput">
+                                                                                                        <label for="nameOnCard2" class="form-label">Name on card</label>
+                                                                                                        <input type="tel" class="form-control rounded-0 shadow-none" id="nameOnCard2" placeholder="Name on card" aria-describedby="emailHelp" required>
+                                                                                                        <div class="invalid-feedback">Please enter on card.</div>
+                                                                                                    </div>
+                                                                                                    <div class="col-12 px-0">
+                                                                                                        <div class="form-check">
+                                                                                                            <input class="form-check-input shadow-none" type="checkbox" value="" id="saveCard">
+                                                                                                            <label class="form-check-label" for="saveCard">Securely save this card for a faster checkout next time.</label>
+                                                                                                          </div>
+                                                                                                    </div>
+                                                                                                    <div class="col-12 px-0">
+                                                                                                        <button type="submit" class="btn btn-success w-100 shadow-none btn-style1 rounded-0 payBtn p-2 text-uppercase">Pay <span> ₹ 920 </span>
+                                                                                                            <span class="imgOuter"><img src="assets/img/right-arrow-white.png" class="w-100 h-100" alt=""></span>
+                                                                                                        </button>
+                                                                                                    </div>
+                                                                                                </form>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="tab-pane fade customTab" id="creditTab" role="tabpanel" aria-labelledby="credit-tab" tabindex="0">
+                                                                                <div class="row mx-0">
+                                                                                   <div class="col-12 p-4">
+                                                                                        <div class="row mx-0 gap-3">
+                                                                                            <div class="col-12 p-4 creditCardOuter">
+                                                                                                <div class="row mx-0 gap-4 align-items-center">
+                                                                                                    <div class="col-auto px-0">
+                                                                                                        <div class="creditImgOuter">
+                                                                                                            <img src="assets/img/icon/applepay.svg" class="w-100 h-100" alt="">
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="col px-0">
+                                                                                                        <div class="row mx-0 flex-column gap-3">
+                                                                                                            <div class="col px-0 cardHeading">Apple Pay</div>
+                                                                                                            <div class="col px-0 cardSubHeading">Apple Pay lets you order now & pay later at no extra cost.</div>
+                                                                                                            <div class="col px-0">
+                                                                                                                <a href="javascript:;" class="link-theme1 text-decoration-none text-uppercase linkAccount">Link Account <span class="imgOuter"><img src="assets/img/icon/link-theme1.svg" class="w-100 h-100" alt=""></span></a>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-12 p-4 creditCardOuter">
+                                                                                                <div class="row mx-0 gap-4 align-items-center">
+                                                                                                    <div class="col-auto px-0">
+                                                                                                        <div class="creditImgOuter">
+                                                                                                            <img src="assets/img/icon/payPal.svg" class="w-100 h-100" alt="">
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="col px-0">
+                                                                                                        <div class="row mx-0 flex-column gap-3">
+                                                                                                            <div class="col px-0 cardHeading">Paypal</div>
+                                                                                                            <div class="col px-0 cardSubHeading">Paypal lets you order now & pay later at no extra cost.</div>
+                                                                                                            <div class="col px-0">
+                                                                                                                <a href="javascript:;" class="link-theme1 text-decoration-none text-uppercase linkAccount">Link Account <span class="imgOuter"><img src="assets/img/icon/link-theme1.svg" class="w-100 h-100" alt=""></span></a>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-12 p-4 creditCardOuter">
+                                                                                                <div class="row mx-0 gap-4 align-items-center">
+                                                                                                    <div class="col-auto px-0">
+                                                                                                        <div class="creditImgOuter">
+                                                                                                            <img src="assets/img/icon/dinersclub.svg" class="w-100 h-100" alt="">
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="col px-0">
+                                                                                                        <div class="row mx-0 flex-column gap-3">
+                                                                                                            <div class="col px-0 cardHeading">Diners Club</div>
+                                                                                                            <div class="col px-0 cardSubHeading">Diners Club lets you order now & pay later at no extra cost.</div>
+                                                                                                            <div class="col px-0">
+                                                                                                                <a href="javascript:;" class="link-theme1 text-decoration-none text-uppercase linkAccount">Link Account <span class="imgOuter"><img src="assets/img/icon/link-theme1.svg" class="w-100 h-100" alt=""></span></a>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                   </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="tab-pane fade customTab show active" id="netbanking" role="tabpanel" aria-labelledby="netbanking-tab" tabindex="0">
+                                                                                <div class="row mx-0">
+                                                                                    <div class="col-12 p-4">
+                                                                                        <div class="row mx-0 gap-3">
+                                                                                            <div class="col-12 px-0">
+                                                                                                <div class="tabHeading">Netbanking</div>
+                                                                                            </div>
+                                                                                            <div class="col-12 px-0">
+                                                                                                <form class="row mx-0 gap-4 needs-validation" novalidate>
+                                                                                                    <div class="col-12 px-0 border-bottom border-secondary border-opacity-50 pb-3">
+                                                                                                        <div class="row mx-0">
+                                                                                                            <div class="col-auto px-0 netBankingRadio">
+                                                                                                                <div class="row mx-0">
+                                                                                                                    <div class="col-auto px-0 netBankingRadioInner">
+                                                                                                                        <input class="form-check-input" type="radio" name="netCheckName" id="netCheck1" hidden checked>
+                                                                                                                        <label class="form-check-label" for="netCheck1">
+                                                                                                                          HDFC <div class="imgOuter"><img src="assets/img/icon/check-theme1.svg" class="w-100 h-100" alt=""></div>
+                                                                                                                        </label>
+                                                                                                                    </div>
+                                                                                                                    <div class="col-auto px-0 netBankingRadioInner">
+                                                                                                                        <input class="form-check-input" type="radio" name="netCheckName" id="netCheck2" hidden>
+                                                                                                                        <label class="form-check-label" for="netCheck2">
+                                                                                                                          HDFC <div class="imgOuter"><img src="assets/img/icon/check-theme1.svg" class="w-100 h-100" alt=""></div>
+                                                                                                                        </label>
+                                                                                                                    </div>
+                                                                                                                    <div class="col-auto px-0 netBankingRadioInner">
+                                                                                                                        <input class="form-check-input" type="radio" name="netCheckName" id="netCheck3" hidden>
+                                                                                                                        <label class="form-check-label" for="netCheck3">
+                                                                                                                          HDFC <div class="imgOuter"><img src="assets/img/icon/check-theme1.svg" class="w-100 h-100" alt=""></div>
+                                                                                                                        </label>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="col-12 px-0">
+                                                                                                        <div class="selectLabel mb-2">Select Bank</div>
+                                                                                                        <select class="customSelect" id="selectBank" autocomplete="off">
+                                                                                                            <option selected disabled>Bank</option>
+                                                                                                            <option>1</option>
+                                                                                                            <option>2</option>
+                                                                                                            <option>3</option>
+                                                                                                        </select>
+                                                                                                    </div>
+                                                                                                    <div class="col-12 px-0">
+                                                                                                        <button type="submit" class="btn btn-success w-100 shadow-none btn-style1 rounded-0 payBtn p-2 text-uppercase">Pay <span> ₹ 920 </span>
+                                                                                                            <span class="imgOuter"><img src="assets/img/right-arrow-white.png" class="w-100 h-100" alt=""></span>
+                                                                                                        </button>
+                                                                                                    </div>
+                                                                                                </form>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="tab-pane fade customTab" id="payOnDelivery" role="tabpanel" aria-labelledby="payOnDelivery-tab" tabindex="0">
+                                                                                <div class="row mx-0">
+                                                                                    <div class="col-12 p-4">
+                                                                                        <div class="row mx-0 gap-3">
+                                                                                            <div class="col-12 px-0">
+                                                                                                <div class="tabHeading">Netbanking</div>
+                                                                                            </div>
+                                                                                            <div class="col-12 px-0">
+                                                                                                <form class="row mx-0 gap-4 needs-validation" novalidate>
+                                                                                                    <div class="col-12 px-0 border-bottom border-secondary border-opacity-50 pb-3 tabSubHeading">
+                                                                                                        Please keep extra change handy to help us serve you better
+                                                                                                    </div>
+                                                                                                    <div class="col-12 px-0">
+                                                                                                        <button type="submit" class="btn btn-success w-100 shadow-none btn-style1 rounded-0 payBtn p-2 text-uppercase"> confirm to order
+                                                                                                            <span class="imgOuter"><img src="assets/img/right-arrow-white.png" class="w-100 h-100" alt=""></span>
+                                                                                                        </button>
+                                                                                                    </div>
+                                                                                                </form>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
                                                                           </div>
                                                                     </div>
                                                                 </div>
@@ -827,10 +1036,21 @@
                                                     <div class="col-12 px-0 cartOuter rounded-1">
                                                         <div class="row mx-0">
                                                             <div class="col-12 p-md-4 p-2">
-                                                                <div class="row mx-0 gap-3">
+                                                                <div class="row mx-0 gap-3 ">
                                                                     <div class="col-12 px-0">
-                                                                        <div class="secHeading">Your Order</div>
-                                                                        <div class="items">6 Items</div>
+                                                                        <div class="row mx-0 gap-3 align-items-center">
+                                                                            <div class="col-auto px-0">
+                                                                                <div class="resImgOuter">
+                                                                                    <img src="assets/img/1.png" class="" alt="">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col px-0">
+                                                                                <div class="row mx-0 flex-column">
+                                                                                    <div class="col px-0 resName">Spice Hut Indian Restaurant</div>
+                                                                                    <div class="col px-0 resAddress"> <span class="imgOuter"><img src="assets/img/icon/location.svg" class="w-100 h-100" alt=""></span> 2036 2ND AVE, NEW YORK, NY 10029</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                     <div class="col-12 px-0 bg-white border border-secondary border-opacity-25 rounded-1">
                                                                         <div class="row mx-0">
@@ -1053,6 +1273,15 @@
                                                                                         <div class="dishDisc">₹ 314 </div>
                                                                                     </div>
                                                                                 </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 px-0 bg-white border border-secondary border-opacity-25 rounded-1">
+                                                                        <div class="row mx-0">
+                                                                            <div class="col-12 p-2">
+                                                                                <form class="needs-validation" novalidate>
+                                                                                    
+                                                                                </form>
                                                                             </div>
                                                                         </div>
                                                                     </div>

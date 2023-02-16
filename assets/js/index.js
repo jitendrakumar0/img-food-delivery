@@ -331,6 +331,10 @@ if ($("[page-name=Checkout]").length) {
     navText: ["", ""]
 });
 
+new TomSelect("#selectBank",{
+  allowEmptyOption: false,
+  create: false
+});
 
 $('.buttons button').on('click', function () {
   var $self = $(this);
@@ -361,6 +365,25 @@ $(function () {
 
 // Set the height of the container to the height of the active form elements
 function setFormHeight () {
+  var activeHeight = $('.option.active').height(),
+      submitHeight = $('.form-submit').outerHeight();
+  $('.input').animate({
+    height: activeHeight + submitHeight + 5
+  }, 350);
+}
+
+$(function () {
+  // Set form height on document ready
+  setcustom();
+
+  // Set up formatting for Credit Card fields
+  $('#foodCredit .cc-number').formatCardNumber();
+  $('#foodCredit .cc-expires').formatCardExpiry();
+  $('#foodCredit .cc-cvc').formatCardCVC();
+});
+
+// Set the height of the container to the height of the active form elements
+function setcustom () {
   var activeHeight = $('.option.active').height(),
       submitHeight = $('.form-submit').outerHeight();
   $('.input').animate({

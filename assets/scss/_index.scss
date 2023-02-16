@@ -8769,7 +8769,6 @@
 
 //? ################################## Checkout Page Start ###################################
 
-
 [page-name=Checkout] {
     &.checkoutMain {
         & .partOne {
@@ -9162,6 +9161,139 @@
                                     transition: all 0.3s ease-in-out;
                                 }
                             }
+                            & .creditCardOuter {
+                                border: 1px solid lighten($secondary, 40);
+                                background-color: $white;
+                                & .creditImgOuter {
+                                    width: 60px;
+                                    height: 45px;
+                                    & img {
+                                        object-fit: cover;
+                                        filter: brightness(0);
+                                    }
+                                }
+                                & .cardHeading {
+                                    font-size: 20px;
+                                    font-weight: bold;
+                                    color: $black;
+                                }
+                                & .cardSubHeading {
+                                    font-size: 14px;
+                                    font-weight: bold;
+                                    color: $secondary;
+                                }
+                                & .linkAccount {
+                                    font-size: 13px;
+                                    font-weight: bold;
+                                    &:hover {
+                                        & .imgOuter {
+                                            & img {
+                                                filter: brightness(2.4);
+                                            }
+                                        }
+                                    }
+                                    & .imgOuter {
+                                        display: inline-flex;
+                                        width: 12px;
+                                        height: 12px;
+                                        margin-left: 5px;
+                                    }
+                                }
+                            }
+                            & .netBankingRadio {
+                                border: 1px solid $theme1;
+                                border-radius: 3px;
+                                & .netBankingRadioInner {
+                                    & .form-check-input {
+                                        &:checked ~ .form-check-label {
+                                            background-color: $theme1;
+                                            color: $white;
+                                            & .imgOuter {
+                                                & img {
+                                                    filter: brightness(10);
+                                                }
+                                            }
+                                        }
+                                    }
+                                    & .form-check-label {
+                                        font-size: 12px;
+                                        font-weight: bold;
+                                        color: $theme1;
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 5px;
+                                        padding: 6px 15px;
+                                        justify-content: center;
+                                        border-right: 1px solid $theme1;
+                                        & .imgOuter {
+                                            width: 14px;
+                                            height: 14px;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                    }
+                                    &:last-child {
+                                        & .form-check-label {
+                                            border-right: none;
+                                        }
+                                    }
+                                }
+                            }
+                            & .selectLabel {
+                                font-size: 13px;
+                                font-weight: bold;
+                                color: $black;
+                            }
+                            & .customSelect {
+                                width: 100%;
+                                font-size: 14px;
+                                color: $cyan;
+                                font-weight: normal;
+                                border: 1px solid $secondary;
+                                position: relative;
+                                background-color: $white;
+                                & .ts-control {
+                                    border: none !important;
+                                    padding-left: 10px;
+                                    background-color: transparent;
+                                    color: $black;
+            
+                                }
+                                & input {
+                                    display: none !important;
+                                }
+                                & .ts-dropdown {
+                                    color: $black
+                                }
+                                & .ts-dropdown {
+                                    margin: 0;
+                                    border-top: none;
+                                }
+                                &::after {
+                                    content: "";
+                                    position: absolute;
+                                    right: 0;
+                                    top: 50%;
+                                    background-image: url('../img/down.png');
+                                    background-position: center;
+                                    background-size: 7px;
+                                    width: 12px;
+                                    height: 12px;
+                                    transform: translate(-8px, -6px);
+                                    background-repeat: no-repeat;
+                                    transition: all 0.3s ease-in-out;
+                                }
+                                &.dropdown-active {
+                                    &::after {
+                                        transform: rotate(60deg) translate(-8px, 5px);
+                                    }
+                                }
+                            }
+                            & .tabSubHeading {
+                                font-size: 13px;
+                                font-weight: bold;
+                                color: $secondary;
+                            }
                         }
                     }
                 }
@@ -9173,10 +9305,35 @@
                 }
                 & .cartOuter {
                     background-color: $white;
-                    & .secHeading {
-                        font-size: 18px;
+                    .resImgOuter {
+                        background-color: $theme1;
+                        padding: 2px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        & img {
+                            width: 45px;
+                            height: 45px;
+                            border-radius: 50%;
+                        }
+                    }
+                    & .resName {
+                        font-size: 16px;
                         font-weight: bold;
-                        color: $black;
+                        color: $theme1;
+                    }
+                    & .resAddress {
+                        font-size: 11px;
+                        font-weight: bold;
+                        color: $secondary;
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        & .imgOuter {
+                            display: inline-flex;
+                            align-items: center;
+                            width: 11px;
+                            height: 11px;
+                        }
                     }
                     & .items {
                         color: $black;
