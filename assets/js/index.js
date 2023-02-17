@@ -300,27 +300,27 @@ if ($("[page-name=Checkout]").length) {
     responsiveClass: true,
     responsive: {
         0: {
-            items: 2,
+            items: 1.15,
         },
         360: {
-          items: 3,
+          items: 1.1,
           margin: 10,
         },
         440: {
-          items:3,
+          items:1.5,
           margin: 10,
         },
         576: {
-            items: 4,
+            items: 2,
         },
         768: {
-          items: 5,
+          items: 3,
         },
         992: {
-          items: 4,
+          items: 2,
         },
         1200: {
-          items: 5,
+          items: 3,
           nav: true,
         },
         1400: {
