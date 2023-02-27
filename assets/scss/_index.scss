@@ -13722,4 +13722,35 @@
 }
 
 
-//! ###########################  Details Page End  ###########################
+//! ##################################  Details Page End  ###########################
+
+//? ################################## Signup Page Start ###################################
+
+[page-name=signup] {
+    .bg-image {
+        background: url('../img/login-bg.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .loginForm {
+        & .form-control {
+            border: none;
+            border-bottom: 1px solid gray;
+            border-radius: 0px;
+            box-shadow: none;
+            &:focus {
+                border: none;
+                border-bottom: 1px solid gray;
+            }
+            &:invalid {
+                box-shadow: none;
+            }
+            &:valid {
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+//! ##################################  Signup Page End  #####################################
