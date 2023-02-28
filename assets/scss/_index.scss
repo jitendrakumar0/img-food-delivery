@@ -2304,9 +2304,6 @@
 }
 // Medium devices (tablets, less than 992px)
 @mixin Listing-mixin-max-md() {
-    .customTranslate {
-        transform: translate(0);
-    }
     [page-name=listing] {
         &.listingMain {
             & .sectioPartOne {
@@ -2357,6 +2354,20 @@
                     }
                 }
                 & .leftPart {
+                    position: absolute;
+                    left: 0;
+                    z-index: 111;
+                    top: 0;
+                    padding: 0;
+                    transform: translateX(-100%);
+                    opacity: 0;
+                    transition: all 0.3s ease-in-out;
+                    background-color: $white;
+                    overflow: hidden auto;
+                    &.active {
+                        transform: translateX(0);
+                        opacity: 1;
+                    }
                     & .leftInner {
                         & .filterHeading {
                         }
@@ -2950,7 +2961,10 @@
     
 }
 
-
+.customTranslate {
+    transform: translate(0);
+    position: relative;
+}
 //! ###########################  Listing Page End  ###########################
 
 
@@ -13742,7 +13756,7 @@
             font-size: 15px;
             font-weight: normal;
             color: $black;
-            padding: 1.5rem 0.25rem 0.5rem 0.25rem;
+            padding: 1.5rem 0.25rem 0.15rem 0.25rem;
             &:focus {
                 border: none;
                 border-bottom: 1px solid gray;
@@ -13753,11 +13767,591 @@
             &:valid {
                 box-shadow: none;
             }
+            &:focus ~ label {
+                // transform: scale(0.85) translateY(-0.85rem) translateX(0.15rem);
+            }
         }
         & label {
-            padding: 1rem 0.25rem;
+            padding: 1.35rem 0.15rem;
+            font-size: 15px;
+            font-weight: normal;
+            color: $black;
+        }
+    }
+}
+
+
+
+// Small devices (landscape phones, 576px and up)
+@mixin Signup-mixin-min-sm() {
+    [page-name=signup] {
+        .bg-image {
+        }
+        .loginForm {
+            & .form-control {
+                &:focus {
+                }
+                &:invalid {
+                }
+                &:valid {
+                }
+                &:focus ~ label {
+                }
+            }
+            & label {
+            }
+        }
+    }
+}
+// Medium devices (tablets, 768px and up)
+@mixin Signup-mixin-min-md() {
+    [page-name=signup] {
+        .bg-image {
+        }
+        .loginForm {
+            & .form-control {
+                &:focus {
+                }
+                &:invalid {
+                }
+                &:valid {
+                }
+                &:focus ~ label {
+                }
+            }
+            & label {
+            }
+        }
+    }
+}
+// Large devices (desktops, 992px and up)
+@mixin Signup-mixin-min-lg() {
+    [page-name=signup] {
+        .bg-image {
+        }
+        .loginForm {
+            & .form-control {
+                &:focus {
+                }
+                &:invalid {
+                }
+                &:valid {
+                }
+                &:focus ~ label {
+                }
+            }
+            & label {
+            }
+        }
+    }
+}
+// X-Large devices (large desktops, 1200px and up)
+@mixin Signup-mixin-min-xl() {
+    [page-name=signup] {
+        .bg-image {
+        }
+        .loginForm {
+            & .form-control {
+                &:focus {
+                }
+                &:invalid {
+                }
+                &:valid {
+                }
+                &:focus ~ label {
+                }
+            }
+            & label {
+            }
+        }
+    }
+}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin Signup-mixin-min-xxl() {
+    [page-name=signup] {
+        .bg-image {
+        }
+        .loginForm {
+            & .form-control {
+                &:focus {
+                }
+                &:invalid {
+                }
+                &:valid {
+                }
+                &:focus ~ label {
+                }
+            }
+            & label {
+            }
+        }
+    }
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin Signup-mixin-max-xs() {
+    [page-name=signup] {
+        .bg-image {
+            max-height: 350px;
+        }
+        .loginForm {
+            & .form-control {
+                &:focus {
+                }
+                &:invalid {
+                }
+                &:valid {
+                }
+                &:focus ~ label {
+                }
+            }
+            & label {
+            }
+        }
+    }
+}
+// Small devices (landscape phones, less than 768px)
+@mixin Signup-mixin-max-sm() {
+    [page-name=signup] {
+        .bg-image {
+            background-image: url('../img/160.jpg');
+            height: 465px;
+            background-size: cover;
+            background-position: center top;
+        }
+        .loginForm {
+            & .form-control {
+                &:focus {
+                }
+                &:invalid {
+                }
+                &:valid {
+                }
+                &:focus ~ label {
+                }
+            }
+            & label {
+            }
+        }
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin Signup-mixin-max-md() {
+    [page-name=signup] {
+        .bg-image {
+        }
+        .loginForm {
+            & .form-control {
+                &:focus {
+                }
+                &:invalid {
+                }
+                &:valid {
+                }
+                &:focus ~ label {
+                }
+            }
+            & label {
+            }
+        }
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin Signup-mixin-max-lg() {
+    [page-name=signup] {
+        .bg-image {
+        }
+        .loginForm {
+            & .form-control {
+                &:focus {
+                }
+                &:invalid {
+                }
+                &:valid {
+                }
+                &:focus ~ label {
+                }
+            }
+            & label {
+            }
+        }
+    }
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin Signup-mixin-max-xl() {
+    [page-name=signup] {
+        .bg-image {
+        }
+        .loginForm {
+            & .form-control {
+                &:focus {
+                }
+                &:invalid {
+                }
+                &:valid {
+                }
+                &:focus ~ label {
+                }
+            }
+            & label {
+            }
+        }
+    }
+}
+
+@mixin Signup-mixin-330() {
+    [page-name=signup] {
+        .bg-image {
+        }
+        .loginForm {
+            & .form-control {
+                &:focus {
+                }
+                &:invalid {
+                }
+                &:valid {
+                }
+                &:focus ~ label {
+                }
+            }
+            & label {
+            }
         }
     }
 }
 
 //! ##################################  Signup Page End  #####################################
+
+
+//? ################################## Signin Page Start ###################################
+
+[page-name=signin] {
+    .bg-image {
+        background: url('../img/login-bg.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .loginForm {
+        & .form-control {
+            border: none;
+            border-bottom: 1px solid $gray-600;
+            border-radius: 0px;
+            box-shadow: none;
+            font-size: 15px;
+            font-weight: normal;
+            color: $black;
+            padding: 1.5rem 0.25rem 0.15rem 0.25rem;
+            &:focus {
+                border: none;
+                border-bottom: 1px solid gray;
+            }
+            &:invalid {
+                box-shadow: none;
+            }
+            &:valid {
+                box-shadow: none;
+            }
+            &:focus ~ label {
+                // transform: scale(0.85) translateY(-0.85rem) translateX(0.15rem);
+            }
+        }
+        & label {
+            padding: 1.35rem 0.15rem;
+            font-size: 15px;
+            font-weight: normal;
+            color: $black;
+        }
+    }
+}
+
+
+
+// Small devices (landscape phones, 576px and up)
+@mixin Signin-mixin-min-sm() {
+    [page-name=signin] {
+        .bg-image {
+        }
+        .loginForm {
+            & .form-control {
+                &:focus {
+                }
+                &:invalid {
+                }
+                &:valid {
+                }
+                &:focus ~ label {
+                }
+            }
+            & label {
+            }
+        }
+    }
+}
+// Medium devices (tablets, 768px and up)
+@mixin Signin-mixin-min-md() {
+    [page-name=signin] {
+        .bg-image {
+        }
+        .loginForm {
+            & .form-control {
+                &:focus {
+                }
+                &:invalid {
+                }
+                &:valid {
+                }
+                &:focus ~ label {
+                }
+            }
+            & label {
+            }
+        }
+    }
+}
+// Large devices (desktops, 992px and up)
+@mixin Signin-mixin-min-lg() {
+    [page-name=signin] {
+        .bg-image {
+        }
+        .loginForm {
+            & .form-control {
+                &:focus {
+                }
+                &:invalid {
+                }
+                &:valid {
+                }
+                &:focus ~ label {
+                }
+            }
+            & label {
+            }
+        }
+    }
+}
+// X-Large devices (large desktops, 1200px and up)
+@mixin Signin-mixin-min-xl() {
+    [page-name=signin] {
+        .bg-image {
+        }
+        .loginForm {
+            & .form-control {
+                &:focus {
+                }
+                &:invalid {
+                }
+                &:valid {
+                }
+                &:focus ~ label {
+                }
+            }
+            & label {
+            }
+        }
+    }
+}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin Signin-mixin-min-xxl() {
+    [page-name=signin] {
+        .bg-image {
+        }
+        .loginForm {
+            & .form-control {
+                &:focus {
+                }
+                &:invalid {
+                }
+                &:valid {
+                }
+                &:focus ~ label {
+                }
+            }
+            & label {
+            }
+        }
+    }
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin Signin-mixin-max-xs() {
+    [page-name=signin] {
+        .bg-image {
+            max-height: 350px;
+        }
+        .loginForm {
+            & .form-control {
+                &:focus {
+                }
+                &:invalid {
+                }
+                &:valid {
+                }
+                &:focus ~ label {
+                }
+            }
+            & label {
+            }
+        }
+    }
+}
+// Small devices (landscape phones, less than 768px)
+@mixin Signin-mixin-max-sm() {
+    [page-name=signin] {
+        .bg-image {
+            background-image: url('../img/160.jpg');
+            height: 465px;
+            background-size: cover;
+            background-position: center top;
+        }
+        .loginForm {
+            & .form-control {
+                &:focus {
+                }
+                &:invalid {
+                }
+                &:valid {
+                }
+                &:focus ~ label {
+                }
+            }
+            & label {
+            }
+        }
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin Signin-mixin-max-md() {
+    [page-name=signin] {
+        .bg-image {
+        }
+        .loginForm {
+            & .form-control {
+                &:focus {
+                }
+                &:invalid {
+                }
+                &:valid {
+                }
+                &:focus ~ label {
+                }
+            }
+            & label {
+            }
+        }
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin Signin-mixin-max-lg() {
+    [page-name=signin] {
+        .bg-image {
+        }
+        .loginForm {
+            & .form-control {
+                &:focus {
+                }
+                &:invalid {
+                }
+                &:valid {
+                }
+                &:focus ~ label {
+                }
+            }
+            & label {
+            }
+        }
+    }
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin Signin-mixin-max-xl() {
+    [page-name=signin] {
+        .bg-image {
+        }
+        .loginForm {
+            & .form-control {
+                &:focus {
+                }
+                &:invalid {
+                }
+                &:valid {
+                }
+                &:focus ~ label {
+                }
+            }
+            & label {
+            }
+        }
+    }
+}
+
+@mixin Signin-mixin-330() {
+    [page-name=signin] {
+        .bg-image {
+        }
+        .loginForm {
+            & .form-control {
+                &:focus {
+                }
+                &:invalid {
+                }
+                &:valid {
+                }
+                &:focus ~ label {
+                }
+            }
+            & label {
+            }
+        }
+    }
+}
+
+
+svg {
+    height: 15vh;
+    width: 15vw;
+}
+.loading-wrapper {
+    display: none;
+    &.active {
+        background-color: $theme2;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        text-align: center;
+        padding-top: 50px;
+        min-height: 200px;
+        min-width: 250px;
+        left: 50%;
+        top: 50%;
+        right: 0;
+        bottom: 0; 
+        transform: translate(-50%, -50%);
+        z-index: 999999999;
+        & svg {
+            & #body {
+                fill: $secondary;
+            }
+            & #cap {
+                fill: $secondary;
+                transform-origin: center;
+                animation: capAnimation 1s ease-in-out infinite
+            }
+        }
+    }
+}   
+
+@keyframes capAnimation {
+    0% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(5deg);
+    }
+}
+
+//! ##################################  Signin Page End  #####################################

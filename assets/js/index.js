@@ -410,3 +410,12 @@ let showmoreBtn = document.querySelectorAll('.addressLabel');
 }
 
 //! ########################### Checkout Page End ###########################
+
+
+
+setTimeout(()=>{
+  let a = document.querySelectorAll(".loading-wrapper");
+  a.forEach((e)=>{
+   e.classList.remove('active');
+  })
+ }, 1000);

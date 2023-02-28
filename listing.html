@@ -64,18 +64,352 @@
     <script src="assets/libs/jquery/jquery-3.6.3.min.js"></script>
 </head>
 <body class="vh-100 p-0 m-0 overflow-hidden">
+    <div class="loading-wrapper active">
+        <?xml version="1.0" encoding="iso-8859-1"?>
+        <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 35.235 35.235" style="enable-background:new 0 0 35.235 35.235;" xml:space="preserve">
+        <g>
+            <g id="b103_soup">
+                <path id = "cap" d="M26.776,12.687H19.25c0.68,0,1.233-0.553,1.233-1.234s-0.554-1.23-1.233-1.23h-3.078c-0.68,0-1.232,0.549-1.232,1.23
+                    s0.553,1.234,1.232,1.234H8.645c-2.094,0-3.828,1.877-4.165,3.875h26.464C30.605,14.563,28.871,12.687,26.776,12.687z"/>
+                <path id = "body" d="M31.005,18.677v-0.352H4.479H4.417H0v1.762h4.417v10.918c0,2.338,1.894,4.229,4.228,4.229h18.132
+                    c2.336,0,4.229-1.891,4.229-4.229V20.439h4.229v-1.762H31.005z"/>
+            </g>
+            <g id="Capa_1_128_">
+            </g>
+        </g>
+        </svg>
+    </div>
     <!-- Main Start -->
     <div class="container-fluid h-100 px-0 overflow-hidden">
         <div class="row mx-0 flex-nowrap landingPage flex-column h-100 overflow-hidden" page-name="landingPage">
             <!-- Header Start -->
             <div class="col-12 px-0">
-                <div class="header"></div>
+                <nav class="navbar  navbar-expand-sm py-md-2 py-1 bg-white shadow-sm headerMain">
+                    <div class="container-lg container-fluid d-flex align-items-center h-100">
+                      <a class="navbar-brand d-flex align-items-center justify-content-center" href="index.html">
+                        <img src="assets/img/logo/foodlogo.svg" class="w-100 h-100" alt="">
+                      </a>
+                      <button class="d-block d-md-none border-0 bg-transparent p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#headerOccanvas" aria-controls="headerOccanvas">
+                        <div class="toggleButton d-flex flex-column gap-1 align-items-end p-1">
+                            <div class="item item1"></div>
+                            <div class="item item2"></div>
+                            <div class="item item3"></div>
+                        </div>
+                      </button>
+                      <div class="d-none d-md-block h-100" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto d-flex align-items-center gap-md-3 gap-1 h-100">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                          </li>
+                          <li class="nav-item ms-md-3 ms-2 me-md-5 me-4 position-relative">
+                            <a class="nav-link offersButton" href="javascript:;">Offers</a>
+                            <span class="position-absolute top-50 ms-md-3 ms-2 start-100 translate-middle badge customBadge rounded-0 bg-theme1">New</span>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:;" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Restaurants
+                            </a>
+                            <ul class="dropdown-menu rounded-0 shadow-lg border-0 show">
+                              <li><a class="dropdown-item" href="listing.html">Listing</a></li>
+                              <li><a class="dropdown-item" href="details.html">Detail</a></li>
+                              <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center gap-2 py-0" href="javascript:;" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="rounded-circle overflow-hidden p-1 border border-theme1">
+                                    <div class="imgOuter rounded-circle overflow-hidden">
+                                        <img src="assets/img/profile-avater.jpg" class="w-100 h-100" alt="">
+                                     </div> 
+                                </div>
+                                My Account
+                            </a>
+                            <ul class="dropdown-menu rounded-0 shadow-lg border-0 px-2 myAccountItems shwo">
+                              <li><a class="dropdown-item ordersItem" href="javascript:;">Orders</a></li>
+                              <li><a class="dropdown-item offtersItem" href="javascript:;">Offers</a></li>
+                              <li><a class="dropdown-item favouritesItem" href="javascript:;">Favourites</a></li>
+                              <li><a class="dropdown-item paymentsItem" href="javascript:;">Payments</a></li>
+                              <li><a class="dropdown-item addressItems" href="javascript:;">Address</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown position-relative">
+                            <a class="nav-link dropdown-toggle cartButton d-flex align-items-center gap-1" href="javascript:;" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <span class="cartButtonInner">
+                                0
+                              </span>
+                                Cart
+                            </a>
+                            <ul class="dropdown-menu rounded-0 shadow-lg border-0 cartMain show p-0">
+                                <li class="dropdown-item py-4">
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <div class="resImgOuter">
+                                                <div class="resImgInner">
+                                                    <img src="assets/img/imgfoodlogo.svg" class="w-100 h-100" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="row h-100">
+                                                <div class="col-12 resName">Gus's World Famous Chicken</div>
+                                                <div class="col-12 resAddress">310 S Front St, Memphis, USA</div>
+                                                <a class="col-12 resMenu text-decoration-none" href="javascript:;">View Full Menu</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><hr class="dropdown-divider m-0"></li>
+                                <li class="dropdown-item py-4">
+                                    <div class="row gap-1">
+                                        <div class="col-12 px-0">
+                                            <div class="row mx-0">
+                                                <div class="col-auto foodVegNonVeg">
+                                                    <div class="foodVegNonVegImg">
+                                                        <img src="assets/img/squareRed.svg" class="w-100 h-100" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col disName px-0"> Chicken Tikka Sub 12" (30 cm) x 1 </div>
+                                                <div class="col-auto foodPrize">₹<span>314</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 px-0">
+                                            <div class="row mx-0">
+                                                <div class="col-auto foodVegNonVeg">
+                                                    <div class="foodVegNonVegImg">
+                                                        <img src="assets/img/squareGreen.svg" class="w-100 h-100" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col disName px-0"> Corn & Peas Salad x 1 </div>
+                                                <div class="col-auto foodPrize">₹<span>209</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 px-0">
+                                            <div class="row mx-0">
+                                                <div class="col-auto foodVegNonVeg">
+                                                    <div class="foodVegNonVegImg">
+                                                        <img src="assets/img/squareRed.svg" class="w-100 h-100" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col disName px-0"> Chicken Tikka Sub 12" (30 cm) x 1 </div>
+                                                <div class="col-auto foodPrize">₹<span>314</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 px-0">
+                                            <div class="row mx-0">
+                                                <div class="col-auto foodVegNonVeg">
+                                                    <div class="foodVegNonVegImg">
+                                                        <img src="assets/img/squareGreen.svg" class="w-100 h-100" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col disName px-0"> Chicken Tikka Sub 12" (30 cm) x 1 </div>
+                                                <div class="col-auto foodPrize">₹<span>314</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 px-0">
+                                            <div class="row mx-0">
+                                                <div class="col-auto foodVegNonVeg">
+                                                    <div class="foodVegNonVegImg">
+                                                        <img src="assets/img/squareGreen.svg" class="w-100 h-100" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col disName px-0"> Chicken Tikka Sub 12" (30 cm) x 1 </div>
+                                                <div class="col-auto foodPrize">₹<span>314</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><hr class="dropdown-divider m-0"></li>
+                                <li class="dropdown-item py-4">
+                                    <div class="row">
+                                        <div class="col px-0">
+                                            <div class="row mx-0 flex-column">
+                                                <div class="col subTotal">Sub Total</div>
+                                                <div class="col extraCharges">Extra charges may apply</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto totalPrize">₹<span>1465</span></div>
+                                    </div>
+                                </li>
+                                <li><hr class="dropdown-divider m-0"></li>
+                                <li class="dropdown-item py-2 px-2">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <button class="btn btn-success shadow-none rounded-0 w-100">Checkout</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                </nav>
+                <div class="offcanvas offcanvas-end headerOffcanvas" tabindex="-1" id="headerOccanvas" aria-labelledby="headerOccanvasLabel">
+                    <div class="offcanvas-header shadow-sm border-bottom border-secondary border-opacity-75">
+                        <a href="index.html" class="logoOuter">
+                            <img src="assets/img/logo/foodlogo.svg" class="w-100 h-100" alt="">
+                        </a>
+                      <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body p-sm-3 p-2">
+                        <ul class="navbar-nav ms-auto d-flex align-items-start gap-md-3 gap-1 h-100">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item position-relative">
+                              <a class="nav-link offersButton" href="javascript:;">Offers</a>
+                              <span class="position-absolute top-50 translate-middle badge customBadge rounded-0 bg-theme1">New</span>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-bs-target="#resDrop"data-bs-toggle="collapse" href="javascript:;">
+                                  Restaurants
+                              </a>
+                              <div class="collapse customCollapse rounded-0 shadow-lg border-0" id="resDrop">
+                                <ul class="p-2 list-unstyled">
+                                    <li><a class="collapse-item text-decoration-none" href="listing.html">Listing</a></li>
+                                    <li><a class="collapse-item text-decoration-none" href="details.html">Details</a></li>
+                                    <li><a class="collapse-item text-decoration-none" href="checkout.html">Checkout</a></li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link d-flex align-items-center gap-2 py-2" data-bs-target="#accountDrop"data-bs-toggle="collapse" href="javascript:;">
+                                  <!-- <div class="rounded-circle overflow-hidden p-1 border border-theme1">
+                                      <div class="imgOuter rounded-circle overflow-hidden">
+                                          <img src="assets/img/profile-avater.jpg" class="w-100 h-100" alt="">
+                                       </div> 
+                                  </div> -->
+                                  My Account
+                              </a>
+                              <div class="collapse customCollapse rounded-0 shadow-lg border-0 myAccountItems" id="accountDrop">
+                                <ul class="p-2 list-unstyled">
+                                    <li><a class="collapse-item ordersItem" href="javascript:;">Orders</a></li>
+                                    <li><a class="collapse-item offtersItem" href="javascript:;">Offers</a></li>
+                                    <li><a class="collapse-item favouritesItem" href="javascript:;">Favourites</a></li>
+                                    <li><a class="collapse-item paymentsItem" href="javascript:;">Payments</a></li>
+                                    <li><a class="collapse-item addressItems" href="javascript:;">Address</a></li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="nav-item dropdown position-relative">
+                              <a class="nav-link cartButton d-flex align-items-center gap-2" href="javascript:;" data-bs-target="#cartDrop"data-bs-toggle="collapse" >
+                                Cart
+                                <span class="cartButtonInner">5</span>
+                              </a>
+                              <div class="collapse rounded-0 shadow-lg border-0 cartMain p-0" id="cartDrop">
+                                  <ul class="list-unstyled row mx-0">
+                                    <li class="col-12 py-3">
+                                        <div class="row mx-0 resDesMain">
+                                            <div class="col-auto px-1">
+                                                <div class="resImgOuter">
+                                                    <div class="resImgInner">
+                                                        <img src="assets/img/imgfoodlogo.svg" class="w-100 h-100" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col px-1">
+                                                <div class="row h-100">
+                                                    <div class="col-12 resName">Gus's World Famous Chicken</div>
+                                                    <div class="col-12 resAddress">310 S Front St, Memphis, USA</div>
+                                                    <a class="col-12 resMenu text-decoration-none" href="javascript:;">View Full Menu</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="p-0"><hr class="m-0"></li>
+                                    <li class="col-12 py-3">
+                                        <div class="row gap-1 mx-0">
+                                            <div class="col-12 px-0">
+                                                <div class="row mx-0">
+                                                    <div class="col-auto foodVegNonVeg">
+                                                        <div class="foodVegNonVegImg">
+                                                            <img src="assets/img/squareRed.svg" class="w-100 h-100" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col disName px-0"> Chicken Tikka Sub 12" (30 cm) x 1 </div>
+                                                    <div class="col-auto foodPrize">₹<span>314</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 px-0">
+                                                <div class="row mx-0">
+                                                    <div class="col-auto foodVegNonVeg">
+                                                        <div class="foodVegNonVegImg">
+                                                            <img src="assets/img/squareGreen.svg" class="w-100 h-100" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col disName px-0"> Corn & Peas Salad x 1 </div>
+                                                    <div class="col-auto foodPrize">₹<span>209</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 px-0">
+                                                <div class="row mx-0">
+                                                    <div class="col-auto foodVegNonVeg">
+                                                        <div class="foodVegNonVegImg">
+                                                            <img src="assets/img/squareRed.svg" class="w-100 h-100" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col disName px-0"> Chicken Tikka Sub 12" (30 cm) x 1 </div>
+                                                    <div class="col-auto foodPrize">₹<span>314</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 px-0">
+                                                <div class="row mx-0">
+                                                    <div class="col-auto foodVegNonVeg">
+                                                        <div class="foodVegNonVegImg">
+                                                            <img src="assets/img/squareGreen.svg" class="w-100 h-100" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col disName px-0"> Chicken Tikka Sub 12" (30 cm) x 1 </div>
+                                                    <div class="col-auto foodPrize">₹<span>314</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 px-0">
+                                                <div class="row mx-0">
+                                                    <div class="col-auto foodVegNonVeg">
+                                                        <div class="foodVegNonVegImg">
+                                                            <img src="assets/img/squareGreen.svg" class="w-100 h-100" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col disName px-0"> Chicken Tikka Sub 12" (30 cm) x 1 </div>
+                                                    <div class="col-auto foodPrize">₹<span>314</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="p-0"><hr class="m-0"></li>
+                                    <li class="col-12 py-3">
+                                        <div class="row mx-0">
+                                            <div class="col px-0">
+                                                <div class="row mx-0 flex-column">
+                                                    <div class="col subTotal">Sub Total</div>
+                                                    <div class="col extraCharges">Extra charges may apply</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto totalPrize">₹<span>1465</span></div>
+                                        </div>
+                                    </li>
+                                    <li class="p-0"><hr class="m-0"></li>
+                                    <li class="col-12 py-2 px-2">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <button class="btn btn-success shadow-none rounded-0 w-100">Checkout</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                  </ul>
+                              </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <!-- Header End -->
 
             <!-- Main Start-->
             <div class="col-12 px-0 flex-fill h-100 overflow-hidden customTranslate">
-                <div class="offcanvas offcanvas-start filterOffcanvas" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                <!-- <div class="offcanvas offcanvas-start filterOffcanvas h-100" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
                     <div class="offcanvas-header">
                       <h5 class="offcanvas-title fw-bold" id="staticBackdropLabel">Filter By</h5>
                       <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -86,7 +420,6 @@
                                 <div class="row gap-4">
                                     <div class="col-12">
                                         <div class="row">
-                                            <!-- <div class="col-12 filterHeading py-2">Filter By</div> -->
                                             <div class="col-12 filterOuter">
                                                 <div class="accordion" id="accordionPanelsStayOpenExample">
                                                     <div class="accordion-item rounded-0">
@@ -376,7 +709,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="h-100 overflow-y-auto">
                     <div class="listingMain" page-name="listing">
                         <div class="container-fluid px-0 sectioPartOne">
@@ -405,15 +738,15 @@
                                                 </select>
                                             </div>
                                             <div class="col-sm-auto col-12 d-lg-none d-block order-sm-3 order-2">
-                                                <button class="btn btn-outline-dark justify-content-center gap-2 fitletBtn rounded-0 shadow-none btn-style1 py-2 w-100 d-flex align-items-center" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="offcanvasResponsive">
+                                                <button class="btn btn-outline-dark justify-content-center gap-2 fitletBtn rounded-0 shadow-none btn-style1 py-2 w-100 d-flex align-items-center" onclick="toggle()">
                                                     <div class="imgOuter"></div>  Fillter 
                                                 </button>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <div class="row position-relative">
-                                            <div class="col-auto leftPart h-100 d-none d-lg-block position-stickey top-0">
+                                        <div class="row">
+                                            <div class="col-auto leftPart h-100" id="toggleSide">
                                                 <div class="row mx-0">
                                                     <div class="col-12 px-0 leftInner">
                                                         <div class="row mx-0 gap-4">
@@ -1437,5 +1770,12 @@
     <script src="assets/libs/OwlCarousel/owl.carousel.min.js"></script>
     <!-- Custom Js -->
     <script src="assets/js/index.js"></script>
+    <script>
+        function toggle() {
+            let toggleSide = document.getElementById('toggleSide');
+           toggleSide.classList.toggle('active')
+            console.log(toggleSide);
+        }
+    </script>
 </body>
 </html>

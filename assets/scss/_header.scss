@@ -3,7 +3,7 @@
     height: 70px;
     & .navbar-brand {
         width: auto;
-        height:45px;
+        height:50px;
         & img {
             object-fit: contain;
         }
@@ -280,7 +280,7 @@
 }
 .headerOffcanvas {
     & .logoOuter {
-        height: 30px;
+        height: 25px;
     }
     & .navbar-nav {
         & .nav-item {
@@ -603,6 +603,7 @@
         height: 60px;
         & .navbar-brand {
             height: 35px;
+            padding: 0;
         }
         & .navbar-nav {
             & .nav-item {
