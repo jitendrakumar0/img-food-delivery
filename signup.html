@@ -76,17 +76,17 @@
                         <div class="row">
                             <div class="col-md-11 col-lg-8 mx-auto">
                                 <h3 class="login-heading mb-4">New Buddy!</h3>
-                                <form class="needs-validation loginForm" novalidate>
-                                    <div class="form-label-group">
-                                        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+                                <form class="needs-validation loginForm d-flex flex-column gap-2" novalidate>
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" id="inputEmail" placeholder="Email address" required>
                                         <label for="inputEmail">Email address / Mobile</label>
                                     </div>
-                                    <div class="form-label-group">
-                                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                                    <div class="form-floating mb-3">
+                                        <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
                                         <label for="inputPassword">Password</label>
                                     </div>
-                                    <div class="form-label-group mb-4">
-                                        <input type="text" id="ptext" class="form-control" placeholder="Promocode">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="ptext" placeholder="Promocode">
                                         <label for="ptext">Promocode</label>
                                     </div>
                                     <button  type="submit"class="btn btn-lg btn-outline-theme1 rounded-0 w-100 btn-block btn-login text-uppercase font-weight-bold mb-2">Sign Up</button>

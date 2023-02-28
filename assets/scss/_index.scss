@@ -13736,9 +13736,13 @@
     .loginForm {
         & .form-control {
             border: none;
-            border-bottom: 1px solid gray;
+            border-bottom: 1px solid $gray-600;
             border-radius: 0px;
             box-shadow: none;
+            font-size: 15px;
+            font-weight: normal;
+            color: $black;
+            padding: 1.5rem 0.25rem 0.5rem 0.25rem;
             &:focus {
                 border: none;
                 border-bottom: 1px solid gray;
@@ -13749,6 +13753,9 @@
             &:valid {
                 box-shadow: none;
             }
+        }
+        & label {
+            padding: 1rem 0.25rem;
         }
     }
 }
