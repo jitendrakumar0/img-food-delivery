@@ -4,6 +4,17 @@
 //     padding: 0;
 //     margin: 0;
 // }
+//? ################################## landing Page Start ###################################
+
+[page-name=landingPage] {
+    & .headerMain {
+
+    }
+    & .outerMain {
+
+    }
+}
+//! ################################## landing Page End  ###################################
 //? ################################## Index Page Start ###################################
 [page-name=mainSection] {
     &.mainSecton {
@@ -511,6 +522,10 @@
 }
 // Medium devices (tablets, 768px and up)
 @mixin Index-mixin-min-md() {
+    body {
+        height: 100vh;
+        overflow: hidden;
+    }
 }
 // Large devices (desktops, 992px and up)
 @mixin Index-mixin-min-lg() {
@@ -927,10 +942,16 @@
             }
         }
     }
-    body {
-        // overflow-y: auto !important;
-        // height: 100% !important;
+    [page-name=landingPage] {
+    & .headerMain {
+        position: fixed;
+        width: 100%;
+        z-index: 99;
     }
+    & .outerMain {
+        padding-top: 60px;
+    }
+}
 }
 // Medium devices (tablets, less than 992px)
 @mixin Index-mixin-max-md() {
@@ -1524,7 +1545,10 @@
 @mixin Index-mixin-330() {
     
 }
-
+ .customBody {
+    overflow: hidden;
+    height: 100vh;
+ }
 //! ###########################  Index Page End  ###########################
 
 //? ################################## Listing Page Start ###################################
@@ -14321,24 +14345,19 @@ svg {
 .loading-wrapper {
     display: none;
     &.active {
+        position: fixed;
+        inset: 0;
+        z-index: 999999;
         background-color: $theme2;
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        position: absolute;
         text-align: center;
-        padding-top: 50px;
         min-height: 200px;
         min-width: 250px;
-        left: 50%;
-        top: 50%;
-        right: 0;
-        bottom: 0; 
-        transform: translate(-50%, -50%);
-        z-index: 999999999;
         & svg {
             & #body {
                 fill: $secondary;

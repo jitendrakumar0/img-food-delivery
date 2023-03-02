@@ -414,9 +414,11 @@ let showmoreBtn = document.querySelectorAll('.addressLabel');
 
 
 setTimeout(()=>{
-  let a = document.querySelectorAll(".loading-wrapper");
-  a.forEach((e)=>{
-   e.classList.remove('active');
-  })
+  let a = document.querySelector(".loading-wrapper");
+    let b = document.querySelector('body');
+    b.classList.remove('customBody');
+   a.classList.remove('active');
+   b.style.overflow = 'hidden auto;'
+ 
  }, 1000);
 
