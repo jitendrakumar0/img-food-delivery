@@ -1,3 +1,9 @@
+// body {
+//     height: 100vh;
+//     overflow: hidden;
+//     padding: 0;
+//     margin: 0;
+// }
 //? ################################## Index Page Start ###################################
 [page-name=mainSection] {
     &.mainSecton {
@@ -920,6 +926,10 @@
                 }
             }
         }
+    }
+    body {
+        // overflow-y: auto !important;
+        // height: 100% !important;
     }
 }
 // Medium devices (tablets, less than 992px)
@@ -9399,7 +9409,7 @@
                            font-weight: bold;
                            color: $black;
                            & .dishTag {
-                                color: white;
+                                color: $white;
                                 font-size: 12px;
                                 text-transform: uppercase;
                                 border-radius: 2px;

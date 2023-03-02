@@ -25,10 +25,13 @@
         }
         & .subsInp {
             font-size: 14px;
+            border: 1px solid lighten($secondary, 20);
             &:focus {
                 outline: none;
-                border: none;
             }
+        }
+        & .subscribeButton  {
+            height: 35px;
         }
         & .regiDes {
             color: $black;

@@ -88,7 +88,324 @@
         <div class="row mx-0 flex-nowrap landingPage flex-column h-100 overflow-hidden" page-name="landingPage">
             <!-- Header Start -->
             <div class="col-12 px-0">
-                <div class="header"></div>
+                <nav class="navbar  navbar-expand-sm py-md-2 py-1 bg-white shadow-sm headerMain">
+                    <div class="container-lg container-fluid d-flex align-items-center h-100">
+                      <a class="navbar-brand d-flex align-items-center justify-content-center" href="index.html">
+                        <img src="assets/img/logo/foodlogo.svg" class="w-100 h-100" alt="">
+                      </a>
+                      <button class="d-block d-md-none border-0 bg-transparent p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#headerOccanvas" aria-controls="headerOccanvas">
+                        <div class="toggleButton d-flex flex-column gap-1 align-items-end p-1">
+                            <div class="item item1"></div>
+                            <div class="item item2"></div>
+                            <div class="item item3"></div>
+                        </div>
+                      </button>
+                      <div class="d-none d-md-block h-100" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto d-flex align-items-center gap-md-3 gap-1 h-100">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                          </li>
+                          <li class="nav-item ms-md-3 ms-2 me-md-5 me-4 position-relative">
+                            <a class="nav-link offersButton" href="javascript:;">Offers</a>
+                            <span class="position-absolute top-50 ms-md-3 ms-2 start-100 translate-middle badge customBadge rounded-0 bg-theme1">New</span>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:;" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Restaurants
+                            </a>
+                            <ul class="dropdown-menu rounded-0 shadow-lg border-0 show">
+                              <li><a class="dropdown-item" href="listing.html">Listing</a></li>
+                              <li><a class="dropdown-item" href="details.html">Detail</a></li>
+                              <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center gap-2 py-0" href="javascript:;" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="rounded-circle overflow-hidden p-1 border border-theme1">
+                                    <div class="imgOuter rounded-circle overflow-hidden">
+                                        <img src="assets/img/profile-avater.jpg" class="w-100 h-100" alt="">
+                                     </div> 
+                                </div>
+                                My Account
+                            </a>
+                            <ul class="dropdown-menu rounded-0 shadow-lg border-0 px-2 myAccountItems shwo">
+                              <li><a class="dropdown-item ordersItem" href="javascript:;">Orders</a></li>
+                              <li><a class="dropdown-item offtersItem" href="javascript:;">Offers</a></li>
+                              <li><a class="dropdown-item favouritesItem" href="javascript:;">Favourites</a></li>
+                              <li><a class="dropdown-item paymentsItem" href="javascript:;">Payments</a></li>
+                              <li><a class="dropdown-item addressItems" href="javascript:;">Address</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown position-relative">
+                            <a class="nav-link dropdown-toggle cartButton d-flex align-items-center gap-1" href="javascript:;" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <span class="cartButtonInner">
+                                0
+                              </span>
+                                Cart
+                            </a>
+                            <ul class="dropdown-menu rounded-0 shadow-lg border-0 cartMain show p-0">
+                                <li class="dropdown-item py-4">
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <div class="resImgOuter">
+                                                <div class="resImgInner">
+                                                    <img src="assets/img/imgfoodlogo.svg" class="w-100 h-100" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="row h-100">
+                                                <div class="col-12 resName">Gus's World Famous Chicken</div>
+                                                <div class="col-12 resAddress">310 S Front St, Memphis, USA</div>
+                                                <a class="col-12 resMenu text-decoration-none" href="javascript:;">View Full Menu</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><hr class="dropdown-divider m-0"></li>
+                                <li class="dropdown-item py-4">
+                                    <div class="row gap-1">
+                                        <div class="col-12 px-0">
+                                            <div class="row mx-0">
+                                                <div class="col-auto foodVegNonVeg">
+                                                    <div class="foodVegNonVegImg">
+                                                        <img src="assets/img/squareRed.svg" class="w-100 h-100" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col disName px-0"> Chicken Tikka Sub 12" (30 cm) x 1 </div>
+                                                <div class="col-auto foodPrize">₹<span>314</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 px-0">
+                                            <div class="row mx-0">
+                                                <div class="col-auto foodVegNonVeg">
+                                                    <div class="foodVegNonVegImg">
+                                                        <img src="assets/img/squareGreen.svg" class="w-100 h-100" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col disName px-0"> Corn & Peas Salad x 1 </div>
+                                                <div class="col-auto foodPrize">₹<span>209</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 px-0">
+                                            <div class="row mx-0">
+                                                <div class="col-auto foodVegNonVeg">
+                                                    <div class="foodVegNonVegImg">
+                                                        <img src="assets/img/squareRed.svg" class="w-100 h-100" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col disName px-0"> Chicken Tikka Sub 12" (30 cm) x 1 </div>
+                                                <div class="col-auto foodPrize">₹<span>314</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 px-0">
+                                            <div class="row mx-0">
+                                                <div class="col-auto foodVegNonVeg">
+                                                    <div class="foodVegNonVegImg">
+                                                        <img src="assets/img/squareGreen.svg" class="w-100 h-100" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col disName px-0"> Chicken Tikka Sub 12" (30 cm) x 1 </div>
+                                                <div class="col-auto foodPrize">₹<span>314</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 px-0">
+                                            <div class="row mx-0">
+                                                <div class="col-auto foodVegNonVeg">
+                                                    <div class="foodVegNonVegImg">
+                                                        <img src="assets/img/squareGreen.svg" class="w-100 h-100" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col disName px-0"> Chicken Tikka Sub 12" (30 cm) x 1 </div>
+                                                <div class="col-auto foodPrize">₹<span>314</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><hr class="dropdown-divider m-0"></li>
+                                <li class="dropdown-item py-4">
+                                    <div class="row">
+                                        <div class="col px-0">
+                                            <div class="row mx-0 flex-column">
+                                                <div class="col subTotal">Sub Total</div>
+                                                <div class="col extraCharges">Extra charges may apply</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto totalPrize">₹<span>1465</span></div>
+                                    </div>
+                                </li>
+                                <li><hr class="dropdown-divider m-0"></li>
+                                <li class="dropdown-item py-2 px-2">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <a href="checkout.html" class="btn btn-success shadow-none rounded-0 w-100">Checkout</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                </nav>
+                <div class="offcanvas offcanvas-end headerOffcanvas" tabindex="-1" id="headerOccanvas" aria-labelledby="headerOccanvasLabel">
+                    <div class="offcanvas-header shadow-sm border-bottom border-secondary border-opacity-75">
+                        <a href="index.html" class="logoOuter">
+                            <img src="assets/img/logo/foodlogo.svg" class="w-100 h-100" alt="">
+                        </a>
+                      <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body p-sm-3 p-2">
+                        <ul class="navbar-nav ms-auto d-flex align-items-start gap-md-3 gap-1 h-100">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item position-relative">
+                              <a class="nav-link offersButton" href="javascript:;">Offers</a>
+                              <span class="position-absolute top-50 translate-middle badge customBadge rounded-0 bg-theme1">New</span>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-bs-target="#resDrop"data-bs-toggle="collapse" href="javascript:;">
+                                  Restaurants
+                              </a>
+                              <div class="collapse customCollapse rounded-0 shadow-lg border-0" id="resDrop">
+                                <ul class="p-2 list-unstyled">
+                                    <li><a class="collapse-item text-decoration-none" href="listing.html">Listing</a></li>
+                                    <li><a class="collapse-item text-decoration-none" href="details.html">Details</a></li>
+                                    <li><a class="collapse-item text-decoration-none" href="checkout.html">Checkout</a></li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link d-flex align-items-center gap-2 py-2" data-bs-target="#accountDrop"data-bs-toggle="collapse" href="javascript:;">
+                                  <!-- <div class="rounded-circle overflow-hidden p-1 border border-theme1">
+                                      <div class="imgOuter rounded-circle overflow-hidden">
+                                          <img src="assets/img/profile-avater.jpg" class="w-100 h-100" alt="">
+                                       </div> 
+                                  </div> -->
+                                  My Account
+                              </a>
+                              <div class="collapse customCollapse rounded-0 shadow-lg border-0 myAccountItems" id="accountDrop">
+                                <ul class="p-2 list-unstyled">
+                                    <li><a class="collapse-item ordersItem" href="javascript:;">Orders</a></li>
+                                    <li><a class="collapse-item offtersItem" href="javascript:;">Offers</a></li>
+                                    <li><a class="collapse-item favouritesItem" href="javascript:;">Favourites</a></li>
+                                    <li><a class="collapse-item paymentsItem" href="javascript:;">Payments</a></li>
+                                    <li><a class="collapse-item addressItems" href="javascript:;">Address</a></li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="nav-item dropdown position-relative">
+                              <a class="nav-link cartButton d-flex align-items-center gap-2" href="javascript:;" data-bs-target="#cartDrop"data-bs-toggle="collapse" >
+                                Cart
+                                <span class="cartButtonInner">5</span>
+                              </a>
+                              <div class="collapse rounded-0 shadow-lg border-0 cartMain p-0" id="cartDrop">
+                                  <ul class="list-unstyled row mx-0">
+                                    <li class="col-12 py-3">
+                                        <div class="row mx-0 resDesMain">
+                                            <div class="col-auto px-1">
+                                                <div class="resImgOuter">
+                                                    <div class="resImgInner">
+                                                        <img src="assets/img/imgfoodlogo.svg" class="w-100 h-100" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col px-1">
+                                                <div class="row h-100">
+                                                    <div class="col-12 resName">Gus's World Famous Chicken</div>
+                                                    <div class="col-12 resAddress">310 S Front St, Memphis, USA</div>
+                                                    <a class="col-12 resMenu text-decoration-none" href="javascript:;">View Full Menu</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="p-0"><hr class="m-0"></li>
+                                    <li class="col-12 py-3">
+                                        <div class="row gap-1 mx-0">
+                                            <div class="col-12 px-0">
+                                                <div class="row mx-0">
+                                                    <div class="col-auto foodVegNonVeg">
+                                                        <div class="foodVegNonVegImg">
+                                                            <img src="assets/img/squareRed.svg" class="w-100 h-100" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col disName px-0"> Chicken Tikka Sub 12" (30 cm) x 1 </div>
+                                                    <div class="col-auto foodPrize">₹<span>314</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 px-0">
+                                                <div class="row mx-0">
+                                                    <div class="col-auto foodVegNonVeg">
+                                                        <div class="foodVegNonVegImg">
+                                                            <img src="assets/img/squareGreen.svg" class="w-100 h-100" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col disName px-0"> Corn & Peas Salad x 1 </div>
+                                                    <div class="col-auto foodPrize">₹<span>209</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 px-0">
+                                                <div class="row mx-0">
+                                                    <div class="col-auto foodVegNonVeg">
+                                                        <div class="foodVegNonVegImg">
+                                                            <img src="assets/img/squareRed.svg" class="w-100 h-100" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col disName px-0"> Chicken Tikka Sub 12" (30 cm) x 1 </div>
+                                                    <div class="col-auto foodPrize">₹<span>314</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 px-0">
+                                                <div class="row mx-0">
+                                                    <div class="col-auto foodVegNonVeg">
+                                                        <div class="foodVegNonVegImg">
+                                                            <img src="assets/img/squareGreen.svg" class="w-100 h-100" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col disName px-0"> Chicken Tikka Sub 12" (30 cm) x 1 </div>
+                                                    <div class="col-auto foodPrize">₹<span>314</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 px-0">
+                                                <div class="row mx-0">
+                                                    <div class="col-auto foodVegNonVeg">
+                                                        <div class="foodVegNonVegImg">
+                                                            <img src="assets/img/squareGreen.svg" class="w-100 h-100" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col disName px-0"> Chicken Tikka Sub 12" (30 cm) x 1 </div>
+                                                    <div class="col-auto foodPrize">₹<span>314</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="p-0"><hr class="m-0"></li>
+                                    <li class="col-12 py-3">
+                                        <div class="row mx-0">
+                                            <div class="col px-0">
+                                                <div class="row mx-0 flex-column">
+                                                    <div class="col subTotal">Sub Total</div>
+                                                    <div class="col extraCharges">Extra charges may apply</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto totalPrize">₹<span>1465</span></div>
+                                        </div>
+                                    </li>
+                                    <li class="p-0"><hr class="m-0"></li>
+                                    <li class="col-12 py-2 px-2">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <a href="checkout.html" class="btn btn-success shadow-none rounded-0 w-100">Checkout</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                  </ul>
+                              </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <!-- Header End -->
 
@@ -1722,7 +2039,172 @@
                         </div>
                     </div>
                     <!-- Footer Start -->
-                    <div class="footer"></div>
+                    <div class="mainFooter container-fluid p-0">
+                        <div class="footerTop">
+                         <div class="container-lg container-fluid py-md-5 py-sm-4 py-3">
+                             <div class="row">
+                                 <div class="col-12 text-center workWithUsOuter">
+                                     Operate food store or restaurants? 
+                                     <a href="javascript:;" class="text-decoration-none workWithUs">Work With Us</a>
+                                 </div>
+                             </div>
+                         </div>
+                        </div>
+                        <div class="footerMiddalFirst">
+                             <div class="container-lg container-fluid py-md-5 py-sm-4 py-3">
+                                 <div class="row">
+                                     <div class="col-xl-4 col-md-5 col-12 pe-lg-5 pe-md-2 order-2 order-md-1 pt-4 pt-md-0">
+                                         <div class="row">
+                                             <div class="col-lg-12 col-sm-7 col-12 col-md-12">
+                                                 <div class="row mx-0">
+                                                     <div class="col-12 subsHeading pb-3 px-0">Subscribe to our Newsletter</div>
+                                                     <div class="col-12 px-0">
+                                                         <form class="needs-validation" novalidate>
+                                                             <div class="row mx-0">
+                                                                 <div class="col px-0">
+                                                                     <input type="email" class="form-control shadow-none rounded-0 border-end-0 subsInp" placeholder="Please enter your email" required>
+                                                                     <div class="invalid-feedback">Please enter email address.</div>
+                                                                 </div>
+                                                                 <div class="col-auto px-0">
+                                                                     <button class="btn btn-theme1 rounded-0 border-0 subscribeButton btn-style1" type="submit">Subscribe</button>
+                                                                 </div>
+                                                             </div>
+                                                         </form>
+                                                     </div>
+                                                     <div class="col-12 regiDes pt-1 px-0">
+                                                         <a href="javascript:;" class="text-decoration-none regiText">Register now</a> to get updates on <a href="javascript:;" class="text-decoration-none regiText">Offers and conditions</a>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                             <div class="col-12 pt-3 pt-sm-0">
+                                                 <div class="row mx-0">
+                                                     <div class="col-12 downloadAppHeading pt-sm-4 pt-0  px-0">DOWNLOAD APP</div>
+                                                     <div class="col-12 pt-md-2 pt-sm-3 pt-2 px-0">
+                                                         <div class="row">
+                                                             <a class="col-auto" href="javascript:;">
+                                                                 <div class="downloadAppImg">
+                                                                     <img src="assets/img/icon-GooglePlay_1_zixjxl.png" class="w-100 h-100" alt="">
+                                                                 </div>
+                                                             </a>
+                                                             <a class="col-auto px-0 px-sm-1" href="javascript:;">
+                                                                 <div class="downloadAppImg">
+                                                                     <img src="assets/img/icon-AppStore_lg30tv.png" class="w-100 h-100" alt="">
+                                                                 </div>
+                                                             </a>
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="col-xl-8 col-md-7 col-12 order-1 order-md-2">
+                                         <div class="row">
+                                             <div class="col-sm-4 col-12">
+                                                 <div class="row subHeadingOuter">
+                                                     <div class="col-12">
+                                                         <div class="subHeading mb-sm-3 mb-1">About IMG Food</div>
+                                                         <ul class="list-unstyled m-0 d-flex flex-column gap-sm-1 gap-0">
+                                                             <li><a href="javascript:;" class="subHaddingList">About Us</a></li>
+                                                             <li><a href="javascript:;" class="subHaddingList">Culture</a></li>
+                                                             <li><a href="javascript:;" class="subHaddingList">Blog</a></li>
+                                                             <li><a href="javascript:;" class="subHaddingList">Careers</a></li>
+                                                             <li><a href="javascript:;" class="subHaddingList">Contact</a></li>
+                                                         </ul>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                             <div class="col-sm-4 col-12 pt-2 pt-sm-0">
+                                                 <div class="row subHeadingOuter">
+                                                     <div class="col-12">
+                                                         <div class="subHeading mb-sm-3 mb-1">For Foodies</div>
+                                                         <ul class="list-unstyled m-0 d-flex flex-column gap-sm-1 gap-0">
+                                                             <li><a href="javascript:;" class="subHaddingList">Community</a></li>
+                                                             <li><a href="javascript:;" class="subHaddingList">Developers</a></li>
+                                                             <li><a href="javascript:;" class="subHaddingList">Bloger Help</a></li>
+                                                             <li><a href="javascript:;" class="subHaddingList">Verified Users</a></li>
+                                                             <li><a href="javascript:;" class="subHaddingList">Code of Conduct</a></li>
+                                                         </ul>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                             <div class="col-sm-4 col-12 pt-2 pt-sm-0">
+                                                 <div class="row subHeadingOuter">
+                                                     <div class="col-12">
+                                                         <div class="subHeading mb-sm-3 mb-1">For Restaurants</div>
+                                                         <ul class="list-unstyled m-0 d-flex flex-column gap-sm-1 gap-0">
+                                                             <li><a href="javascript:;" class="subHaddingList">Advertise</a></li>
+                                                             <li><a href="javascript:;" class="subHaddingList">Add a Restaurant</a></li>
+                                                             <li><a href="javascript:;" class="subHaddingList">Claim your Listing</a></li>
+                                                             <li><a href="javascript:;" class="subHaddingList">For Businesses</a></li>
+                                                             <li><a href="javascript:;" class="subHaddingList">Owner Guidelines</a></li>
+                                                         </ul>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                        </div>
+                        <div class="footerMiddalSecond">
+                             <div class="container-lg container-fluid py-md-5 py-sm-4 py-3">
+                                 <div class="row gap-3">
+                                     <div class="col-12">
+                                         <div class="subHeadingText mb-sm-3 mb-1">POPULAR CITYS</div>
+                                         <ul class="list-unstyled d-flex catTestOuter flex-wrap m-0">
+                                             <li><a href="javascript:;" class="catTest">Aasam</a></li>
+                                             <li><a href="javascript:;" class="catTest">Delhi</a></li>
+                                             <li><a href="javascript:;" class="catTest">Jaipur</a></li>
+                                             <li><a href="javascript:;" class="catTest">Ajmer</a></li>
+                                             <li><a href="javascript:;" class="catTest">Kota</a></li>
+                                             <li><a href="javascript:;" class="catTest">Aasam</a></li>
+                                             <li><a href="javascript:;" class="catTest">Delhi</a></li>
+                                             <li><a href="javascript:;" class="catTest">Jaipur</a></li>
+                                             <li><a href="javascript:;" class="catTest">Jaipur</a></li>
+                                             <li><a href="javascript:;" class="catTest">Ajmer</a></li>
+                                             <li><a href="javascript:;" class="catTest">Kota</a></li>
+                                             <li><a href="javascript:;" class="catTest">Aasam</a></li>
+                                         </ul>
+                                     </div>
+                                     <div class="col-12">
+                                         <div class="subHeadingText mb-sm-3 mb-1">POPULAR Food</div>
+                                         <ul class="list-unstyled d-flex catTestOuter flex-wrap m-0">
+                                             <li><a href="javascript:;" class="catTest">Fast Food</a></li>
+                                             <li><a href="javascript:;" class="catTest">Chinese</a></li>
+                                             <li><a href="javascript:;" class="catTest">Street Food</a></li>
+                                             <li><a href="javascript:;" class="catTest">Chinese</a></li>
+                                             <li><a href="javascript:;" class="catTest">Mithai</a></li>
+                                             <li><a href="javascript:;" class="catTest">Cafe</a></li>
+                                             <li><a href="javascript:;" class="catTest">South Indian</a></li>
+                                             <li><a href="javascript:;" class="catTest">Fast Food</a></li>
+                                             <li><a href="javascript:;" class="catTest">Chinese</a></li>
+                                             <li><a href="javascript:;" class="catTest">Street Food</a></li>
+                                             <li><a href="javascript:;" class="catTest">Chinese</a></li>
+                                             <li><a href="javascript:;" class="catTest">Mithai</a></li>
+                                             <li><a href="javascript:;" class="catTest">Cafe</a></li>
+                                             <li><a href="javascript:;" class="catTest">South Indian</a></li>
+                                             <li><a href="javascript:;" class="catTest">Fast Food</a></li>
+                                             <li><a href="javascript:;" class="catTest">Chinese</a></li>
+                                             <li><a href="javascript:;" class="catTest">Street Food</a></li>
+                                             <li><a href="javascript:;" class="catTest">Chinese</a></li>
+                                             <li><a href="javascript:;" class="catTest">Mithai</a></li>
+                                             <li><a href="javascript:;" class="catTest">Cafe</a></li>
+                                             <li><a href="javascript:;" class="catTest">South Indian</a></li>
+                                         </ul>
+                                     </div>
+                                 </div>
+                             </div>
+                        </div>
+                        <div class="footerBottom bg-theme2">
+                         <div class="container py-3">
+                             <div class="row">
+                                 <div class="col-12 text-center copyRightText">
+                                     © Copyright 2023 IMG Food. All Rights Reserved
+                                 </div>
+                             </div>
+                         </div>
+                        </div>
+                     </div>
                     <!-- Footer End -->
                 </div>
             </div>
