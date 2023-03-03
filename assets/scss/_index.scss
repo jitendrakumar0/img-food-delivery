@@ -2194,6 +2194,8 @@
                     }
                 }
                 & .leftPart {
+                    margin-top: 60px;
+                    height: calc(100vh - 60px) !important;
                     & .leftInner {
                         & .filterHeading {
                         }
@@ -2388,7 +2390,7 @@
                     }
                 }
                 & .leftPart {
-                    position: absolute;
+                    position: fixed;
                     left: 0;
                     z-index: 111;
                     top: 0;
@@ -2398,12 +2400,28 @@
                     transition: all 0.3s ease-in-out;
                     background-color: $white;
                     overflow: hidden auto;
+                    bottom: 0;
+                    padding-bottom: 40px;
                     &.active {
                         transform: translateX(0);
                         opacity: 1;
                     }
                     & .leftInner {
+                        position: relative;
                         & .filterHeading {
+                            position: sticky;
+                            top: 0;
+                            z-index: 9;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            & .closeBtn {
+                                display: flex !important;
+                                width: 18px;
+                                height: 18px;
+                                align-items: center;
+                                justify-content: center;
+                            }
                         }
                         & .filterOuter {
                             & .accordion {
@@ -2659,6 +2677,15 @@
                 }
             }
         }
+    }
+    .customBackDrop {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.35);
+        top: 0;
+        left: 0;
+        position: absolute;
+        z-index: 9;
     }
 }
 // Large devices (desktops, less than 1200px)

@@ -418,7 +418,6 @@ setTimeout(()=>{
     let b = document.querySelector('body');
     b.classList.remove('customBody');
    a.classList.remove('active');
-   b.style.overflow = 'hidden auto;'
  
  }, 1000);
 
